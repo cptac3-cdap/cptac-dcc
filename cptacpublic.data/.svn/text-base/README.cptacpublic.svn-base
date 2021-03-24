@@ -1,0 +1,74 @@
+
+cptacpublic
+===========
+
+Command-line access to CPTAC public portal from the command-line. 
+
+Usage: cptacpublic [options] [list] [<cptac-folder-or-file>]
+       cptacpublic [options] get <cptac-folder-or-file>
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  --accept              Accept data use aggreement. See 
+                        https://cptac-data-portal.georgetown.edu/
+                        cptac/dataPublic/disclaimer. Required.
+  -t, --time            Sort listings by modification time.
+  -s, --size            Sort listings by file/folder size.
+  -r, --reverse         Reverse the order of the listing sort.
+  --humansizes          Human readable file/folder sizes.
+  -f, --force           Toggle whether to update changed files on
+                        download. Default: False.
+  -k RESUME, --resume=RESUME
+                        File-check stringency for file-skipping on resume. One
+                        of: always retransfer (0); check file-size (1); sparse
+                        checksum (2); or full checksum (3). Default: 2.
+  -C, --checksum        Toggle whether to download and check (get) checksum
+                        files (using cksum) for folder transfers. Default:
+                        False.
+  -q, --quiet           Toggle whether to execute ascp in quiet mode. Default:
+                        False.
+  -e, --echo            Toggle whether to echo ascp command for get. Default: 
+                        False.
+  -n, --noexecute       Do not execute the ascp command for get. Implies 
+                        -e/--echo.
+  -v, --verbose         Print diagnostic and debugging information to standard
+                        error. Double for more information.
+
+Commands:
+  list [f]              List contents of file/folder f [ home folder ] at 
+                        CPTAC DCC (Default command).
+  get f                 Get/download file/folder f from CPTAC DCC.
+
+The CPTAC DCC file/folder argument f for the get command can use
+filename matching symbols "*". Comman-line arguements with filename
+matching symbols will generally need to be quoted to avoid
+interpretation by the shell.
+
+To set local or user defaults, copy and paste the relevant section
+heading and options from $INSTALL/cptacpublic.ini to any one of the
+following locations $INSTALL/cptacpublic-local.ini,
+$HOME/cptacpublic.ini, $HOME/.cptacpublic.ini, or cptacpublic.ini in
+the current working directory.
+
+Do not just change the configuration file $INSTALL/cptacpublic.ini in
+place, as it will be overwritten by the automatic update script.
+
+Examples:
+
+* List the root folder of the public portal:
+
+  > cptacpublic --accept
+
+* List a folder of the public portal:
+
+  > cptacpublic --accept Phase_II_Data
+
+* List a folder of the public portal (showing path separators):
+
+  > cptacpublic --accept Phase_II_Data/CompRef
+
+* Download a folder from the public portal:
+
+  > cptacpublic --accept get Phase_II_Data/CompRef
+

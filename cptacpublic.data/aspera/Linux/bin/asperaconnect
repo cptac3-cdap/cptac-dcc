@@ -1,0 +1,6 @@
+#!/bin/sh
+
+BASEDIR=`dirname "$0"`
+export QT_PLUGIN_PATH="$BASEDIR/plugins":$QT_PLUGIN_PATH
+
+"$BASEDIR/asperaconnect.bin" "$@"

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2336/CPTAC-DCC/trunk/cptacpublic.data
+END
+cptacpublic_update.bat
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2101/CPTAC-DCC/trunk/cptacpublic.data/cptacpublic_update.bat
+END
+cptacpublic.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2103/CPTAC-DCC/trunk/cptacpublic.data/cptacpublic.sh
+END
+cptacpublic_update.sh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/2102/CPTAC-DCC/trunk/cptacpublic.data/cptacpublic_update.sh
+END
+README.cptacpublic
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2101/CPTAC-DCC/trunk/cptacpublic.data/README.cptacpublic
+END
+unzip.exe
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2101/CPTAC-DCC/trunk/cptacpublic.data/unzip.exe
+END
+wget.exe
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2101/CPTAC-DCC/trunk/cptacpublic.data/wget.exe
+END
+cptacpublic.ini
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2347/CPTAC-DCC/trunk/cptacpublic.data/cptacpublic.ini
+END
+cksum.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2103/CPTAC-DCC/trunk/cptacpublic.data/cksum.sh
+END
+README.cksum
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2101/CPTAC-DCC/trunk/cptacpublic.data/README.cksum
+END

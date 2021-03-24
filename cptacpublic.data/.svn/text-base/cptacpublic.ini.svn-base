@@ -1,0 +1,30 @@
+
+#
+# Do not make changes to this file - copy and paste the relevant
+# configuration section and setting(s) to a new configuration file in
+# any one of the following locations: $INSTALL/cptacpublic-local.ini,
+# $HOME/cptacpublic.ini, $HOME/.cptacpublic.ini, or cptacpublic.ini in
+# your current working directory.
+#
+
+[Aspera]
+Options = -l 1g -Q -Z 1370
+Resume = 2
+Install = %(INSTALL)s/aspera/%(SYSTEM)s
+
+[Portal]
+
+# Portal address
+Address = cptac-data-portal.georgetown.edu
+
+# Check and update local files/folders with get
+Force = False
+
+# Aspera progress?
+Quiet = False
+
+# Echo aspera commands
+Echo = False
+
+# Auto Checksum
+Checksum = False

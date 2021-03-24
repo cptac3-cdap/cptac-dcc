@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc
+END
+aspera.conf
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc/aspera.conf
+END
+localhost.crt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc/localhost.crt
+END
+localhost.key
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc/localhost.key
+END
+aspera_web_key.pem
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc/aspera_web_key.pem
+END
+asperaconnect.path
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc/asperaconnect.path
+END
+asperaweb_id_dsa.putty
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc/asperaweb_id_dsa.putty
+END
+aspera_web_cert.pem
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc/aspera_web_cert.pem
+END
+asperaweb_id_dsa.openssh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc/asperaweb_id_dsa.openssh
+END
+aspera-license
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2324/CPTAC-DCC/trunk/cptacpublic.data/aspera/Linux64/etc/aspera-license
+END
