@@ -1,0 +1,111 @@
+
+cptacdcc
+========
+
+Command-line access to CPTAC private portal from the command-line.
+
+Usage: cptacdcc [options] [list] [<cptac-dcc-folder-or-file>]
+       cptacdcc [options] get <cptac-dcc-folder-or-file>
+       cptacdcc [options] put <local-folders-or-files> <cptac-dcc-folder-or-file>
+       cptacdcc [options] delete <cptac-dcc-folder-or-file>
+       cptacdcc [options] mkdir <cptac-dcc-folder-or-file>
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -u USER, --user=USER  CPTAC DCC portal user-name. Required.
+  -p PASSWORD, --password=PASSWORD
+                        CPTAC DCC portal password. If value is a file,
+                        password is read from the file. If value is "-"
+                        password is read from stdin. If missing, user is
+                        prompted for password. Default: Prompt.
+  -t, --time            Sort listings by modification time.
+  -s, --size            Sort listings by file/folder size.
+  -r, --reverse         Reverse the order of the listing sort.
+  --humansizes          Human readable file/folder sizes.
+  -f, --force           Toggle whether to update changed files on
+                        download/upload. Default: False.
+  -k RESUME, --resume=RESUME
+                        File-check stringency for file-skipping on resume. One
+                        of: always retransfer (0); check file-size (1); sparse
+                        checksum (2); or full checksum (3). Default: 2.
+  -C, --checksum        Toggle whether to download and check (get) or compute
+                        and upload (put) checksum files (using cksum) for
+                        folder transfers. Default: False.
+  -q, --quiet           Toggle whether to execute ascp in quiet mode. Default:
+                        False.
+  -e, --echo            Toggle whether to echo ascp command for get and put.
+                        Default: False.
+  -n, --noexecute       Do not execute the ascp command for get and put.
+                        Implies -e/--echo.
+  -v, --verbose         Print diagnostic and debugging information to standard
+                        error. Double for more information.
+
+Commands:
+  list [f]              List contents of file/folder f [ home folder ] at 
+                        CPTAC DCC (Default command).
+  get f                 Get/download file/folder f from CPTAC DCC.
+  put l f               Put/upload file/folder l to CPTAC DCC folder f.
+  delete f              Delete file/folder f from CPTAC DCC.
+  mkdir f               Make new folder f at CPTAC DCC.
+
+The CPTAC DCC file/folder argument f for the get and delete commands
+can use filename matching symbols "*". Command-line arguements with
+filename matching symbols will generally need to be quoted to avoid
+interpretation by the shell. The local file/folder argument l for the
+put command can use filename matching symbols and/or list multiple
+files/folders.
+
+To set local or user defaults, copy and paste the relevant section
+heading and options from $INSTALL/cptacdcc.ini to any one of the
+following locations $INSTALL/cptacdcc-local.ini, $HOME/cptacdcc.ini,
+$HOME/.cptacdcc.ini, or cptacdcc.ini in the current working directory.
+
+Frequent users will probably want to set the User and Password
+defaults as follows in one of the above locations.
+
+[Portal]
+User = XXXXX
+Password = YYYYY
+
+Do not just change the configuration file $INSTALL/cptacdcc.ini
+in place, as it may be overwritten by the automatic update script.
+
+Examples:
+
+* List the root folder of the private portal:
+
+  > cptacdcc
+
+* List a folder of the private portal:
+
+  > cptacdcc cptac_shared
+
+* List a folder of the private portal (showing path separators):
+
+  > cptacdcc cptac_shared/NCI
+
+* List a file on the private portal (showing path separators):
+
+  > cptacdcc cptac_shared/NCI/1GB
+
+* Download a folder from the private portal:
+
+  > cptacdcc get cptac_shared/NCI
+
+* Download a file from the private portal:
+
+  > cptacdcc get cptac_shared/NCI/1GB
+
+* Upload a local folder Testing to the private portal:
+
+  > cptacdcc put Testing cptac_shared
+
+* Upload a local file Testing.txt to the private portal:
+
+  > cptacdcc put Testing.txt cptac_shared/NCI
+
+* Delete a file from the private portal:
+
+  > cptacdcc delete cptac_shared/NCI/1GB 
+

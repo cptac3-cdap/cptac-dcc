@@ -1,0 +1,61 @@
+
+cksum
+=====
+
+Usage: cksum [options] <dir-or-checksum-file> [ <dir1-or-checksum-file1> ... ]
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -F FORMAT, --cksumformat=FORMAT
+                        Format (and default checksum file name and location)
+                        of checksum file. One of DCC, VU, NIST. Default: DCC
+  -f FILENAME, --cksumfile=FILENAME
+                        Explicit path for the checksum file. Overrides the
+                        checksum file location implied by the -F/--cksumformat
+                        option.
+  -c, --checkonly       Check the checksum file only, do not create if
+                        missing.
+  -q, --quiet           Print summary of cksum check only. If doubled, be
+                        silent for folders where all checksums match.
+
+Computes checksums for all files in a directory (recursively). If the
+checksum file exists, then file checksums are compared with the stored
+values. If the checksum file does not exist, then the checksum file is
+created and file checksums are stored.
+
+Either a directory or a checksum file can be specified on the
+command-line. If a checksum file is specified, the corresponding
+directory is inferred based on the -F/--cksumformat option.
+
+The default location and format of the checksum file, relative to the
+directory, is set by the -F/--cksumformat option. The location of the
+checksum file can be overriden using the -f/--cksumfile option.
+
+DCC format checksum files for <dir> are stored in <dir>.cksum and list
+md5 hash, sha1 hash, file-size in bytes, and the file-name as
+tab-separated values.
+
+NIST format checksum files for <dir> are stored in <dir>/md5.txt and
+list the file-name and md5 hash as space separated values.
+
+VU format checksum files for <dir> are stored in <dir>/md5sums.txt and
+list the md5 hash and the file-name as space separaed values.
+
+While DCC, NIST, VU format checksum files can all be read, only DCC
+format checksum files can be written by the cksum program.
+
+Examples:
+
+* Compute checksums for folder Testing.
+
+  > cksum Testing
+
+* Check contents of file Testing.cksum.
+
+  > more Testing.cksum
+
+* Check file checksums for folder Testing.
+
+  > cksum Testing
+

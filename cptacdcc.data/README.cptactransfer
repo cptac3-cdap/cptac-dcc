@@ -1,0 +1,107 @@
+
+cptactransfer
+=============
+
+Command-line access to CPTAC Aspera transfer server from the command-line.
+
+Usage: cptactransfer [options] [list] [<cptac-folder-or-file>]
+       cptactransfer [options] get <cptac-folder-or-file>
+       cptactransfer [options] put <local-folders-or-files> <cptac-folder-or-file>
+       cptactransfer [options] delete <cptac-folder-or-file>
+       cptactransfer [options] mkdir <cptac-folder-or-file>
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -u USER, --user=USER  CPTAC Aspera transfer server user-name. Required.
+  -p PASSWORD, --password=PASSWORD
+                        CPTAC Aspera transfer server password. If
+                        value is a file, password is read from the
+                        file. If value is "-" password is read from
+                        stdin. If missing, user is prompted for
+                        password. Default: Prompt.
+  -f, --force           Toggle whether to update changed files on
+                        download/upload. Default: False.
+  -k RESUME, --resume=RESUME
+                        File-check stringency for file-skipping on resume. One
+                        of: always retransfer (0); check file-size (1); sparse
+                        checksum (2); or full checksum (3). Default: 2.
+  -q, --quiet           Toggle whether to execute ascp in quiet mode. Default:
+                        False.
+  -e, --echo            Toggle whether to echo ascp command for get and put.
+                        Default: False.
+  -n, --noexecute       Do not execute the ascp command for get and put.
+                        Implies -e/--echo.
+
+Commands:
+  list [f]              List contents of file/folder f [ home folder ] at 
+                        CPTAC DCC (Default command).
+  get f                 Get/download file/folder f from CPTAC DCC.
+  put l f               Put/upload file/folder l to CPTAC DCC folder f.
+  delete f              Delete file/folder f from CPTAC DCC.
+  mkdir f               Make new folder f at CPTAC DCC.
+
+The CPTAC DCC file/folder argument f for the get and delete commands
+can use filename matching symbols "*". Arguements with filename
+matching symbols will generally need to be quoted to avoid
+interpretation by the shell. The local file/folder argument l for the
+put command can use filename matching symbols and/or list multiple
+files/folders.
+
+Default options are set in the configuration file
+$INSTALL/cptactransfer.ini.
+
+To set defaults, copy and paste (only) the relevant section heading
+and options from $INSTALL/cptactransfer.ini to any one of the
+following locations $INSTALL/cptactransfer-local.ini,
+$HOME/cptactransfer.ini, $HOME/.cptactransfer.ini, or
+cptactransfer.ini in the current working directory.
+
+Frequent users will probably want to set the User and Password
+defaults as follows in one of the above locations.
+
+[Portal]
+User = XXXXX
+Password = YYYYY
+
+Do not just change the configuration file $INSTALL/cptactransfer.ini
+in place, as it will be overwritten by the automatic update script.
+
+Examples:
+
+* List the root folder of the Aspera transfer server:
+
+  > cptactransfer
+
+* List a folder of the Aspera transfer server:
+
+  > cptactransfer cptac_shared
+
+* List a folder of the Aspera transfer server (showing path separators):
+
+  > cptactransfer cptac_shared/NCI
+
+* List a file on the Aspera transfer server (showing path separators):
+
+  > cptactransfer cptac_shared/NCI/1GB
+
+* Download a folder from the Aspera transfer server:
+
+  > cptactransfer get cptac_shared/NCI
+
+* Download a file from the Aspera transfer server:
+
+  > cptactransfer get cptac_shared/NCI/1GB
+
+* Upload a local folder Testing to the Aspera transfer server:
+
+  > cptactransfer put Testing cptac_shared
+
+* Upload a local file Testing.txt to the Aspera transfer server:
+
+  > cptactransfer put Testing.txt cptac_shared/NCI
+
+* Delete a file from the Aspera transfer server:
+
+  > cptactransfer delete cptac_shared/NCI/1GB 
+
