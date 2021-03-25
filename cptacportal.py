@@ -84,7 +84,11 @@ class CPTACDataPortal(object):
         setattr(self.opts,k,v)
         
     def read_config(self,verbose=False):
-        prog = os.path.realpath(os.path.abspath(sys.argv[0]))
+        if getattr(sys, 'frozen', False):
+            prog = sys.executable
+        else:
+            prog = __file__
+        prog = os.path.abspath(os.path.realpath(prog))
         script = os.path.join(os.path.split(prog)[0],self.portal)
         cfg = configfile.readconfig(script,verbose=verbose)
 
@@ -114,7 +118,11 @@ class CPTACDataPortal(object):
     def find_aspera(self):
         VARIABLES = copy.copy(os.environ)
         if 'INSTALL' not in VARIABLES:
-            prog = os.path.realpath(os.path.abspath(sys.argv[0]))
+            if getattr(sys, 'frozen', False):
+                prog = sys.executable
+            else:
+                prog = __file__
+            prog = os.path.abspath(os.path.realpath(prog))
             installdir = os.path.split(prog)[0]
             base = self.portal
             if base == "cptactransfer":
