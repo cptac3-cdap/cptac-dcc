@@ -7,8 +7,8 @@ except ImportError:
     from ConfigParser import SafeConfigParser
 
 def readconfig(prog, verbose=False):
+  prog = os.path.realpath(os.path.abspath(prog))
   d,p = os.path.split(prog)
-  d = os.path.realpath(os.path.abspath(d))
   name = p.rsplit('.',1)[0]
   iniFileName = name+'.ini'
   siteIniFileName = name+'-local.ini'

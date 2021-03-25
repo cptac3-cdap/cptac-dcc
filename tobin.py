@@ -14,9 +14,13 @@ def rmminusrf(top):
         pass
 
 base = sys.argv[1]
+base0 = os.path.split(base)[1].split('-')[0]
 
 if os.path.exists(base):
     rmminusrf(base)
+
+base1 = base
+base = base+'/'+base0
 
 files = list(sys.argv[2:])
 
@@ -33,7 +37,7 @@ for f in files:
     if os.path.exists(f[:-3] + '.ini'):
         shutil.copy(f[:-3]+'.ini',os.path.join(base,f[:-3]+'.ini'))
 
-datadir = "%s.data"%(os.path.split(base)[1].split('-')[0],)
+datadir = "%s.data"%(base0,)
 if os.path.isdir(datadir):
     for f in os.listdir(datadir):
         if os.path.isdir(os.path.join(datadir,f)):
@@ -54,4 +58,4 @@ for root, dirs, files in os.walk(base):
            dirs1.append(d)
     dirs = dirs1
 
-os.system("tar -czf %s.tgz %s"%(base,base))
+os.system("tar -czf %s.tgz -C %s %s"%(base1,base1,base0))

@@ -7,8 +7,8 @@ PUBVER="CPTAC-Portal-Tools-v$VER"
 ./ulbin_public.sh
 ./ulsrc.sh
 ./ulsrc_public.sh
-( cd dist; md5sum cptacdcc-$VER.*.tgz > cptacdcc-$VER.md5 )
-( cd dist; md5sum cptacpublic-$VER.*.tgz > cptacpublic-$VER.md5 )
+( cd dist; md5sum cptacdcc-$VER.*.tgz > cptacdcc-$VER.md5 ; touch cptacdcc-$VER.txt )
+( cd dist; md5sum cptacpublic-$VER.*.tgz > cptacpublic-$VER.md5 ; touch cptacpublic-$VER.txt )
 gh release create -F dist/cptacdcc-$VER.txt "$DCCVER" dist/cptacdcc-$VER.*.tgz dist/cptacdcc-$VER.md5
 gh release create -F dist/cptacpublic-$VER.txt "$PUBVER" dist/cptacpublic-$VER.*.tgz dist/cptacpublic-$VER.md5
 for a in dist/cptacdcc-$VER.*.tgz dist/cptacpublic-$VER.*.tgz; do

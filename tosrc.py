@@ -26,8 +26,14 @@ def clean(top):
 		rmminusrf(os.path.join(root, name))
 
 base = sys.argv[1]
+base0 = os.path.split(base)[1].split('-')[0]
+
 if os.path.exists(base):
     rmminusrf(base)
+
+base1 = base
+base = base+'/'+base0
+
 try:
     os.makedirs(base)
 except OSError:
@@ -42,9 +48,7 @@ for pkg in ['configfile.py','version.py','lockfile.py']:
     else:
         shutil.copyfile(pkg,os.path.join(base,pname))
 
-print(base)
-
-datadir = "%s.data"%(os.path.split(base)[1].split('-')[0],)
+datadir = "%s.data"%(base0,)
 if os.path.isdir(datadir):
     for f in os.listdir(datadir):
 	if os.path.isdir(os.path.join(datadir,f)):
@@ -54,4 +58,4 @@ if os.path.isdir(datadir):
 
 clean(base)
 
-os.system("tar -czf %s.tgz %s"%(base,base))
+os.system("tar -czf %s.tgz -C %s %s"%(base1,base1,base0))
