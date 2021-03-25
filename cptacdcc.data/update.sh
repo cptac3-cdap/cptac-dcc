@@ -5,7 +5,7 @@ if [ "$VER" != "" ]; then
 fi
 DIR=`dirname "$0"`
 cd $DIR
-URL=https://edwardslab.bmcb.georgetown.edu/software/downloads/CPTAC-DCC
+URL=http://cptac-cdap.georgetown.edu.s3-website-us-east-1.amazonaws.com
 OS=`uname -o`
 AR=`uname -m`
 case $OS in

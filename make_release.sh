@@ -11,3 +11,9 @@ PUBVER="CPTAC-Portal-Tools-v$VER"
 ( cd dist; md5sum cptacpublic-$VER.*.tgz > cptacpublic-$VER.md5 )
 gh release create -F dist/cptacdcc-$VER.txt "$DCCVER" dist/cptacdcc-$VER.*.tgz dist/cptacdcc-$VER.md5
 gh release create -F dist/cptacpublic-$VER.txt "$PUBVER" dist/cptacpublic-$VER.*.tgz dist/cptacpublic-$VER.md5
+for a in dist/cptacdcc-$VER.*.tgz dist/cptacpublic-$VER.*.tgz; do
+  a1=`basename $a`
+  rclone copyto $a cptac-s3:cptac-cdap.georgetown.edu/$a1
+  b1=`echo $a1 | sed "s/-$VER//"`
+  aws --profile cptac s3api put-object --bucket cptac-cdap.georgetown.edu --key "$b1" --website-redirect-location "/$a1"
+done
