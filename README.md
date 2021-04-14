@@ -2,4 +2,4 @@
 
 ## Install
 
-```wget -O - -q cptac-cdap.georgetown.edu/cptacdcc.linux-x86_64.tgz | tar xzf -```
+```wget -O - -q http://cptac-cdap.georgetown.edu.s3-website-us-east-1.amazonaws.com/cptacdcc.linux-x86_64.tgz | tar xzf -```
