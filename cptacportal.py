@@ -722,11 +722,11 @@ class CPTACDataPortal(object):
     def convertsize(self,s):
         if not s:
             return 0, "0 B"
-        m = re.search(r'^(-?\d+(\.\d+)?) *(B|KB|MB|GB|TB|K|M|G|T|null)$',s)
+        m = re.search(r'^(-?\d+(\.\d+)?) *(B|KB|MB|GB|TB|K|M|G|T|null)?$',s)
         assert m, repr(s)
         value = float(m.group(1))
         units = m.group(3)
-        if units == "B":
+        if units in ("B",None,"") :
             return int(value),"%d B "%(int(value),)
         if value == int(value):
             value = int(value)
