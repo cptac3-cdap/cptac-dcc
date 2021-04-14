@@ -16,13 +16,14 @@ if [ -f ./cptacdcc.py ]; then
     MACH="src"; EXT=".tgz"; EXE=".py"
 fi
 ZIP=cptacdcc$VER.$MACH$EXT
-rm -f $ZIP
+rm -f cptacdcc*.$MACH$EXT
 # Assume wget and unzip/tar are on the path...
 wget --no-check-certificate $URL/$ZIP
+mv cptacdcc*.$MACH$EXT $ZIP
 if [ "$EXT" = ".zip" ]; then
     unzip -o -d .. $ZIP
 else
     tar -C .. -xvzf $ZIP
 fi
 ./cptacdcc$EXE --version
-rm -f $ZIP
+rm -f cptacdcc*.$MACH$EXT

@@ -1,2 +1,2 @@
 
-VERSION = 'CPTAC-DCC Tools 1.7.28'
+VERSION = 'CPTAC-DCC Tools 1.7.29'
