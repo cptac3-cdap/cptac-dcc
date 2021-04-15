@@ -885,9 +885,11 @@ class CPTACPublic_JSON(CPTACDataPortal):
         if listPath != "/":
             listurl += ('?' + urlencode(dict(currentPath=listPath)))
 
-        buffer = self.urlread(listurl)
         try:
+            buffer = self.urlread(listurl)
             rawlisting = json.loads(buffer)
+        except NotFound:
+            raise PortalPathNotFound(listPath)
         except ValueError:
             raise BadJSONListing()
 
@@ -923,7 +925,10 @@ class CPTACPublic_HTTP(CPTACPublic_JSON):
         listPath = self.normalize(path)
         listurl += (listPath+"/")
 
-        buffer = self.urlread(listurl)
+        try:
+            buffer = self.urlread(listurl)
+        except NotFound:
+            raise PortalPathNotFound(listPath)
 
         rows = []
         for l in buffer.splitlines():
@@ -996,7 +1001,10 @@ class CPTACPublic_Scraper(CPTACPublic_JSON):
             folder,name = self.split(listPath)
             listurl += ('/'+quote_plus(name)+'?' + urlencode(dict(currentPath=folder)))
 
-        buffer = self.urlread(listurl)
+        try:
+            buffer = self.urlread(listurl)
+        except NotFound:
+            raise PortalPathNotFound(listPath)
 
         return self.parse_asphtml(listPath,buffer)
 
@@ -1053,9 +1061,11 @@ class CPTACDCC_JSON(CPTACDataPortal):
             urlencode(dict(currentPath=folder))
             listurl += ('/'+quote_plus(name)+'?' + urlencode(dict(currentPath=folder)))
 
-        buffer = self.urlread(listurl)
         try:
+            buffer = self.urlread(listurl)
             rawlisting = json.loads(buffer)
+        except NotFound:
+            raise PortalPathNotFound(listPath)
         except ValueError:
             raise BadJSONListing()
 
@@ -1111,7 +1121,10 @@ class CPTACDCC_Scraper(CPTACDCC_JSON):
             folder,name = self.split(listPath)
             listurl += ('/'+quote_plus(name)+'?' + urlencode(dict(currentPath=folder)))
 
-        buffer = self.urlread(listurl)
+        try:
+            buffer = self.urlread(listurl)
+        except NotFound:
+            raise PortalPathNotFound(listPath)
 
         return self.parse_asphtml(listPath,buffer)
 
@@ -1162,7 +1175,10 @@ class CPTACTransfer(CPTACDataPortal):
         if listPath != "/":
             thelisturl += '?B='+quote_plus(listPath,)
 
-        buffer = self.urlread(thelisturl)
+        try:
+            buffer = self.urlread(thelisturl)
+        except NotFound:
+            raise PortalPathNotFound(listPath)
 
         upload_details = None
         current_item = None
@@ -1228,6 +1244,9 @@ class LoginError(RuntimeError):
 class GotCookie(RuntimeError):
     pass
 
+class NotFound(RuntimeError):
+    pass
+
 class SessionOpener(URLopener):
 
     def __init__(self,version):
@@ -1250,6 +1269,9 @@ class SessionOpener(URLopener):
 
     def http_error_403(self, url, fp, errcode, errmsg, headers, data=None):
         raise LoginError()
+
+    def http_error_404(self, url, fp, errcode, errmsg, headers, data=None):
+        raise NotFound(url)
 
     def http_error_default(self, url, fp, errcode, errmsg, headers, data=None):
         raise IOError("Unhandled HTTP Error: %s (%s)"%(errmsg,errcode))
@@ -1330,7 +1352,12 @@ def cptac_portals():
 def cptac_portal(tag,*args,**kwargs):
     for cls in cptac_portals():
         if tag in cls.tags:
-            return cls(*args,**kwargs)
+            try:
+                return cls(*args,**kwargs)
+            except Exception as e:
+                print(e.args[0])
+                sys.exit(1)
+
     raise BadPortalTag(tag)
 
 if __name__ == '__main__':
@@ -1347,5 +1374,5 @@ if __name__ == '__main__':
         try:
             tag = sys.argv.pop(1)
             cptac_portal(tag,cmdline=True)
-        except IndexError as e:
+        except CPTACPortalError as e:
             raise MissingPortalTag()
