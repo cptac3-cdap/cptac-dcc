@@ -1354,7 +1354,7 @@ def cptac_portal(tag,*args,**kwargs):
         if tag in cls.tags:
             try:
                 return cls(*args,**kwargs)
-            except Exception as e:
+            except CPTACPortalError as e:
                 print(e.args[0])
                 sys.exit(1)
 
@@ -1374,5 +1374,5 @@ if __name__ == '__main__':
         try:
             tag = sys.argv.pop(1)
             cptac_portal(tag,cmdline=True)
-        except CPTACPortalError as e:
+        except IndexError as e:
             raise MissingPortalTag()
