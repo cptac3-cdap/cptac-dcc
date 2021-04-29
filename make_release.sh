@@ -16,8 +16,8 @@ if [ "$1" ]; then
     echo "* $comment" >> dist/cptacpublic-$VER.txt
   done
 fi
-gh release create "$DCCVER" -F dist/cptacdcc-$VER.txt dist/cptacdcc-$VER.*.tgz dist/cptacdcc-$VER.md5
-gh release create "$PUBVER" -F dist/cptacpublic-$VER.txt dist/cptacpublic-$VER.*.tgz dist/cptacpublic-$VER.md5
+gh release create "$DCCVER" dist/cptacdcc-$VER.*.tgz dist/cptacdcc-$VER.md5 -F dist/cptacdcc-$VER.txt -t "$DCCVER"
+gh release create "$PUBVER" dist/cptacpublic-$VER.*.tgz dist/cptacpublic-$VER.md5 -F dist/cptacpublic-$VER.txt -t "$PUBVER"
 for a in dist/cptacdcc-$VER.*.tgz dist/cptacpublic-$VER.*.tgz; do
   a1=`basename $a`
   rclone copyto $a cptac-s3:cptac-cdap.georgetown.edu/$a1
