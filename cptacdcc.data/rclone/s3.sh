@@ -1,6 +1,6 @@
 #!/bin/sh
 DIR=`dirname $0`
-RCLONE="$DIR/rclone/rclone"
+RCLONE="$DIR/rclone"
 CONFIG=`mktemp .rclone.XXXXXXXXXX` || exit 1
 CONFIGFILE1=".galaxy.ini"
 CONFIGFILE2=".aws/config"

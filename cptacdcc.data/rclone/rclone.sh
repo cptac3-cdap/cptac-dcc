@@ -1,6 +1,6 @@
 #!/bin/sh
 DIR=`dirname $0`
-RCLONE="$DIR/rclone/rclone"
+RCLONE="$DIR/rclone"
 CONFIGFILE=".rclone.conf"
 REMOTE="$1"
 FULLPATH="$2"
