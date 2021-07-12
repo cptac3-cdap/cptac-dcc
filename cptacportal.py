@@ -901,8 +901,10 @@ class CPTACPublic_HTTP(CPTACPublic_JSON):
 
     def check_opts(self,opts,cmdline):
         super(CPTACPublic_HTTP,self).check_opts(opts,cmdline)
-
         setattr(opts,'human',True)
+
+    def convertdate(self,s):
+        return datetime.datetime.strptime(s, "%Y-%m-%d %H:%M")
 
     def getlisting(self,path=None):
 
@@ -944,7 +946,11 @@ class CPTACPublic_HTTP(CPTACPublic_JSON):
                     if i not in (1,2,3):
                         continue
                     value = m.group(0)
-                    value = re.sub(r'\</?(td|a|img)( [^>]+)?\>','',value)
+                    m = re.search(r'<a href="([^ "]*)">',value)
+                    if m:
+                        value = m.group(1).strip('/')
+                    else:
+                        value = re.sub(r'\</?(td|a|img)( [^>]+)?\>','',value)
                     value = value.strip()
                     if value == "-":
                         value = ""
