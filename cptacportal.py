@@ -592,7 +592,7 @@ class CPTACDataPortal(object):
 
         tokenurl = kwargs.get('tokenGeneratorURL',self.geturl(self.tokenurl))
         params = dict(files=kwargs['fullpath'],user=kwargs['remote_user'],direction=kwargs.get('direction','receive'))
-        params['_'] = kwargs['cookie'].split('_')[-1]
+        # params['_'] = kwargs['cookie'].split('_')[-1]
         params = urlencode(params)
         tokenurl += '?' + params
 
@@ -896,7 +896,6 @@ class CPTACPublic_JSON(CPTACDataPortal):
         return self.parse_json(listPath,rawlisting)
 
 class CPTACPublic_HTTP(CPTACPublic_JSON):
-    querypath = 'study/query'
     tags = ['publichttp','cptacpublichttp']
 
     def check_opts(self,opts,cmdline):
@@ -906,22 +905,25 @@ class CPTACPublic_HTTP(CPTACPublic_JSON):
     def convertdate(self,s):
         return datetime.datetime.strptime(s, "%Y-%m-%d %H:%M")
 
+    def get_token(self,**kwargs):
+        return self.get_token_node(portal='study',**kwargs)
+
     def getlisting(self,path=None):
 
-        if not self.transspec:
+        # if not self.transspec:
+            # queryurl = self.geturl(self.querypath)
+            # buffer = self.urlread(queryurl)
+            # for l in buffer.splitlines():
+                # if 'transferSpec' in l:
+                    # jsonstr = l.split("'",1)[1].rsplit("'",1)[0]
+                    # # jsonstr = jsonstr.decode( 'unicode-escape' ).encode( 'ascii' )
+                    # self.transspec = json.loads(jsonstr)
+                    # self.transspec['remote_port'] = self.transspec['fasp_port']
+                    # break
 
-            queryurl = self.geturl(self.querypath)
-            buffer = self.urlread(queryurl)
-            for l in buffer.splitlines():
-                if 'transferSpec' in l:
-                    jsonstr = l.split("'",1)[1].rsplit("'",1)[0]
-                    jsonstr = jsonstr.decode( 'unicode-escape' ).encode( 'ascii' )
-                    self.transspec = json.loads(jsonstr)
-                    self.transspec['remote_port'] = self.transspec['fasp_port']
-                    break
-
-        if not self.transspec:
-            self.transspec = self.get_token_node(portal='dataPublic',fullpath='/')
+        # if not self.transspec:
+        #     self.transspec = self.get_token_node(portal='dataPublic',fullpath='/')
+        self.transspec = {'remote_host': 'cptc-xfer.uis.georgetown.edu', 'port': 33001, 'remote_user': 'public_gcp'}
 
         listurl = 'https://%(remote_host)s/publicData'%self.transspec
         listPath = self.normalize(path)
@@ -1244,13 +1246,19 @@ class CPTACTransfer(CPTACDataPortal):
 
         return self.clean_listing(folder=listPath,upload=upload_details,files=listing)
 
-class LoginError(RuntimeError):
+class SessionOpenerError(RuntimeError):
     pass
 
-class GotCookie(RuntimeError):
+class LoginError(SessionOpenerError):
     pass
 
-class NotFound(RuntimeError):
+class GotCookie(SessionOpenerError):
+    pass
+
+class NotFound(SessionOpenerError):
+    pass
+
+class URLMoved(SessionOpenerError):
     pass
 
 class SessionOpener(URLopener):
@@ -1278,6 +1286,9 @@ class SessionOpener(URLopener):
 
     def http_error_404(self, url, fp, errcode, errmsg, headers, data=None):
         raise NotFound(url)
+
+    def http_error_301(self, url, fp, errcode, errmsg, headers, data=None):
+        raise URLMoved(headers['Location'])
 
     def http_error_default(self, url, fp, errcode, errmsg, headers, data=None):
         raise IOError("Unhandled HTTP Error: %s (%s)"%(errmsg,errcode))
@@ -1334,12 +1345,6 @@ class BadCommand(CPTACPortalError):
 class CommandArgumentError(CPTACPortalError):
     pass
 
-class BadPortalTag(CPTACPortalError):
-    format = "Bad portal argument: %s"
-
-class MissingPortalTag(CPTACPortalError):
-    format = "Portal argument missing"
-
 class MissingOptionError(CPTACPortalError):
     format = "%s"
 
@@ -1355,6 +1360,13 @@ def cptac_portals():
             continue
         yield cls
 
+def alltags():
+    tags = {}
+    for cls in cptac_portals():
+        name = cls.__name__
+        tags[name] = cls.tags
+    return tags
+
 def cptac_portal(tag,*args,**kwargs):
     for cls in cptac_portals():
         if tag in cls.tags:
@@ -1363,8 +1375,14 @@ def cptac_portal(tag,*args,**kwargs):
             except CPTACPortalError as e:
                 print(e.args[0])
                 sys.exit(1)
-
     raise BadPortalTag(tag)
+
+class BadPortalTag(CPTACPortalError):
+    format = "Bad portal argument: %s" + "\n\nValid Portal Tags:\n   " + "\n   ".join(map(lambda t: "%s: %s"%(t[0],", ".join(t[1])),sorted(alltags().items())))
+
+class MissingPortalTag(CPTACPortalError):
+    format = "Portal tag command-line argument missing" + "\n\nValid Portal Tags:\n   " + "\n   ".join(map(lambda t: "%s: %s."%(t[0],", ".join(t[1])),sorted(alltags().items())))
+
 
 if __name__ == '__main__':
 
