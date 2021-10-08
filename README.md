@@ -2,6 +2,7 @@
 
 The CPTAC DCC Command-Line Tools repository supports command-line-based access to the CPTAC public portal and private data repository servers. These tools interact with the portal websites for navigation and browsing of files and execute the necessary Aspera commands to download (and upload) files and folders.
 
-* [Install](https://github.com/cptac3-cdap/cptac-dcc/wiki#installation)
-* [Tools](https://github.com/cptac3-cdap/cptac-dcc/wiki#tools)
-* [Support](https://github.com/cptac3-cdap/cptac-dcc/issues)
+* [Documentation](https://github.com/cptac3-cdap/cptac-dcc/wiki)
+** [Install](https://github.com/cptac3-cdap/cptac-dcc/wiki#installation)
+** [Tools](https://github.com/cptac3-cdap/cptac-dcc/wiki#tools)
+** [Support](https://github.com/cptac3-cdap/cptac-dcc/issues)
