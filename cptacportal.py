@@ -662,7 +662,10 @@ class CPTACDataPortal(object):
                 filemetadata = files[filename]
                 if 'token' not in filemetadata:
                     filemetadata.update(self.get_token(**filemetadata))
-                self.aspera_get(path,filename,filemetadata)
+                if os.path.exists(filename) and os.path.isdir(filename):
+                    self.aspera_get(path,'.',filemetadata)
+                else:
+                    self.aspera_get(path,filename,filemetadata)
                 any = True
             if not any:
                 raise PortalPathNotFound(arg)
