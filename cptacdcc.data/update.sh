@@ -18,7 +18,7 @@ fi
 ZIP=cptacdcc$VER.$MACH$EXT
 rm -f $ZIP
 # Assume wget and unzip/tar are on the path...
-wget --no-check-certificate -O $ZIP $URL/$ZIP
+wget --read-timeout 10 --no-check-certificate -O $ZIP $URL/$ZIP
 if [ "$EXT" = ".zip" ]; then
     unzip -o -d .. $ZIP
 else
