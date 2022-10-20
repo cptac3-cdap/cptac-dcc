@@ -5,4 +5,5 @@ The CPTAC DCC Command-Line Tools repository supports command-line-based access t
 * [Documentation](https://github.com/cptac3-cdap/cptac-dcc/wiki)
   - [Install](https://github.com/cptac3-cdap/cptac-dcc/wiki#installation)
   - [Tools](https://github.com/cptac3-cdap/cptac-dcc/wiki#tools)
+  - [Python Module](https://github.com/cptac3-cdap/cptac-dcc/wiki#python-module)
   - [Support](https://github.com/cptac3-cdap/cptac-dcc/wiki#support)
