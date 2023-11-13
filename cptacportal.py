@@ -156,7 +156,7 @@ class CPTACDataPortal(object):
 
         assert os.path.exists(self.ascp), "ASPERA ascp program not found, expected location: %s"%(self.ascp,)
         assert os.access(self.ascp,os.X_OK), "ASPERA ascp program not executable: %s"%(self.ascp,)
-        assert os.path.exists(self.ascpkey), "ASPERA public key file asperaweb_id_dsa not found, expected location: %s"(self.ascpkey,)
+        assert os.path.exists(self.ascpkey), "ASPERA public key file asperaweb_id_dsa not found, expected location: %s"%(self.ascpkey,)
 
     def set_version(self):
         self.VERSION = version.VERSION + ' (%s, %s, %s bit)'%(sys.argv[0].split('/')[-1],
