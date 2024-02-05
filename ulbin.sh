@@ -4,6 +4,6 @@ OS=`uname`
 AR=`uname -m`
 XX="linux-$AR"
 mkdir -p build dist
-./tobin.py build/cptacdcc-${VER}.${XX} cptacdcc.py cksum.py cptacpublic.py cptactransfer.py cptacportal.py
+./tobin.py build/cptacdcc-${VER}.${XX} cptacdcc.py cksum.py cptacpublic.py cptactransfer.py cptacportal.py packageraw.py unpackraw.py
 mv build/cptacdcc-${VER}.${XX}.tgz dist
 

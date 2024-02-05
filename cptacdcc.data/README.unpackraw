@@ -1,0 +1,33 @@
+
+unpackraw
+=========
+
+Usage: unpackraw [options]
+
+Options:
+  -h, --help         show this help message and exit
+  -r RAW, --raw=RAW  RAW file extension of files to unpack. Default: wiff.
+  -R, --remove       Remove ZIP files. Default: False.
+  -v, --verbose      Verbose output, repeat for more verbosity. Default:
+                     Quiet.
+
+Unpackages multi-file or directory based spectral data from a single,
+self-contained ZIP file made by packageraw. Specify the raw file extension (without the dot)
+to unpack up all spectral data ZIP files in the current directory. Use option -R
+to remove the ZIP files.
+
+Examples:
+
+* Unpack packaged WIFF ZIP files in the current directory, extension
+.wiff.zip, to get .wiff and .wiff.scan files, and remove the .wiff.zip
+files.
+
+  > unpackraw -r wiff -R
+  > ls *.wiff*
+
+* Unpack packaged Brucker *.d.zip ZIP files, show names of unpacked ZIP files on
+standard out. Do not remove .d.zip ZIP files.
+
+  > unpackraw -r d -v 
+  > ls -lR *.d
+

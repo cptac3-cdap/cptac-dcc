@@ -1,0 +1,32 @@
+
+packageraw
+==========
+
+Usage: packageraw [options]
+
+Options:
+  -h, --help         show this help message and exit
+  -r RAW, --raw=RAW  RAW file extension of files to package. Default: wiff.
+  -R, --remove       Remove zipped files. Default: False.
+  -v, --verbose      Verbose output, repeat for more verbosity. Default:
+                     Quiet.
+
+Packages up multi-file or directory based spectral data into a single,
+self-contained ZIP file. Specify the raw file extension (without the dot)
+to package up all spectral data in the current directory. Use option -R
+to remove original spectral data.
+
+Examples:
+
+* Package WIFF files, extension *.wiff, with corresponding .wiff.scan
+files in the current directory, and remove the .wiff and .wiff.scan files.
+
+  > packageraw -r wiff -R
+  > ls *.wiff.zip
+
+* Package Brucker *.d directories, show names of created ZIP files on
+standard out. Do not remove .d directories.
+
+  > packageraw -r d -v 
+  > ls *.d.zip
+
