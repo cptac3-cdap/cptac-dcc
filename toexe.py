@@ -1,6 +1,6 @@
 #!/bin/env python
 
-import sys, os, shutil, os.path, zipfile
+import sys, os, shutil, os.path, shutil
 from py2exe import freeze
 
 def rmminusrf(top):
@@ -13,13 +13,23 @@ def rmminusrf(top):
             os.rmdir(os.path.join(root, name))
     os.rmdir(top)
 
+if not os.path.isdir("build"):
+    os.makedirs("build")
+
+from version import VERSION
+VER = VERSION.split()[2]
 base = sys.argv[1]
+fullbase0 = "build/%s-%s"%(base,VER)
+fullbase1 = "build/%s-%s/%s"%(base,VER,base)
+if not os.path.isdir(fullbase0):
+    os.makedirs(fullbase0)
+
 progs = sys.argv[2:]
-rmminusrf(base)
+rmminusrf(fullbase1)
 
 freeze(console = progs, 
        options = dict(
-         dist_dir = base, 
+         dist_dir = fullbase1, 
          verbose= 4,
        ))
 
@@ -29,11 +39,11 @@ if os.path.isdir(datadir):
     if f.startswith('.svn'):
         continue
     if os.path.isdir(os.path.join(datadir,f)):
-        shutil.copytree(os.path.join(datadir,f),os.path.join(base,f))
+        shutil.copytree(os.path.join(datadir,f),os.path.join(fullbase1,f))
     else:
-        shutil.copyfile(os.path.join(datadir,f),os.path.join(base,f))
+        shutil.copyfile(os.path.join(datadir,f),os.path.join(fullbase1,f))
 
-for root, dirs, files in os.walk(base):
+for root, dirs, files in os.walk(fullbase1):
   dirs1 = []
   for d in dirs:
     if d in ('.svn','.git'):
@@ -43,9 +53,19 @@ for root, dirs, files in os.walk(base):
        dirs1.append(d)
   dirs = dirs1
 
+
+if not os.path.isdir("dist"):
+    os.makedirs("dist")
+
 if os.path.exists("%s.iss"%(base,)):
-    os.system(r'call "c:\Program Files\Inno Setup 6\ISCC.exe" %s.iss'%(base,))
-if os.path.exists('%s.zip'%(base,)):
-    os.remove('%s.zip'%(base,))
-# os.system("zip -r %s.zip %s"%(base,base))
-shutil.make_archive(base,"zip",base)
+    innosetupfile = "dist/%s-%s.exe"%(base,VER)
+    if os.path.exists(innosetupfile):
+        os.unlink(innosetupfile)
+    if os.path.exists('%s.exe'%(base,)):
+        os.unlink('%s.exe'%(base,))
+    os.system(r'call "c:\Program Files (x86)\Inno Setup 6\ISCC.exe" /DBASE=%s %s.iss'%(fullbase1,base,))
+    shutil.move("%s.exe"%(base,),innosetupfile)
+zipfile = "dist/%s-%s.zip"%(base,VER)
+if os.path.exists(zipfile):
+    os.unlink(zipfile)
+shutil.make_archive(zipfile[:-4],"zip",fullbase0)
