@@ -1,6 +1,6 @@
 #!/bin/env python
 
-import sys, os, shutil, os.path
+import sys, os, shutil, os.path, zipfile
 from py2exe import freeze
 
 def rmminusrf(top):
@@ -47,4 +47,5 @@ if os.path.exists("%s.iss"%(base,)):
     os.system(r'call "c:\Program Files\Inno Setup 6\ISCC.exe" %s.iss'%(base,))
 if os.path.exists('%s.zip'%(base,)):
     os.remove('%s.zip'%(base,))
-os.system("zip -r %s.zip %s"%(base,base))
+# os.system("zip -r %s.zip %s"%(base,base))
+shutil.make_archive(base,"zip",base)
