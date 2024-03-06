@@ -11,9 +11,14 @@ parser.add_option('-r','--raw',type='string',default='wiff',dest='raw',
 #                 help='XML format to convert to. Default: mzML.')
 parser.add_option('-R','--remove',action='store_true',dest='remove',
                   help='Remove raw files. Default: False.')
+parser.add_option('-d','--outdir',type='string',default='.',dest='outdir',
+                  help='Write packaged files to a specific directory. Default: Current working directory.')
 parser.add_option('-v','--verbose',dest="verbose",action='count',default=0,
                   help='Verbose output, repeat for more verbosity. Default: Quiet.')
 opts,args = parser.parse_args()
+
+if opts.outdir != ".":
+    os.makedirs(opts.outdir)
 
 curdir = os.path.abspath(os.getcwd())
 for root, dirs, files in os.walk(curdir):
@@ -32,9 +37,10 @@ for root, dirs, files in os.walk(curdir):
             continue
         if os.path.isdir(os.path.join(root,f)):
             dirs.remove(f)
+        ff = os.path.join([opts.outdir,f])
         if opts.verbose > 0:
-            print("Creating zip file:",f+'.zip',file=sys.stderr)
-        zf = zipfile.ZipFile(f+'.zip', mode='w', compression=zipfile.ZIP_DEFLATED)
+            print("Creating zip file:",ff+'.zip',file=sys.stderr)
+        zf = zipfile.ZipFile(ff+'.zip', mode='w', compression=zipfile.ZIP_DEFLATED)
         for f1 in allfs:
             if not os.path.isdir(f1):
                 if opts.verbose > 1:
