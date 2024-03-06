@@ -58,14 +58,14 @@ if not os.path.isdir("dist"):
     os.makedirs("dist")
 
 if os.path.exists("%s.iss"%(base,)):
-    innosetupfile = "dist/%s-%s.exe"%(base,VER)
+    innosetupfile = "dist/%s-%s.win.exe"%(base,VER)
     if os.path.exists(innosetupfile):
         os.unlink(innosetupfile)
     if os.path.exists('%s.exe'%(base,)):
         os.unlink('%s.exe'%(base,))
     os.system(r'call "c:\Program Files (x86)\Inno Setup 6\ISCC.exe" /DBASE=%s %s.iss'%(fullbase1,base,))
     shutil.move("%s.exe"%(base,),innosetupfile)
-zipfile = "dist/%s-%s.zip"%(base,VER)
+zipfile = "dist/%s-%s.win.zip"%(base,VER)
 if os.path.exists(zipfile):
     os.unlink(zipfile)
 shutil.make_archive(zipfile[:-4],"zip",fullbase0)
