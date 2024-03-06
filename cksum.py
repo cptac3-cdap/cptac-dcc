@@ -123,11 +123,15 @@ class MultiHash(object):
             sha1hash.update(buf) 
             md5hash.update(buf)
         h.close()
-        elapsed = (time.time() - starttime)
-        rate = float(size)/elapsed
         sha1_hash = sha1hash.hexdigest().lower()
         md5_hash = md5hash.hexdigest().lower()
         if verbose:
+            elapsed = (time.time() - starttime)
+            if elapsed > 0:
+                rate = float(size)/elapsed
+            else:
+                elapsed = 0
+                rate = 0
             sizestr,sizeunits = roundbytes(size)
             ratestr,rateunits = roundbytes(rate)
             timestr,timeunits = roundtime(elapsed)
