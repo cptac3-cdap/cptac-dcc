@@ -18,10 +18,15 @@ parser.add_option('-v','--verbose',dest="verbose",action='count',default=0,
 opts,args = parser.parse_args()
 
 if opts.outdir != ".":
-    os.makedirs(opts.outdir)
+    if not os.path.exists(opts.outdir):
+        os.makedirs(opts.outdir)
 
-curdir = os.path.abspath(os.getcwd())
-for root, dirs, files in os.walk(curdir):
+if len(args) < 1:
+    userdirs = [ '.' ]
+else:
+    userdirs = args
+for d in userdirs:
+  for root, dirs, files in os.walk(d):
     for f in (files+dirs):
         try:
             b,e = f.rsplit('.',1)
@@ -37,7 +42,12 @@ for root, dirs, files in os.walk(curdir):
             continue
         if os.path.isdir(os.path.join(root,f)):
             dirs.remove(f)
-        ff = os.path.join([opts.outdir,f])
+        ff = os.path.join(opts.outdir,os.path.join(root,f))
+        ff = os.path.realpath(ff)
+        if not os.path.isdir(os.path.split(ff)[0]):
+            os.makedirs(os.path.split(ff)[0])
+        if ff.startswith(os.getcwd()+"/"):
+            ff = ff[len(os.getcwd())+1:]
         if opts.verbose > 0:
             print("Creating zip file:",ff+'.zip',file=sys.stderr)
         zf = zipfile.ZipFile(ff+'.zip', mode='w', compression=zipfile.ZIP_DEFLATED)
