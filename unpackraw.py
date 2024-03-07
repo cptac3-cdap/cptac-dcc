@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 import sys, os, os.path, shutil, encodings
 import zipfile, glob
@@ -18,7 +17,9 @@ opts,args = parser.parse_args()
 if len(args) < 1:
     userdirs = [ '.' ]
 else:
-    userdirs = args
+    userdirs = []
+    for a in args:
+        userdirs.extend(glob.glob(a))
 
 for d in userdirs:
   for root, dirs, files in os.walk(d):
@@ -27,7 +28,7 @@ for d in userdirs:
         continue
       if opts.verbose > 0:
         print("Exploding zip file:",os.path.join(root,f),file=sys.stderr)
-      zf = zipfile.ZipFile(f, mode='r')
+      zf = zipfile.ZipFile(os.path.join(root,f), mode='r')
       if opts.verbose > 1:
           for f1 in zf.namelist():
               print("Writing file:",os.path.join(opts.outdir,root,f,f1),file=sys.stderr)

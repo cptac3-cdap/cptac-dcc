@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys, os, os.path, subprocess, shutil, encodings
-import zipfile
+import zipfile, glob
 from optparse import OptionParser
 
 parser = OptionParser()
@@ -24,7 +24,10 @@ if opts.outdir != ".":
 if len(args) < 1:
     userdirs = [ '.' ]
 else:
-    userdirs = args
+    userdirs = []
+    for a in args:
+        userdirs.extend(glob.glob(a))
+    
 for d in userdirs:
   for root, dirs, files in os.walk(d):
     for f in (files+dirs):
@@ -52,17 +55,18 @@ for d in userdirs:
             print("Creating zip file:",ff+'.zip',file=sys.stderr)
         zf = zipfile.ZipFile(ff+'.zip', mode='w', compression=zipfile.ZIP_DEFLATED)
         for f1 in allfs:
-            if not os.path.isdir(f1):
+            # print(os.path.join(root,f1))
+            if not os.path.isdir(os.path.join(root,f1)):
                 if opts.verbose > 1:
-                    print("Adding to zip file:",f1,file=sys.stderr)
-                zf.write(f1)
+                    print("Adding to zip file:",os.path.join(root,f1),file=sys.stderr)
+                zf.write(os.path.join(root,f1))
             else:
-                for root1,dirs1,files1 in os.walk(f1):
+                for root1,dirs1,files1 in os.walk(os.path.join(root,f1)):
                     for f11 in files1:
                         f111 = os.path.join(root1,f11)
                         if opts.verbose > 1:
-                            print("Adding to zip file:",f111,file=sys.stderr)
-                        zf.write(f111)
+                            print("Adding to zip file:",f111[len(root)+1:],file=sys.stderr)
+                        zf.write(f111,arcname=f111[len(root)+1:])
         zf.close()
         # cmd = [zip_prog]+zip_args+[f+'.zip']+allfs
         # if opts.verbose:

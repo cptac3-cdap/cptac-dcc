@@ -2,7 +2,7 @@
 
 from __future__ import print_function
 
-import sys, os.path, os, re, encodings
+import sys, os.path, os, re, encodings, glob
 from operator import itemgetter
 import time
 try:
@@ -259,6 +259,9 @@ if len(args) < 1:
     sys.exit(1)
     
 args1 = []
+for a in args:
+    args1.extend(glob.glob(a))
+args = args1
 for p in args:
     if not os.path.exists(p):
         parser.error("Path %s does not exist"%p)
