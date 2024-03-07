@@ -49,7 +49,7 @@ for d in userdirs:
         ff = os.path.realpath(ff)
         if not os.path.isdir(os.path.split(ff)[0]):
             os.makedirs(os.path.split(ff)[0])
-        if ff.startswith(os.getcwd()+"/"):
+        if ff.startswith(os.getcwd()+os.sep):
             ff = ff[len(os.getcwd())+1:]
         if opts.verbose > 0:
             print("Creating zip file:",ff+'.zip',file=sys.stderr)

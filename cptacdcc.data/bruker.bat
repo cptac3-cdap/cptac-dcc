@@ -23,6 +23,6 @@ REM    Should be run from the folder with the analytical sample directories
 REM
 REM
 
-packageraw -r d -d packaged
+packageraw -r d -d packaged -v
 cksum packaged\*
 
