@@ -23,6 +23,8 @@ REM    Should be run from the folder with the analytical sample directories
 REM
 REM
 
+@echo on
+
 packageraw -r d -d packaged -v
 cksum packaged\*
 
