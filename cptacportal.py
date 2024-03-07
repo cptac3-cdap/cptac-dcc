@@ -681,7 +681,9 @@ class CPTACDataPortal(object):
         return True
 
     def put(self,*args):
-        localpaths = args[:-1]
+        localpaths = []
+        for a in args[:-1]:
+            localpaths.extend(glob.glob(a))
         folder = args[-1]
         if not self.isPortalFolder(folder):
             raise PortalFolderNotFound(folder)
