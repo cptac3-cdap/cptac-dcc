@@ -25,6 +25,6 @@ REM
 
 @echo on
 
-packageraw -r d -d packaged -v
-cksum packaged\*
+%~dp0\packageraw -r d -d packaged -v
+%~dp0\cksum packaged\*
 
