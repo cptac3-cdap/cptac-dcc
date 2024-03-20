@@ -19,8 +19,8 @@ if not os.path.isdir("build"):
 from version import VERSION
 VER = VERSION.split()[2]
 base = sys.argv[1]
-fullbase0 = "build/%s-%s"%(base,VER)
-fullbase1 = "build/%s-%s/%s"%(base,VER,base)
+fullbase0 = "build%s%s-%s"%(os.sep,base,VER)
+fullbase1 = "build%s%s-%s%s%s"%(os.sep,base,VER,os.sep,base)
 if not os.path.isdir(fullbase0):
     os.makedirs(fullbase0)
 
@@ -58,14 +58,14 @@ if not os.path.isdir("dist"):
     os.makedirs("dist")
 
 if os.path.exists("%s.iss"%(base,)):
-    innosetupfile = "dist/%s-%s.win.exe"%(base,VER)
+    innosetupfile = "dist%s%s-%s.win.exe"%(os.sep,base,VER)
     if os.path.exists(innosetupfile):
         os.unlink(innosetupfile)
     if os.path.exists('%s.exe'%(base,)):
         os.unlink('%s.exe'%(base,))
     os.system(r'call "c:\Program Files (x86)\Inno Setup 6\ISCC.exe" /DBASE=%s %s.iss'%(fullbase1,base,))
     shutil.move("%s.exe"%(base,),innosetupfile)
-zipfile = "dist/%s-%s.win.zip"%(base,VER)
+zipfile = "dist%s%s-%s.win.zip"%(os.sep,base,VER)
 if os.path.exists(zipfile):
     os.unlink(zipfile)
 shutil.make_archive(zipfile[:-4],"zip",fullbase0)
