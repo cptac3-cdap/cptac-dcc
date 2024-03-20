@@ -23,7 +23,7 @@ DIR=`readlink -f "$DIR"`
 echo "> cksum.sh -q -V *.cksum"
 $DIR/cksum.sh -q -V *.cksum
 if [ $? -ne 0 ]; then
-  echo "Bad checksums! Will not unpack Bruker files" 1>&2
+  echo "Bad checksum! Will not unpack Bruker files." 1>&2
   exit 1
 fi
 echo "> unpackraw.sh -r d -R -v"

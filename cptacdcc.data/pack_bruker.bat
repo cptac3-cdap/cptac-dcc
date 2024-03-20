@@ -19,12 +19,14 @@ REM          ...
 REM       02AS_F3.d/
 REM          ...
 REM
-REM    Should be run from the folder with the analytical sample directories
+REM    Should be run from the folder with the analytical sample directories (01AS, 02AS)
 REM
 REM
 
-@echo on
-
-%~dp0\packageraw -r d -d packaged -v
-%~dp0\cksum packaged\*
+echo|(set /p="> rmdir /s /q packaged" & echo.)
+rmdir /s /q packaged
+echo|(set /p="> packageraw -r d -d packaged -v" & echo.)
+%~dp0packageraw -r d -d packaged -v
+echo|(set /p="> cksum packaged\*" & echo.)
+%~dp0cksum packaged\*
 
