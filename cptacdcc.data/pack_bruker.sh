@@ -24,7 +24,10 @@
 DIR=`dirname $0`
 DIR=`readlink -f "$DIR"`
 
+echo "> rm -rf packaged"
 rm -rf packaged
+echo "> cksum.sh --force */*.d"
+$DIR/cksum.sh --force */*.d
 echo "> packageraw.sh -r d -d packaged -v"
 $DIR/packageraw.sh -r d -d packaged -v
 echo "> cksum.sh packaged/*"

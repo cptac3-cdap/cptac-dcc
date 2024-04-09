@@ -34,6 +34,8 @@ parser.add_option('-C','--common',dest='common',default=False,action='store_true
                   help="Check only files in common between checksum file and directory.")
 parser.add_option('-U','--update',dest='update',default=False,action='store_true',
                   help="Update the checksum file if all checksums don't match.")
+parser.add_option('--force',dest='force',default=False,action='store_true',
+                  help="Create/Update the checksum file, no verify.")
 parser.add_option('-v','--verbose',dest='verbose',default=False,action='store_true',
                   help="Print statistics for hash computation.")
 parser.add_option('-q','--quiet',dest='quiet',default=0,action='count',
@@ -278,7 +280,10 @@ for d in args:
     check=False
     write=False
     update=opts.update
-    if cksum.test():
+    if opts.force:
+        write=True
+        check=False
+    if cksum.test() and not opts.force:
         cksum.read()
         check=True
         if not opts.quiet:

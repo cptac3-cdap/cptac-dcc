@@ -59,7 +59,7 @@ for d in userdirs:
             if not os.path.isdir(os.path.join(root,f1)):
                 if opts.verbose > 1:
                     print("Adding to zip file:",os.path.join(root,f1),file=sys.stderr)
-                zf.write(os.path.join(root,f1))
+                zf.write(os.path.join(root,f1),arcname=f1)
             else:
                 for root1,dirs1,files1 in os.walk(os.path.join(root,f1)):
                     for f11 in files1:

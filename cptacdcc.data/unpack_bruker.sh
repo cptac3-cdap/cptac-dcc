@@ -28,3 +28,5 @@ if [ $? -ne 0 ]; then
 fi
 echo "> unpackraw.sh -r d -R -v"
 $DIR/unpackraw.sh -r d -R -v
+echo "> cksum.sh -q -c */*.d"
+$DIR/cksum.sh -q -c */*.d
