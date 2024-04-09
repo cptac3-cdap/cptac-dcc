@@ -25,6 +25,10 @@ if %ERRORLEVEL% NEQ 0 GOTO :BADCKSUM
 
 echo|(set /p="> unpackraw -r d -R -v" & echo.)
 %~dp0unpackraw -r d -R -v
+
+echo|(set /p="> cksum -q -c */*.d" & echo.)
+%~dp0cksum -q -c */*.d
+
 GOTO :EOF
 
 :BADCKSUM

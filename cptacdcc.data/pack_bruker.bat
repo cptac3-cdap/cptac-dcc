@@ -25,8 +25,13 @@ REM
 
 echo|(set /p="> rmdir /s /q packaged" & echo.)
 rmdir /s /q packaged
+
+echo|(set /p="> cksum --force */*.d" & echo.)
+%~dp0cksum --force */*.d
+
 echo|(set /p="> packageraw -r d -d packaged -v" & echo.)
 %~dp0packageraw -r d -d packaged -v
+
 echo|(set /p="> cksum packaged\*" & echo.)
 %~dp0cksum packaged\*
 
