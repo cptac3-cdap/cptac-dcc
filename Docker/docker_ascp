@@ -1,0 +1,24 @@
+#!/bin/sh
+
+USER=`id -u`:`id -g`
+PWD=`pwd`
+IMAGE=cptacdcc/cptacdcc_ascp
+
+IDENTITY=""
+ARGS=""
+while getopts ":i:" o; do
+    case "${o}" in
+        i)
+            IDENTITY="${OPTARG}"
+            shift; shift;
+            ;;
+        *)
+            break;;
+    esac
+done
+if [ "$IDENTITY" != "" ]; then
+  IDENTITY=`readlink -f "$IDENTITY"`
+  docker run -u $USER -v "$PWD":/data/ -v "$IDENTITY":/.identity -it --rm $IMAGE -i /.identity "$@"
+else
+  docker run -u $USER -v "$PWD":/data/ -it --rm $IMAGE "$@"
+fi
