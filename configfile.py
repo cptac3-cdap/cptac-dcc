@@ -2,9 +2,9 @@
 import os, os.path, sys
 
 try:
-    from configparser import SafeConfigParser
+    from configparser import ConfigParser
 except ImportError:
-    from ConfigParser import SafeConfigParser
+    from ConfigParser import ConfigParser
 
 def readconfig(prog, verbose=False):
   prog = os.path.realpath(os.path.abspath(prog))
@@ -12,10 +12,10 @@ def readconfig(prog, verbose=False):
   name = p.rsplit('.',1)[0]
   iniFileName = name+'.ini'
   siteIniFileName = name+'-local.ini'
-  cfg = SafeConfigParser()
+  cfg = ConfigParser()
   cfg.optionxform = str
   iniFile = open(os.path.join(d,iniFileName))
-  cfg.readfp(iniFile)
+  cfg.read(iniFile)
   iniFile.close()
   readfiles = [ os.path.join(d,iniFileName) ]
   readfiles.extend(
