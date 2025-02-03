@@ -1,0 +1,1142 @@
+//| It's a waste of time and space to add entries with translation exactly the same as key.
+
+/* cargo_application.cpp */
+"Errors occurred while loading the configuration file" = "加载配置文件时发生错误";
+
+
+/* about_window.cpp */
+"About - %s" = "关于 - %s";
+"Internal %s (%s)" = "内部版 %s (%s)";
+/* "Release (%s)" = "发行版 (%s)"; */
+"Version %s (%s)" = "版本 %s (%s)";
+"Shell extension (%s)" = "Shell 扩展 (%s)";
+
+
+/* account_conflicts_item_delegate.cpp */
+"%d conflicts" = "%d 个冲突";
+
+
+/* account_verification_dialog.cpp */
+"Cancel" = "取消";
+"Connecting..." = "正在连接...";
+"Looking up host..." = "正在查找主机...";
+"Verifying cloud storage..." = "正在验证云存储...";
+"Remove" = "除去";
+"Next" = "下一步";
+"Please click 'Next' to re-authenticate the account: '%s'." = "请单击“下一步”以对帐户“%s”进行重新认证。";
+"Error verifying host: %s" = "验证主机 %s 时出错";
+"OK" = "确定";
+"Account is invalid." = "帐户无效。";
+
+
+/* accounts_model.cpp */
+"Accounts" = "帐户";
+" (default)" = " （缺省）";
+
+
+/* accounts_pref_widget.cpp */
+"Are you sure you want to remove %s?" = "是否确定要除去 %s？";
+"\nAll account transfers and services will be stopped and removed." = "\n所有帐户传输和服务都将停止并被删除。";
+"Please complete the account information." = "请完成帐户信息。";
+"Your authentication token has gone stale. Click here to re-authenticate." = "您的认证令牌已过时。单击此处可重新认证。";
+"Sync" = "同步";
+"All changes will be discarded. Are you sure you want to proceed?" = "将放弃所有更改。是否确定要继续？";
+"Preferences contains errors:" = "首选项包含错误：";
+"Do you want to revert changes?" = "是否要还原更改?";
+"unknown" = "未知";
+"Querying for services failed: %s" = "查询服务失败：%s";
+"Account name" = "帐户名称";
+"Server address" = "服务器地址";
+"Username" = "用户名";
+"Password" = "密码";
+"Do not verify host's SSL certificate" = "请勿验证主机的 SSL 证书";
+"Account" = "帐户";
+"Services" = "服务";
+"Packages" = "程序包";
+"Settings..." = "设置...";
+
+
+/* activity_window.cpp */
+"Activity - %s" = "活动 - %s";
+"Application menu" = "应用程序菜单";
+"Inboxes" = "收件箱";
+"Transfers" = "传输";
+
+
+/* add_account_wizard2.cpp */
+"Account Wizard - %s" = "帐户向导 - %s";
+"Back" = "上一步";
+"Finish" = "完成";
+"Welcome to %s" = "欢迎使用 %s";
+"Fast and secure access to all your files." = "快速安全地访问所有文件。";
+"This wizard will help you set up your account." = "该向导将帮助您设置帐户。";
+"Set up account" = "设置帐户";
+"Select the %s product you want to link to Drive." = "请选择想要链接到驱动器的 %s 产品。";
+"Enter your IBMid or work email to look up your organization." = "请输入您的 IBM 标识或工作电子邮件以查找组织。";
+"Email" = "电子邮件";
+"We've sent your organization URL to your email." = "我们已将您的组织 URL 发送到您的电子邮件。";
+"OR" = "或者";
+"Enter your organization URL here." = "在此输入组织 URL。";
+"Please enter your account email address or organization name." = "请输入帐户电子邮件地址或组织名称。";
+"Please enter your organization name." = "请输入组织名称。";
+"Please enter your account email address." = "请输入帐户电子邮件地址。";
+"New Account" = "新建帐户";
+"Please enter your server information." = "请输入服务器信息。";
+"Account name:" = "帐户名称：";
+"Server address:" = "服务器地址：";
+"Tip:" = "提示：";
+"Server address entered invalid" = "输入的服务器地址无效";
+"An account with the same name already exists. Please choose a new name." = "已存在同名的帐户。请选择新名称。";
+"Please enter all fields." = "请输入所有字段。";
+"Authentication" = "认证";
+"Please choose your authentication method." = "请选择认证方法。";
+"Unknown host type." = "未知主机类型。";
+"Authentication URL is empty" = "认证 URL 为空";
+"Could not retrieve token from OAuth provider" = "无法从 OAuth 提供者检索令牌";
+"Basic Authentication" = "管理员认证";
+"SAML Authentication" = "SAML 认证";
+"Username:" = "用户名";
+"Password:" = "密码：";
+"Login" = "登录";
+"Please enter your credentials." = "请输入您的凭证。";
+"User name:" = "用户名";
+"Looking up services..." = "正在查找服务...";
+"Verifying storage..." = "正在验证存储...";
+"Problem..." = "问题...";
+"There was a problem with your account." = "您的帐户存在问题。";
+"Inbox Setup" = "收件箱设置";
+"Package downloading" = "程序包下载";
+"The folder selected is not empty. Do you want to continue?" = "所选文件夹不为空。是否要继续？";
+"Automatically download my packages to the following directory" = "自动将我的程序包下载到以下目录";
+"I'd rather not set up automatic downloading now." = "我现在不想设置自动下载。";
+"Change..." = "更改...";
+"Download existing packages" = "下载现有程序包";
+"Download my packages from date sent" = "从发送日期开始下载我的程序包";
+"Only download packages from now on." = "仅从现在开始下载程序包。";
+"Yesterday" = "昨天";
+"A week ago" = "一周前";
+"A month ago" = "一月前";
+"The beginning of time" = "开始时间";
+"Checking for new packages" = "检查是否有新程序包";
+"Check for new packages" = "检查新程序包";
+"I'll check manually using the Check Now option." = "我将使用“立即检查”选项手动进行检查。";
+"Every Minute" = "每分钟";
+"Every 5 Minutes" = "每 5 分钟";
+"Every 15 Minutes" = "每 15 分钟";
+"Every 30 Minutes" = "每 30 分钟";
+"Every Hour" = "每小时";
+"Sync Setup" = "同步设置";
+"Sync folder location" = "同步文件夹位置";
+"Place my files in the following directory" = "将我的文件放入以下目录";
+"I'd rather not set up file syncing now." = "我现在不想设置文件同步。";
+"Two-Way" = "双向";
+"Remote to Local" = "远程到本地";
+"Local to Remote" = "本地到远程";
+"Choose folders to sync" = "选择要同步的文件夹";
+"Synchronize with the selected remote folders." = "与所选远程文件夹进行同步。";
+"I'll choose the folder to sync later." = "我将稍后选择文件夹以进行同步。";
+"Continuous Mode" = "连续方式";
+"Local Mounts Signature Pathname" = "本地安装签名路径名";
+"Remote Mounts Signature Pathname" = "远程安装签名路径名";
+"Browse..." = "浏览...";
+"Direction" = "方向";
+"Completing the Account Setup" = "正在完成帐户设置";
+"Your account is almost complete. Press finish to create your account." = "您的帐户即将完成。按“完成”以创建帐户。";
+"Almost done" = "即将完成";
+"The following services are available for this account." = "以下服务可用于此帐户。";
+
+
+/* aoc_workspaces_and_shared_folders_dialog.cpp */
+"Workspace: %s" = "工作空间: %s";
+"Workspaces and shared inboxes - %s" = "工作空间和共享收件箱 - %s";
+"Select specific workspaces and shared inboxes for download" = "选择用于下载的特定工作空间和共享收件箱";
+"Shared inboxes" = "共享收件箱";
+"Loading..." = "正在加载...";
+"My inbox" = "我的收件箱";
+"Could not retrieve list of workspaces from the server." = "无法检索来自服务器的工作空间列表。";
+
+
+/* transfer_monitor_accessible.cpp */
+"Transfer Monitor" = "传输监视器";
+"Use the arrows to change the transfer rate and use SHIFT + arrows to change the minimum transfer rate" = "使用箭头可更改传输速度，使用 SHIFT + 箭头可更改最小传输速度";
+
+
+/* authentication_window.cpp */
+"User name input field" = "用户名输入字段";
+"Password input field" = "密码输入字段";
+"Login to: %s" = "登录到：%s";
+"&User Name:" = "用户名(&U)：";
+"&Password:" = "密码(&P)：";
+"Password is too long. Maximum length is %d." = "密码太长。最小长度为 %d。";
+"&Remember this password" = "记住此密码(&R)";
+
+
+/* bandwidth_pref_widget.cpp */
+"Transfer speeds depend on server settings and your network connectivity." = "传输速度取决于服务器设置及您的网络连接情况。";
+"Manual Transfers" = "手动传输";
+"The settings below let you limit transfer speeds for user-initiated transfers." = "通过以下设置您可以限制用户启动的传输的传输速度。";
+"Downloads" = "下载";
+"Limit to" = "限制为";
+"Uploads" = "上传";
+"Automatic Transfers" = "自动传输";
+"The settings below let you limit transfer speeds for sync transfers and other background jobs." = "通过以下设置您可以限制同步传输和其他后台作业的传输速度。";
+"Background downloads" = "后台下载";
+"Background uploads" = "后台上传";
+
+
+/* confirm_yes_or_no_window.cpp */
+"Confirm - %s" = "确认 - %s";
+"Yes" = "是";
+"No" = "否";
+
+
+/* confirmation_window.cpp */
+"Remember my choice for this site." = "请记住我针对此站点的选择。";
+"Allow access to your computer?" = "是否允许访问您的计算机？";
+"This site is on the restricted list." = "本站点在限制列表中。";
+"This site is requesting permission to upload and download files to and from your computer." = "此站点正在请求允许向您的计算机上传文件并从其下载文件。";
+
+
+/* conflicted_files_window2.cpp */
+"Resolve Conflict" = "解决冲突";
+"Refresh" = "刷新";
+"Resolve Selected Conflicts" = "解决所选冲突";
+"Save copy of the local conflicted file and sync again" = "保存本地冲突文件副本并重新同步";
+"Name" = "名称";
+"Location" = "位置";
+"Last Updated By" = "上次更新时间";
+"Path" = "路径";
+"(first %d displayed) " = "（首先显示 %d） ";
+"Conflicted Files %1$s- %2$s" = "冲突文件 %1$s- %2$s";
+
+
+/* connect_application.cpp */
+"A previous installation of %s has been detected. Would you like to migrate your settings and uninstall %s?" = "检测到以前安装的 %s。是否要迁移设置并卸载 %s？";
+"A previous installation of %s has been detected. Would you like to migrate your account information? This will remove your accounts from %s." = "检测到以前安装的 %s。是否要迁移帐户信息？这将从 %s 中除去您的帐户。";
+"There was an error migrating from %s. It is recommended to manually migrate your account information." = "从 %s 迁移时发生错误。建议手动迁移帐户信息。";
+"%1$s is already running. Please quit before running %2$s." = "%1$s 已在运行中。请在运行 %2$s 之前退出。";
+"You have invalid accounts. Would you like to review them?" = "您具有无效帐户。是否要查看？";
+"Your accounts have been successfully migrated from %s. You may be prompted to re-enter your account credentials. Would you like to uninstall %s?" = "已成功从 %s 迁移您的帐户。可能会提示您重新输入帐户凭证。是否要卸载 %s？";
+
+
+/* connect_tray_handler.cpp */
+"1 inbox." = "1 个收件箱。";
+"%d inboxes." = "%d 个收件箱。";
+"1 sync." = "1 个同步。";
+"%d syncs." = "%d 个同步。";
+"&Send To..." = "发送到(&S)...";
+"&Send to..." = "发送到(&S)...";
+"1 transfer." = "1 个传输。";
+"%d transfers." = "%d 个传输。";
+"Active:" = "有效：";
+
+
+/* content_protection_hosts_model.cpp */
+"Host" = "主机";
+
+
+/* error_list_window.cpp */
+"Sessions error" = "会话错误";
+"Failed to sync file:" = "无法同步文件：";
+
+
+/* fasp_transfer_inspector_window.cpp */
+"The selected transfer policy is not allowed. The server allowed policy is: %s." = "不允许使用所选的传输策略。该服务器允许的策略为：%s。";
+"Fixed" = "固定";
+"High" = "高";
+"Fair" = "一般";
+"Low" = "低";
+
+
+/* faspex_inbox_item_widget.cpp */
+"Automatic checking is off." = "自动检查关闭。";
+"Error: %1$s - to retry in %2$s" = "错误：%1$s - 在 %2$s 内重试";
+"Error: %s" = "错误：%s";
+"Checking for new packages..." = "正在检查是否有新程序包...";
+"Checking for new packages in: %s" = "正在 %s 中检查是否有新程序包";
+"Stop automatic checking and inbox transfers." = "停止自动检查和收件箱传输。";
+"Start automatic checking and resume inbox transfers." = "启动自动检查并恢复收件箱传输。";
+"No Inbox" = "无收件箱";
+"Error: %1$s %2$s left" = "错误：剩余 %1$s %2$s";
+
+
+/* faspex_inbox_window.cpp */
+"Check now" = "立即检查";
+"Open folder" = "打开文件夹";
+"Inbox settings" = "收件箱设置";
+"Check All" = "检查所有";
+
+
+/* faspex_settings_dialog.cpp */
+"Packages - %s" = "程序包 - %s";
+"Passphrase" = "密码";
+"Download received packages to" = "将收到的程序包下载到";
+"Change" = "更改";
+"Overwrite packages that have the same title" = "覆盖具有相同标题的程序包";
+"Do not download packages sent by me" = "不要下载我发送的程序包";
+"Packages are downloaded from:" = "下载自以下时间开始收到的程序包：";
+"Date" = "日期";
+"Automatically unlock encrypted files on download" = "在下载时自动解锁加密文件";
+"Select workspaces to download" = "选择要下载的工作空间";
+"The download folder is not empty. Do you want to continue?" = "下载文件夹不为空。是否要继续？";
+"No download folder selected." = "未选择下载文件夹。";
+"Passphrase is empty." = "密码为空。";
+"Inbox settings could not be saved due to the following errors: %s" = "由于发生以下错误，无法保存收件箱设置：%s";
+
+
+/* general_pref_widget.cpp */
+"Automatically launch when Windows starts" = "Windows 启动时自动启动";
+"Activity Window" = "“活动”窗口";
+"Open Transfers tab when an Inbox transfer is added" = "添加收件箱传输时打开“传输”选项卡";
+"Close Activity window when all transfers are complete" = "所有传输完成后关闭“活动”窗口";
+"Remove transfer list items:" = "除去传输列表项：";
+"Logging" = "日志记录";
+"Logging level:" = "日志记录级别：";
+"Manually" = "手动";
+"Upon Successful Transfer" = "成功传输后";
+"Info" = "信息";
+"Debug" = "调试";
+"Trace" = "追踪";
+"Remote View" = "远程视图";
+"Max remote view items:" = "最多远程视图项数：";
+"* Refresh to apply." = "* 刷新以应用。";
+"Disk Space" = "磁盘空间";
+"Disk space warning:" = "磁盘空间警告：";
+"percent" = "%%";
+"Disk space percentage" = "磁盘空间百分比：";
+
+
+/* gui_application.cpp */
+"Account is invalid. Check network connection, account information and save." = "帐户无效。请检查网络连接和帐户信息并进行保存。";
+"Account name empty" = "帐户名为空";
+"You have active transfers. Are you sure you want to quit?" = "您当前还有多个传输正在进行中。确定要退出？";
+"Could not start new package. Check your settings or network connection and try again." = "无法启动新程序包。请检查设置或网络连接并重试。";
+"Transfer monitor is unavailable for this transfer, because no activity is occurring." = "此传输无法使用传输监视器，因为没有发生任何活动。";
+"%1$s Inbox - %2$s" = "%1$s 收件箱 - %2$s";
+
+
+/* gui_utils.cpp */
+"Choose Folder - %s" = "选择文件夹 - %s";
+"Please complete account information." = "请完成帐户信息。";
+"No permission to download from %s" = "无权从 %s 下载";
+"No permission to upload to %s" = "无权上传到 %s";
+"Folder %s does not exist" = "文件夹 %s 不存在";
+
+
+/* hosts_model.cpp */
+"User" = "用户";
+"Trust State" = "信任状态";
+
+
+/* http_security_handler.cpp */
+"Security problem" = "安全性问题";
+
+
+/* accounts_view_controller.mm */
+"Storage account:" = "存储帐户：";
+"Access key:" = "访问键：";
+"Path:" = "路径：";
+"Shared URL:" = "共享的 URL：";
+"Revert" = "还原";
+"Save" = "保存";
+"Storage" = "存储";
+"test" = "测试";
+
+
+/* activity_controller.mm */
+"Inbox" = "收件箱";
+"Switch View" = "切换视图";
+
+
+/* activity_inbox_delegate.mm */
+"Check Now" = "立即检查";
+"Open Folder" = "打开文件夹";
+"Inbox Settings" = "收件箱设置";
+
+
+/* activity_sync_delegate.mm */
+"Sync is not available for this account" = "该帐户无法同步";
+"Show in Finder" = "在查找器中显示";
+"Sync Settings" = "同步设置";
+
+
+/* activity_transfers_delegate.mm */
+"Stop" = "停止";
+"Start" = "启动";
+"Resume" = "恢复";
+"Retry" = "重试";
+"Show in Transfer Monitor" = "在传输监视器中显示";
+"Open Containing Folder" = "打开所在文件夹";
+"Go to " = "转至 ";
+"Clear list" = "清除列表";
+
+
+/* bandwidth_view_controller.mm */
+/* "Kbps" = "Kbps"; */
+/* "Mbps" = "Mbps"; */
+"Limit downloads to" = "将下载限制为";
+"Limit uploads to" = "将上传限制为";
+"Limit background downloads to" = "将后台下载限制为";
+"Limit background uploads to" = "将后台上传限制为";
+
+
+/* cocoa_initializer.mm */
+"About %s" = "关于 %s";
+"Hide %s" = "隐藏 %s";
+"Quit %s" = "退出 %s";
+"Preferences..." = "首选项...";
+"Hide Others" = "隐藏其他项";
+"Show All" = "全部显示";
+"Edit" = "编辑";
+"Undo" = "撤销";
+"Redo" = "重做";
+"Cut" = "剪切";
+"Copy" = "复制";
+"Paste" = "粘贴";
+"Delete" = "删除";
+"Select All" = "全选";
+"Window" = "窗口";
+"Minimize" = "最小化";
+"Zoom" = "缩放";
+"Bring All to Front" = "全部前置";
+"Open log folder" = "打开日志文件夹";
+
+
+/* filesystem_browser_cell.mm */
+"Open" = "打开";
+"Rename" = "重命名";
+"Archive" = "归档";
+"Undo archive" = "撤销归档";
+
+
+/* filesystem_node.mm */
+"Internal Error. FSItem is null." = "内部错误。FSItem 为 Null。";
+"The original file does not exist." = "原始文件不存在。";
+"The destination already has an item with the same file name." = "目标已有文件名相同的项。";
+"Internal Error. FSItem is Null." = "内部错误。FSItem 为 Null。";
+
+
+/* network_view_controller.mm */
+"Obtain proxy configuration from" = "代理配置获取方式";
+"System" = "系统";
+"Manual" = "手动";
+"Configure proxy settings." = "配置代理设置。";
+"Use HTTP Proxy" = "使用 HTTP 代理";
+"Address:" = "地址：";
+"Port:" = "端口：";
+"HTTP Proxy" = "HTTP 代理";
+"Use FASP Proxy (DNAT)" = "使用 FASP 代理 (DNAT)";
+"Secure (DNATS)" = "安全 (DNATS)";
+"FASP Proxy" = "FASP 代理";
+
+
+/* preferences_window_controller.mm */
+"Preferences" = "首选项";
+
+
+/* remote_view_controller.mm */
+"New folder" = "新建文件夹";
+"Server" = "服务器";
+"Storage type" = "存储类型";
+"Storage host" = "存储主机";
+"Storage path" = "存储路径";
+"Local inbox directory" = "本地收件箱目录";
+"Sync local directory" = "同步本地目录";
+"Delete Files" = "删除文件";
+"Are you sure you want to permanently delete the selected files?" = "是否确定要永久删除所选文件？";
+"Download has not completed" = "下载未完成";
+"Delete the selected item(s)" = "删除所选项";
+"Rename the selected item" = "重命名所选项";
+"Create new package" = "创建新程序包";
+"Create new folder" = "创建新文件夹";
+"The destination already has an item with the same file name. Continue?" = "目标已有文件名相同的项。是否要继续？";
+
+
+/* security_view_controller.mm */
+"Are you sure you want to remove the selected host?" = "是否确定要除去所选主机？";
+"Are you sure you want to remove all the hosts?" = "是否确定要除去所有主机？";
+"Are you sure you want to remove the credential?" = "是否确定要除去凭证？";
+"Are you sure you want to remove all credentials?" = "是否确定要除去所有凭证？";
+"Trusted Hosts" = "受信主机";
+"Restricted Hosts" = "受限主机";
+"Passwords" = "密码";
+"Content Protection" = "内容保护";
+"Trusted hosts are hosts to which you have granted permission to always allow transfers.  If any attempt is made to start a transfer with a host that is not on this list, you will be given the option to allow or deny the transfer." = "受信主机是指您已授权始终允许向其传输的主机。如果尝试开始向此列表未列出的主机传输，您可以选择是允许还是拒绝传输。";
+"Add" = "添加";
+"Remove All" = "全部除去";
+"Restricted hosts are hosts for which you have enabled enhanced security.  If any attempt is made to start a transfer with a host that is on this list, you will be presented with a warning before it can proceed." = "受限主机是指您已为其启用增强安全性的主机。如果尝试开始向此列表未列出的主机传输，那么在可以继续操作之前，系统将显示警告。";
+"Login information has been saved for the following hosts:" = "已为以下主机保存登录信息：";
+"Content protection allows you to leave files encrypted on servers to which they have been uploaded.  Enter a list of hosts for which you want to enable this functionality." = "通过内容保护，文件在上传到服务器后仍可保持加密状态。输入您想要为其启用此功能的主机列表。";
+
+
+/* sync_wrapper_qt.mm */
+" Sync" = " 同步";
+"total files and directories" = "文件和目录总数";
+"Unknown size" = "未知大小";
+"Nothing to sync" = "无要同步的内容";
+"Calculating size..." = "正在计算大小...";
+"Never started" = "永不启动";
+"%d conflict(s)" = "%d 个冲突";
+"%d file error(s)" = "%d 个文件错误";
+"Start file sync" = "启动文件同步";
+"Stop file sync" = "停止文件同步";
+"Warning: %s" = "警告：%s";
+"Current File" = "当前文件";
+"Last File" = "最后一个文件";
+"Done" = "完成";
+"Synced" = "已同步";
+"Retrying" = "正在重试";
+"Next attempt in %s" = "在 %s 中进行下一次尝试";
+"Next sync in %s" = "在 %s 后进行下一次同步";
+"Checking for changes" = "正在检查更改";
+"Downloading" = "正在下载";
+"Uploading" = "正在上传";
+"Syncing" = "正在同步";
+
+
+/* transfer_wrapper.h */
+"Unlock encrypted files" = "解锁加密文件";
+
+
+/* transfer_wrapper_qt.mm */
+"Decryption in progress..." = "正在解密...";
+"Decryption finished" = "解密完成";
+"Authenticating..." = "正在验证...";
+"Measuring bandwidth..." = "正在测量带宽...";
+"Stopping..." = "正在停止...";
+"Queued" = "已排入队列";
+"elapsed" = "已过去";
+"Transferring %1$s (%2$s)" = "正在传输 %1$s (%2$s)";
+"Downloading %1$s (%2$s)" = "正在下载 %1$s (%2$s)";
+"Uploading %1$s (%2$s)" = "正在上传 %1$s (%2$s)";
+"Unknown" = "未知";
+"Open containing folder" = "打开所在文件夹";
+"Open transfer monitor" = "打开传输监视器";
+"Delete source files on complete" = "完成后删除源文件";
+
+
+/* transfers_view_controller.mm */
+"Download Directory" = "下载目录";
+"Downloads location:" = "下载位置：";
+"Remove:" = "除去：";
+"Always ask me where to save downloaded files." = "始终询问我保存下载文件的位置。";
+"Queue:" = "队列：";
+"Enable queuing" = "启用排队";
+"Maximum concurrent transfers:" = "最大并行传输数：";
+"Retry:" = "重试：";
+"Automatically retry failed transfers" = "自动重试失败的传输";
+"Attempts:" = "尝试次数：";
+"Interval:" = "时间间隔：";
+"The interval specifies an amount of time that will elapse between each attempt to restart a failed transfer." = "时间间隔指定两次尝试重新启动失败传输之间所经历的时间段。";
+"Sync:" = "同步：";
+"Multi-Session:" = "多会话：";
+"Enable multi-session" = "启用多会话";
+"Number of sessions:" = "会话数：";
+"When transferring faster than:" = "如果传输速度大于：";
+"Split files larger than:" = "拆分超过以下大小的文件：";
+"Startup interval between sessions:" = "会话间的启动时间间隔：";
+"seconds" = "秒";
+"minutes" = "分钟数";
+"hours" = "小时数";
+/* "KB" = "KB"; */
+/* "MB" = "MB"; */
+/* "GB" = "GB"; */
+/* "Gbps" = "Gbps"; */
+
+
+/* metadata_input_widget.cpp */
+"Missing required fields: %s" = "缺少必填字段：%s";
+
+
+/* mnts_sig_pathname_mixin.cpp */
+"Signature file specified by pathname must exist before sync session is started" = "在启动同步会话之前，由路径名指定的签名文件必须已存在";
+"Signature file on mounted location in parent directory of sync source on local system" = "本地系统上同步源的父目录中安装位置处的签名文件。";
+"Browse to parent directory of sync source and specify signature filename" = "浏览至同步源的父目录，并指定签名文件名";
+"Signature file specified by pathname must exist on remote system before sync session is started" = "在启动同步会话之前，由路径名指定的签名文件必须在远程系统上已存在";
+"Signature file on mounted location in parent directory of sync source on remote system" = "远程系统上同步源的父目录中安装位置处的签名文件。";
+"Specify local mounts signature file" = "指定本地安装签名文件";
+"Local mounts signature file specified by pathname found to be a directory" = "发现由路径名指定的本地安装签名文件是一个目录";
+"Local mounts signature file specified by pathname not an ordinary file" = "由路径名指定的本地安装签名文件不是普通文件";
+"Failed to create local mounts signature file by specified pathname" = "未能创建由路径名指定的本地安装签名文件";
+
+
+/* network_pref_widget.cpp */
+"Connect to the Internet via an HTTP proxy." = "通过 HTTP 代理连接到因特网。";
+
+
+/* passphrase_window.cpp */
+"'Passphrase' field must be entered." = "必须输入“口令”字段。";
+"'Passphrase' and 'Confirm' fields must be entered." = "必须输入“口令”和“确认”字段。";
+"Passphrase confirmation does not match." = "密码确认不匹配。";
+"Passphrase is too long. Maximum length is %d." = "密码太长。最小长度为 %d。";
+"Enter a passphrase to decrypt protected files as they are downloaded." = "下载受保护的文件后输入密码以进行解密。";
+"Enter a passphrase to store files in an encrypted format on the server." = "输入密码以加密格式将文件存储在服务器上。";
+"A passphrase is required." = "密码为必填。";
+"Keep files encrypted" = "保持文件加密";
+"Keep files unencrypted" = "保持文件未加密";
+"Passphrase input field" = "口令输入字段";
+"Confirm passphrase input field" = "确认口令输入字段";
+"Confirm" = "确认";
+"Leave uploaded files unencrypted." = "使上传文件保持未加密状态。";
+
+
+/* select_folder_window.cpp */
+"Look in:" = "查找：";
+"Choose" = "选择";
+
+
+/* send_to_dialog.cpp */
+"Send Files - " = "发送文件 - ";
+"Workspace" = "工作空间";
+"Title" = "标题";
+"Notes" = "注释";
+"Files" = "文件";
+"Encrypt sent files" = "加密发送的文件";
+"Send as public Link" = "作为公共链接发送";
+"Add files" = "添加文件";
+"Add folder" = "添加文件夹";
+"Send" = "发送";
+"Email or group" = "电子邮件或组";
+"Shared Inbox" = "共享收件箱";
+//| "Dropbox" = "Dropbox";
+"Name Conflicts - " = "名称冲突 - ";
+"Failed to send package: " = "无法发送程序包： ";
+"Server error. Failed to send package: " = "服务器错误。无法发送程序包： ";
+"Failed to send package. Could not parse error message from server." = "无法发送程序包。无法解析来自服务器的错误消息。";
+"Package not sent. Account has been deleted." = "未发送程序包。已删除帐户。";
+"Shared inbox" = "共享收件箱";
+"Select files" = "选择文件";
+"Select folder" = "选择文件夹";
+"The note is cut to fit the maximum length of %d." = "将截断注释以符合最大长度 %d 的要求。";
+"This workspace doesn't allow sending packages to external users." = "此工作空间不允许将程序包发送给外部用户。";
+"Maximum number of items reached." = "已达到最大项数。";
+
+
+/* shared_literals.cpp */
+"Show in Windows Explorer" = "在 Windows 资源管理器中显示";
+"Show in file manager" = "在文件管理器中显示";
+
+
+/* sso_via_browser_dialog.cpp */
+"Please sign on in the browser tab that just opened." = "请登录刚刚打开的浏览器选项卡。";
+"Failed to open default browser for authentication" = "未能打开缺省浏览器以进行认证";
+
+
+/* sync_error_dialog.cpp */
+"&Copy" = "复制(&C)";
+"Share" = "共享";
+"File" = "文件";
+" File Errors" = " 文件错误";
+"File Conflict" = "文件冲突";
+"Remote" = "远程";
+"Type" = "类型";
+"Message" = "消息";
+" Session Errors" = " 会话错误";
+"Warning" = "警告";
+
+
+/* sync_settings_dialog.cpp */
+"Synchronize with the selected remote folders" = "与所选远程文件夹同步";
+"Status" = "状态";
+"Local Folder Path" = "本地文件夹路径";
+"Reset Sync" = "重置同步";
+"The local sync folder cannot be empty." = "本地同步文件夹不能为空。";
+"No remote folders selected." = "未选择远程文件夹。";
+"You are changing continuous mode.\nThis will also reset sync. Click Yes to continue." = "您正在更改连续方式。\n这也会重置同步。单击“是”以继续。";
+"This will reset your sync history. Click Yes to continue." = "这将重置同步历史记录。单击“是”以继续。";
+"Failed to create directory: %s" = "无法创建目录：%s";
+"The local sync folder selected is not empty. Do you want to continue?" = "所选本地同步文件夹不为空。是否要继续？";
+
+
+/* sync_widget.cpp */
+"Sync settings" = "同步设置";
+"File sync" = "文件同步";
+
+
+/* transfer_status_widget.cpp */
+"Go to" = "转至";
+"Retrying in" = "...后重试：";
+"Resuming..." = "正在恢复...";
+"Error: Server refused request" = "错误：服务器拒绝请求";
+"Error: Authentication failed" = "错误：认证失败";
+"Transferring" = "正在传输";
+" percent" = " &（百分比）";
+
+
+/* transfer_status_widget_accessible.cpp */
+"Use the tab to move through the different actions" = "使用此选项卡可在不同操作之间切换";
+
+
+/* transfer_status_widget_container_accessible.cpp */
+"Transfers list" = "传输列表";
+"List with all the current transfers" = "包含所有当前传输的列表";
+"Use the up and down arrows to move through the different transfers" = "使用向上和向下箭头在不同传输之间切换";
+
+
+/* transfers_pref_widget.cpp */
+"Save downloaded files to:" = "将下载的文件保存到：";
+"Browse" = "浏览";
+"Queue" = "队列";
+"time(s)" = "次";
+"Multi-session" = "多会话";
+"Start interval between sessions:" = "会话间的启动时间间隔：";
+
+
+/* transfers_window_accessible.cpp */
+"Window with all the transfers" = "包含所有传输的窗口";
+"Use the tab to access the transfer list" = "使用此选项卡可访问传输列表";
+
+
+/* tray_handler.cpp */
+"&About..." = "关于(&A)...";
+"Ac&tivity" = "活动(&T)";
+"&Run diagnostic" = "运行诊断(&R)";
+"&Unlock encrypted files" = "解锁加密文件(&U)";
+"&Quit" = "退出(&Q)";
+"&Open log folder" = "打开日志文件夹(&O)";
+"&Feedback" = "反馈(&F)";
+"&Preferences..." = "首选项(&P)...";
+"&Others..." = "其他(&O)...";
+"&Unlock Encrypted Files" = "解锁加密文件(&U)";
+"&Open Log Folder" = "打开日志文件夹(&O)";
+
+
+/* win_file_dialog_helper.cpp */
+"Sending remote files is not supported" = "不支持发送远程文件";
+
+
+/* win_preferences_window.cpp */
+"Preferences - %s" = "首选项 - %s";
+"Apply" = "应用";
+"General" = "常规";
+"Network" = "网络";
+"Bandwidth" = "带宽";
+"Security" = "安全性";
+
+
+/* busy_dialog.cpp */
+"Processing..." = "正在处理...";
+
+
+/* decrypt_manager.cpp */
+"Task could not be created for %s" = "无法为 %s 创建任务";
+"Decryption already in progress." = "已在解密。";
+"Cannot perform operations during decryption." = "无法在解密期间执行操作。";
+"Failed list is empty." = "失败列表为空。";
+"Error: could not allocate memory for task %s " = "错误：无法为任务 %s 分配内存 ";
+
+
+/* fasp_decrypt_worker.cpp */
+"Could not write to destination." = "无法写入目标。";
+"Code:" = "代码：";
+"Input file is corrupted or not encrypted." = "输入文件已损坏或未加密。";
+"Invalid file" = "无效文件";
+"Source file does not exist." = "源文件不存在。";
+"Source is not a file." = "数据源不是文件。";
+"Could not initialize decrypter." = "无法初始化解密器。";
+"Could not write out to device." = "无法写出到设备。";
+"Cancelled by user" = "已由用户取消";
+
+
+/* main_window.cpp */
+"Drag files and folders to start decrypting..." = "拖动文件和文件夹以开始解密...";
+"Open Encrypted files" = "打开已加密文件";
+"Open Directory" = "打开目录";
+"There are current tasks. Do you want to exit?" = "当前有任务。是否要退出？";
+"Do you want to delete encrypted source files from finished tasks?" = "是否要从已完成任务中删除已加密源文件？";
+"Do you want to reload?" = "是否要重新装入？";
+"Exit" = "退出";
+"Open Files" = "打开文件";
+"Select file(s) to decrypt" = "选择要解密的文件";
+"Decrypt all files and folders in selected folder" = "解密所选文件夹中的所有文件和文件夹";
+"Clear All" = "全部清除";
+"Clear all tasks" = "清除所有任务";
+"Delete Encrypted" = "删除已加密项";
+"Delete encrypted files from finished tasks" = "已从已完成任务中删除了已加密文件";
+"Clear Finished" = "清除已完成项";
+"Clear finished tasks" = "清除已完成任务";
+"Clear Failed" = "清除失败项";
+"Clear failed tasks" = "清除失败任务";
+"Clear Pending" = "清除暂挂项";
+"Clear pending tasks" = "清除暂挂任务";
+"Settings" = "设置";
+"Open Settings dialog" = "打开“设置”对话框";
+"About..." = "关于...";
+"Open About dialog" = "打开“关于”对话框";
+"Reload Failed" = "重新装入失败";
+"Reload failed tasks and resets status to Pending" = "重新装入失败任务并将状态重置为暂挂";
+"Decrypt" = "解密";
+"Show passphrase" = "显示密码";
+"View:" = "查看：";
+"Latest" = "最新";
+"Finished" = "已完成";
+"Failed" = "失败";
+"Options" = "选项";
+"About" = "关于";
+"Enter Passphrase" = "输入密码";
+
+
+/* settings_dialog.cpp */
+"Delete encrypted files when finished" = "完成后删除已加密的文件";
+"Number of concurrent threads for decryption" = "用于解密的并发线程数";
+
+
+/* task.cpp */
+"Decrypting" = "正在解密";
+"Waiting" = "正在等待";
+"Error %s" = "错误 %s";
+"Cancelled" = "已取消";
+"Cleared" = "已清除";
+
+
+/* task_manager.cpp */
+"A task is in progress, try again later." = "任务正在进行中，请稍后重试。";
+"Loading files..." = "正在装入文件...";
+"Could not open file %1$s, for reading. %2$s" = "无法打开文件 %1$s 进行读取。%2$s";
+"Failed to reload tasks." = "重新装入任务失败。";
+"Reloading failed tasks..." = "正在重新装入失败任务...";
+"Failed Tasks reloaded." = "失败任务已重新装入。";
+"No files cleared." = "未清除任何文件。";
+"Clearing pending tasks..." = "正在清除暂挂任务...";
+"Could not clear pending tasks." = "无法清除暂挂任务。";
+"All pending tasks cleared." = "所有暂挂任务已清除。";
+"Clearing failed tasks..." = "正在清除失败任务...";
+"Could not clear failed tasks." = "无法清除失败任务。";
+"All failed tasks cleared." = "所有失败任务已清除。";
+"Clearing finished tasks..." = "正在清除已完成任务...";
+"Could not clear finished tasks." = "无法清除已完成任务。";
+"All finished tasks cleared." = "所有已完成任务已清除。";
+"Clearing all tasks..." = "正在清除所有任务...";
+"Could not clear all tasks." = "无法清除所有任务。";
+"All tasks cleared" = "所有任务已清除";
+"No files cleared for unknown status." = "由于状态未知，因此未清除任何文件。";
+"Could not load files." = "无法装入文件。";
+"No files found." = "未找到任何文件。";
+"Deleting encrypted source files..." = "正在删除已加密源文件...";
+"Encrypted source files deleted from finished tasks." = "已从已完成任务中删除了已加密源文件。";
+"Not all encrypted files could be deleted." = "并非所有已加密文件都可删除。";
+
+
+/* files_fs.cpp */
+"Administratively Shared" = "管理共享";
+
+
+/* files_fs_item.cpp */
+" (Shared)" = " （共享）";
+
+
+/* packages_box_fs_item.cpp */
+"Archived" = "已归档";
+"Sent" = "已发送";
+
+
+/* root_fs.cpp */
+"My Offline Files" = "我的脱机文件";
+
+
+/* account_provider.cpp */
+"Authentication error (at remote view)" = "认证错误（远程视图）";
+
+
+/* aoc_base_item.cpp */
+"Disconnected share" = "已断开连接的共享";
+
+
+/* base_item.cpp */
+"Rename Error" = "重命名错误";
+"Are you sure you want to permanently delete this file?" = "确定要永久删除此文件吗？";
+"Are you sure you want to permanently delete these files?" = "确定要永久删除这些文件吗？";
+"New Folder" = "新建文件夹";
+
+
+/* external_context_menu.cpp */
+"Send files..." = "发送文件...";
+"Activity" = "活动";
+
+
+/* shell_module.cpp */
+"To remove this file only from your computer update your sync selection." = "要仅从计算机中除去此文件，请更新您的同步选择。";
+"Delete permanently?" = "是否永久删除？";
+"Would you like to delete this file everywhere?" = "是否要在任何地方都删除此文件？";
+"Settings update required" = "需要设置更新";
+"Certificate bundle not found. " = "找不到证书捆绑软件。 ";
+
+
+/* transfer_controller.cpp */
+"Replace Files" = "替换文件";
+
+
+/* auth_error_dlg.cpp */
+"Network Error" = "网络错误";
+"%s cannot access %s" = "%s 无法访问 %s";
+"Check the account settings and passwords. Otherwise, there might be a problem with your network." = "请检查帐户设置和密码。否则，网络可能存在问题。";
+"Open Settings" = "打开设置";
+
+
+/* download_dlg.cpp */
+"%s - Download destination" = "%s - 下载目标";
+"Download files to:" = "将文件下载到：";
+"Ask me every time" = "每次都询问我";
+"Download" = "下载";
+"Invalid path is specified. " = "指定了无效路径。 ";
+
+
+/* error_dlg.cpp */
+"%s - Error" = "%s - 错误";
+"%s couldn't complete the request." = "%s 无法完成请求。";
+"%s couldn't complete the '%s' request." = "%s 无法完成“%s”请求。";
+
+
+/* aspcore_utils.cpp */
+"Path is too long. Max length of %s exceeded." = "路径太长。已超出最大长度 %s。";
+"Path ends with /.." = "路径以 /.. 结尾";
+"Path begins with ../" = "路径以 ../ 开始";
+"Path contains /../" = "路径包含 /../";
+"Path is .." = "路径是 ..";
+"Illegal string found: \" %s \"." = "发现非法字符串：“%s”。";
+
+
+/* account_manager.cpp */
+"Could not save account. %s" = "无法保存帐户。%s";
+"Account is missing an ID." = "帐户缺少标识。";
+"Host is empty." = "主机为空。";
+"No authentication type specified." = "未指定认证类型。";
+"User field is empty." = "用户字段为空。";
+"Password field is empty." = "密码字段为空。";
+"Missing token." = "缺少令牌。";
+"Max threads reached." = "已达到最大线程数。";
+"Account has been deleted." = "已删除帐户。";
+"No services discovered." = "未发现服务。";
+"Invalid credentials." = "凭证无效。";
+"Your password has expired. Please reset your password and try again." = "您的密码已到期。请重置密码并重试。";
+"Service discovery failed. No services discovered for host: %s" = "服务发现失败。未发现用于主机的服务：%s";
+"Storage validation failed." = "存储验证失败。";
+"This server does not have node services for storage testing." = "该服务器没有可用于存储测试的节点服务。";
+"This server requires a valid storage configuration." = "该服务器需要有效的存储配置。";
+"The server returned the following error:" = "服务器返回了以下错误：";
+
+
+/* application.cpp */
+"%1$s stopped. You are running very low on disk space on (%2$s)." = "%1$s 已停止。您的运行所占用的 (%2$s) 上的磁盘空间很小。";
+"%1$s. And %2$llu%% disk space remaining for download to %3$s." = "%1$s. 剩余 %2$llu%% 磁盘空间用于下载到 %3$s。";
+"%1$s. And %2$llu%% disk space remaining for sync to %3$s." = "%1$s. 剩余 %2$llu%% 磁盘空间用于同步到 %3$s。";
+"Accounts: " = "帐户： ";
+"%s Name is already taken." = "%s名称已被采用。";
+
+
+/* exception.cpp */
+"An instance of the application is already running." = "应用程序的一个实例已在运行中。";
+"Invalid input." = "输入无效。";
+"Failed to parse XML." = "无法解析 XML。";
+"This system has reached the maximum number of Connect instances running allowed, probably under multiple user IDs. Some will have to be closed before this transfer can succeed." = "该系统已达到允许运行（可能在多个用户标识下运行）的最大连接实例数。其中一些实例必须在成功完成此传输前关闭。";
+"Pointer is nil." = "指针为 nil。";
+"Unexpected value found." = "找到非预期值。";
+"Not implemented." = "未实现。";
+"Json parse error." = "Json 解析错误。";
+"Json serialization failed." = "Json 序列化失败。";
+"Sql execution error." = "Sql 执行错误。";
+"Verification of properties failed." = "验证属性失败。";
+"HTTP error" = "HTTP 错误";
+"User cancelled first run." = "用户已取消首次运行。";
+"Configuration file parsed successfully." = "已成功解析配置文件。";
+"Error parsing configuration file." = "解析配置文件时出错。";
+"Failed to parse application arguments." = "无法解析应用程序参数。";
+
+
+/* faspex_feed_processor2.cpp */
+"Packages-checking request rejected by server as unauthorized" = "由于被视为未经授权，程序包检查请求被服务器拒绝。";
+
+
+/* faspex_inbox_task.cpp */
+"Account \"%s\" may not have permission to download packages." = "“%s”帐户可能无权下载程序包。";
+"Unable to check for packages due to network timeout" = "由于网络超时，无法检查程序包";
+"User name or password not accepted, please check credentials and restart this Inbox." = "不接受用户名或密码，请检查凭证并重新启动该收件箱。";
+"Could not start automatic checking for packages." = "无法启动程序包自动检查。";
+
+
+/* token_refresher.cpp */
+"Token empty/expired" = "令牌为空/已到期";
+
+
+/* files_feed_processor.cpp */
+"Self query returned nil" = "自助查询返回了 nil";
+"Workspace query returned nil" = "工作空间查询返回了 nil";
+"Couldn't parse packages response. Check request parameters" = "无法解析包响应。请检查请求参数";
+
+
+/* node_api.cpp */
+"Node V2 URL not found." = "找不到节点 V2 URL。";
+
+
+/* node_file_info_gatherer.cpp */
+"Node not syncable" = "节点无法同步";
+"Node Api returns non-syncable." = "节点 API 返回不可同步。";
+"Duplicated folder name: " = "重复文件夹名称： ";
+". Please check your Files workspace and rename one of the folders." = ". 请查看文件工作空间，并对其中一个文件夹进行重命名。";
+" code" = " 代码";
+
+
+/* node_filesystem_model.cpp */
+"upload only" = "仅上传";
+"download only" = "仅下载";
+"no permissions" = "无权限";
+
+
+/* node_transfer_worker.cpp */
+"Resource not found. Cannot start transfer." = "找不到资源。无法启动传输。";
+"Transfer failed" = "传输已失败";
+
+
+/* sso_adapter.cpp */
+"Failed to communicate with the host." = "无法与主机通信。";
+
+
+/* setup_worker.cpp */
+"remote directory" = "远程目录";
+"remote directory: %s" = "远程目录：%s";
+"Permission denied to upload to %s" = "上传到 %s 的权限被拒绝";
+"The folder %s is no longer available. Go to Aspera on Cloud and resolve the errors." = "文件夹 %s 不再可用。转至 Aspera on Cloud 并纠正错误。";
+
+
+/* start_spec.cpp */
+"remote selection" = "远程选择";
+
+
+/* sync_error.cpp */
+"No error" = "无错误";
+"Invalid Sync parameters" = "无效同步参数";
+"Connection failed" = "连接失败";
+"Error communicating with server" = "与服务器通信时出错";
+"Your user name or password is incorrect" = "您的用户名或密码不正确";
+"No remote directories selected" = "未选择远程目录";
+"Failed to send data" = "无法发送数据";
+"Sync error" = "同步错误";
+"Sync engine error" = "同步引擎错误";
+"Remote path is not a directory" = "远程路径不是一个目录";
+"Permission denied to sync with remote folder" = "与远程文件夹同步的权限被拒绝";
+"Sync session error" = "同步会话错误";
+"Sync session failed to start" = "无法启动同步会话";
+"Authentication failed" = "认证失败";
+"Failed to initialize the Sync module" = "无法初始化同步模块";
+"Failed to configure Sync session" = "无法配置同步会话";
+"Failed to start Sync session" = "无法启动同步会话";
+"Failed to stop Sync session" = "无法停止同步会话";
+"Waiting for previous Sync session to end" = "等待之前的同步会话结束";
+"Sync tasks stopped. You are running very low on disk space." = "同步任务已停止。您的运行所占用的磁盘空间很小。";
+"code" = "代码";
+
+
+/* sync_queue_manager.cpp */
+"Local directory is not specified" = "未指定本地目录";
+
+
+/* sync_stats.cpp */
+"Error" = "错误";
+"Idle" = "空闲";
+"Paused" = "已暂停";
+"Stopped" = "已停止";
+"Running" = "正在运行";
+
+
+/* transfer.cpp */
+"Authentication failed.  Host is empty." = "验证失败。主机为空。";
+"User is empty." = "用户为空。";
+"Source path not allowed: %s" = "不允许源路径：%s";
+"Destination path not allowed: %s" = "不允许目标路径：%s";
+"Unable to check source or destination path - paths datafile missing" = "无法检查源或目标路径 - 缺少路径数据文件";
+"Destination root not allowed. %s" = "不允许目标根目录。%s";
+"Source root not allowed. %s" = "不允许源根目录。%s";
+"Error: " = "错误： ";
+"Disk write failed" = "磁盘写失败";
+"Ensure the server file still exists and is accessible." = "确保服务器文件仍存在并可供访问。";
+"Error: Authentication failed." = "错误：认证失败。";
+"The ascp executable is missing. Repair your Connect or Drive installation." = "缺少 ascp 可执行文件。请修复 Connect 或 Drive 安装。";
+"Error: Session data transfer timeout (server)." = "错误：会话数据传输超时（服务器）。";
+"Error: Communication problem, ensure both client and server are connected to the network." = "错误：通信问题，确保将客户端和服务器都连接到网络。";
+"Error: Ensure that a valid fasp proxy address is set." = "错误：确保设置了有效的 fasp 代理地址。";
+"Error: FASP process failed to initialize." = "错误：无法初始化 FASP 进程。";
+"Error: Session failed to connect to the remote server." = "错误：会话无法连接到远程服务器。";
+
+
+/* transfer_properties.cpp */
+"Input is not a fasp url: %s" = "输入不是 fasp URL：%s";
+"Could not create fasp url from: %s" = "无法从 %s 创建 fasp URL";
+"Could not create fasp url from destination: %s" = "无法从目标 %s 创建 fasp URL";
+
+
+/* transfer_worker.cpp */
+"FASP process failed to initialize." = "无法初始化 FASP 进程。";
+"File error" = "文件错误";
+
+
+/* updater.cpp */
+"Failed to communicate with the update server" = "无法与更新服务器进行通信";
+"Update server returned invalid data." = "更新服务器返回无效数据。";
+
+
+/* human_string.cpp */
+"at %s" = "%s 时";
+"yesterday" = "昨天";
+"on %s" = "在%s";
+
+
+/* utils_helpers.cpp */
+"GetVolumePathName of '%1$s' failed: %2$ld" = "“%1$s”的 GetVolumePathName 失败：%2$ld";
+"Error encrypting data" = "加密数据时出错";
+"Error decrypting data" = "解密数据时出错";
+
+
+/* utils.cpp */
+"\n%sName is empty." = "\n%s名称为空。";
+"\n%sName cannot contain these characters: \\ / * ? : \" < > |" = "\n%s名称不能包含以下字符：\\ / * ? : \" < > |";
+"\n%1$sName is greater than max length: %2$d" = "\n%1$s名称超出最大长度：%2$d";
+"\n%sServer address is empty." = "\n%s服务器地址为空。";
+"\n%sServer address is invalid." = "\n%s服务器地址无效。";
+"\n%sUser name is empty." = "\n%s用户名为空。";
+"\n%sPassword is empty." = "\n%s密码为空。";
+"\n%sStorage path for Azure can not be empty or \"/\"." = "\n%sAzure 的存储路径不能为空或“/”。";
+"Shared access signature must have either Read-List permissions or Read-Write-Delete-List permissions." = "共享访问签名必须具有“读列表”权限或“读/写/删除列表”权限。";
+
+
+/* status_code.cpp */
+"Continue" = "继续";
+"Switching Protocols" = "切换协议";
+"Created" = "已创建";
+"Accepted" = "已接受";
+"Non-Authoritative Information" = "非权威信息";
+"No Content" = "无内容";
+"Reset Content" = "重置内容";
+"Partial Content" = "部分内容";
+"Multiple Choices" = "多个选项";
+"Moved Permanently" = "已永久移动";
+"Found" = "已找到";
+"See Other" = "查看其他";
+"Not Modified" = "未修改";
+"Use Proxy" = "使用代理";
+"Temporary Redirect" = "临时重定向";
+"Bad Request" = "无效请求";
+"Unauthorized" = "未授权";
+"Payment Required" = "需要付款";
+"Forbidden" = "已禁止";
+"Not Found" = "未找到";
+"Method Not Allowed" = "不允许的方法";
+"Not Acceptable" = "不可接受";
+"Proxy Authentication Required" = "需要代理认证";
+"Request Timeout" = "请求超时";
+"Conflict" = "冲突";
+"Gone" = "过期";
+"Length Required" = "必需的长度";
+"Precondition Failed" = "前置条件失败";
+"Request Entity Too Large" = "请求实体过大";
+"Request-URI Too Large" = "请求 URI 过大";
+"Unsupported Media Type" = "不受支持的介质类型";
+"Requested Range Not Satisfiable" = "所请求的范围无法满足";
+"Expectation Failed" = "期望失败";
+"Unprocessable Entity" = "不可处理的实体";
+"Internal Server Error" = "内部服务器错误";
+"Not Implemented" = "未执行";
+"Bad Gateway" = "错误网关";
+"Service Unavailable" = "服务不可用";
+"Gateway Timeout" = "网关超时";
+"HTTP Version Not Supported" = "不支持的 HTTP 版本";
+"Encryption At Rest Passphrase Required" = "需要加密静态存储的密码";

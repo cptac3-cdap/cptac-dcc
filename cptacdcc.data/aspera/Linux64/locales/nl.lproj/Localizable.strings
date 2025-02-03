@@ -1,0 +1,1142 @@
+//| It's a waste of time and space to add entries with translation exactly the same as key.
+
+/* cargo_application.cpp */
+"Errors occurred while loading the configuration file" = "Er zijn fouten opgetreden tijdens het laden van het configuratiebestand";
+
+
+/* about_window.cpp */
+"About - %s" = "Info - %s";
+"Internal %s (%s)" = "Intern %s (%s)";
+/* "Release (%s)" = "Release (%s)"; */
+"Version %s (%s)" = "Versie %s (%s)";
+"Shell extension (%s)" = "Shell-extensie (%s)";
+
+
+/* account_conflicts_item_delegate.cpp */
+"%d conflicts" = "%d conflicten";
+
+
+/* account_verification_dialog.cpp */
+"Cancel" = "Annuleren";
+"Connecting..." = "Verbinden...";
+"Looking up host..." = "Host opzoeken ...";
+"Verifying cloud storage..." = "Cloudopslag verifiëren...";
+"Remove" = "Verwijderen";
+"Next" = "Volgende";
+"Please click 'Next' to re-authenticate the account: '%s'." = "Klik op 'Volgende' om het account opnieuw te verifiëren: '%s'.";
+"Error verifying host: %s" = "Fout bij verificatie van host: %s";
+//| "OK" = "OK";
+"Account is invalid." = "Account is ongeldig.";
+
+
+/* accounts_model.cpp */
+//| "Accounts" = "Accounts";
+" (default)" = " (standaard)";
+
+
+/* accounts_pref_widget.cpp */
+"Are you sure you want to remove %s?" = "Weet u zeker dat u %s wilt verwijderen?";
+"\nAll account transfers and services will be stopped and removed." = "\nAlle accountoverdrachten en services worden gestopt en verwijderd.";
+"Please complete the account information." = "Vul de accountgegevens in.";
+"Your authentication token has gone stale. Click here to re-authenticate." = "Uw verificatietoken is verouderd. Klik hier om opnieuw te verifiëren.";
+"Sync" = "Synchroniseren";
+"All changes will be discarded. Are you sure you want to proceed?" = "Alle wijzigingen gaan verloren. Weet u zeker dat u door wilt gaan?";
+"Preferences contains errors:" = "Voorkeuren bevatten fouten:";
+"Do you want to revert changes?" = "Wilt u de wijzigingen ongedaan maken?";
+"unknown" = "onbekend";
+"Querying for services failed: %s" = "Zoeken naar services is mislukt: %s";
+"Account name" = "Accountnaam";
+"Server address" = "Serveradres";
+"Username" = "Gebruikersnaam";
+"Password" = "Wachtwoord";
+"Do not verify host's SSL certificate" = "SSL-certificaat van host niet verifiëren";
+//| "Account" = "Account";
+//| "Services" = "Services";
+"Packages" = "Pakketten";
+"Settings..." = "Instellingen...";
+
+
+/* activity_window.cpp */
+"Activity - %s" = "Activiteit - %s";
+"Application menu" = "Toepassingsmenu";
+"Inboxes" = "Inboxen";
+"Transfers" = "Overdrachten";
+
+
+/* add_account_wizard2.cpp */
+"Account Wizard - %s" = "Accountwizard - %s";
+"Back" = "Terug";
+"Finish" = "Voltooien";
+"Welcome to %s" = "Welkom bij %s";
+"Fast and secure access to all your files." = "Snelle en veilige toegang tot al uw bestanden.";
+"This wizard will help you set up your account." = "Deze wizard helpt u bij het instellen van uw account.";
+"Set up account" = "Account instellen";
+"Select the %s product you want to link to Drive." = "Selecteer het %s-product dat u wilt koppelen aan Drive.";
+"Enter your IBMid or work email to look up your organization." = "Voer uw IBM-ID of werkmail in om uw organisatie op te zoeken.";
+"Email" = "E-mail";
+"We've sent your organization URL to your email." = "We hebben uw organisatie-URL naar uw e-mail gestuurd.";
+"OR" = "OF";
+"Enter your organization URL here." = "Voer hier uw organisatie-URL in.";
+"Please enter your account email address or organization name." = "Voer het e-mailadres van uw account of uw organisatienaam in.";
+"Please enter your organization name." = "Voer uw organisatienaam in.";
+"Please enter your account email address." = "Voer het e-mailadres van uw account in.";
+"New Account" = "Nieuw account";
+"Please enter your server information." = "Geef uw servergegevens op.";
+"Account name:" = "Accountnaam:";
+"Server address:" = "Serveradres:";
+//| "Tip:" = "Tip:";
+"Server address entered invalid" = "Ingevoerd serveradres is ongeldig";
+"An account with the same name already exists. Please choose a new name." = "Er bestaat al een account met deze naam. Kies een nieuwe naam.";
+"Please enter all fields." = "Vul alle velden in.";
+"Authentication" = "Verificatie";
+"Please choose your authentication method." = "Kies uw verificatiemethode.";
+"Unknown host type." = "Onbekend hosttype.";
+"Authentication URL is empty" = "Verificatie-URL is leeg";
+"Could not retrieve token from OAuth provider" = "Token kan niet worden opgehaald van OAuth-provider";
+"Basic Authentication" = "Standaardverificatie";
+"SAML Authentication" = "SAML-verificatie";
+"Username:" = "Gebruikersnaam:";
+"Password:" = "Wachtwoord:";
+"Login" = "Aanmelding";
+"Please enter your credentials." = "Geef uw legitimatiegegevens op.";
+"User name:" = "Gebruikersnaam:";
+"Looking up services..." = "Services opzoeken...";
+"Verifying storage..." = "Opslag verifiëren...";
+"Problem..." = "Probleem...";
+"There was a problem with your account." = "Er is een probleem met uw account.";
+"Inbox Setup" = "Instelling van inbox";
+"Package downloading" = "Pakket downloaden";
+"The folder selected is not empty. Do you want to continue?" = "De geselecteerde map is niet leeg. Wilt u doorgaan?";
+"Automatically download my packages to the following directory" = "Mijn pakketten automatisch downloaden naar de volgende directory";
+"I'd rather not set up automatic downloading now." = "Ik wil op dit moment geen automatische downloads instellen.";
+"Change..." = "Wijzigen...";
+"Download existing packages" = "Bestaande pakketten downloaden";
+"Download my packages from date sent" = "Download mijn pakketten vanaf de datum waarop ze verzonden zijn";
+"Only download packages from now on." = "Alleen pakketten downloaden vanaf nu.";
+"Yesterday" = "Gisteren";
+"A week ago" = "Een week geleden";
+"A month ago" = "Een maand geleden";
+"The beginning of time" = "Het begin van de tijd";
+"Checking for new packages" = "Zoeken naar nieuwe pakketten";
+"Check for new packages" = "Zoeken naar nieuwe pakketten";
+"I'll check manually using the Check Now option." = "Ik ga handmatig controleren met behulp van de optie Nu controleren.";
+"Every Minute" = "Elke minuut";
+"Every 5 Minutes" = "Elke 5 minuten";
+"Every 15 Minutes" = "Elke 15 minuten";
+"Every 30 Minutes" = "Elke 30 minuten";
+"Every Hour" = "Elk uur";
+"Sync Setup" = "Synchronisatie instellen";
+"Sync folder location" = "Locatie van synchronisatiemap";
+"Place my files in the following directory" = "Mijn bestanden in de volgende directory plaatsen";
+"I'd rather not set up file syncing now." = "Ik wil nu geen bestandssynchronisatie instellen.";
+"Two-Way" = "Inkomend/uitgaand";
+"Remote to Local" = "Op afstand naar lokaal";
+"Local to Remote" = "Lokaal naar op afstand";
+"Choose folders to sync" = "Te synchroniseren mappen kiezen";
+"Synchronize with the selected remote folders." = "Synchroniseren met de geselecteerde mappen op afstand.";
+"I'll choose the folder to sync later." = "Ik kies de map om te synchroniseren later.";
+"Continuous Mode" = "Ononderbroken modus";
+"Local Mounts Signature Pathname" = "Padnaam voor handtekening lokale mounts";
+"Remote Mounts Signature Pathname" = "Padnaam voor handtekening mounts op afstand";
+"Browse..." = "Bladeren...";
+"Direction" = "Richting";
+"Completing the Account Setup" = "De accountinstelling voltooien";
+"Your account is almost complete. Press finish to create your account." = "Uw account is bijna gereed. Klik op voltooien om uw account te maken.";
+"Almost done" = "Bijna klaar";
+"The following services are available for this account." = "De volgende services zijn beschikbaar voor dit account.";
+
+
+/* aoc_workspaces_and_shared_folders_dialog.cpp */
+"Workspace: %s" = "Werkgebied: %s";
+"Workspaces and shared inboxes - %s" = "Werkgebieden en gedeelde postvakken IN - %s";
+"Select specific workspaces and shared inboxes for download" = "Selecteer specifieke werkgebieden en gedeelde postvakken IN voor downloads";
+"Shared inboxes" = "Gedeelde postvakken IN";
+"Loading..." = "Laden...";
+"My inbox" = "Mijn postvak IN";
+"Could not retrieve list of workspaces from the server." = "Ophalen van lijst van werkgebieden van server is mislukt.";
+
+
+/* transfer_monitor_accessible.cpp */
+"Transfer Monitor" = "Overdrachtsmonitor";
+"Use the arrows to change the transfer rate and use SHIFT + arrows to change the minimum transfer rate" = "Gebruik de pijlen om de overdrachtssnelheid te wijzigen en gebruik SHIFT + pijlen om de minimale overdrachtssnelheid te wijzigen";
+
+
+/* authentication_window.cpp */
+"User name input field" = "Invoerveld voor gebruikersnaam";
+"Password input field" = "Invoerveld voor wachtwoord";
+"Login to: %s" = "Aanmelden bij: %s";
+"&User Name:" = "&Gebruikersnaam:";
+"&Password:" = "&Wachtwoord:";
+"Password is too long. Maximum length is %d." = "Wachtwoord is te lang. Maximumlengte is %d.";
+"&Remember this password" = "Dit wachtwoord &onthouden";
+
+
+/* bandwidth_pref_widget.cpp */
+"Transfer speeds depend on server settings and your network connectivity." = "Overdrachtsnelheden zijn afhankelijk van de serverinstellingen en de netwerkconnectiviteit.";
+"Manual Transfers" = "Handmatige overdrachten";
+"The settings below let you limit transfer speeds for user-initiated transfers." = "In de onderstaande instellingen kunt u de overdrachtsnelheden beperken voor door de gebruiker geïnitieerde overdrachten.";
+//| "Downloads" = "Downloads";
+"Limit to" = "Beperken tot";
+//| "Uploads" = "Uploads";
+"Automatic Transfers" = "Automatische overdrachten";
+"The settings below let you limit transfer speeds for sync transfers and other background jobs." = "Met onderstaande instellingen kunt u de overdrachtsnelheden beperken voor synchronisatie-overdrachten en andere achtergrondtaken.";
+"Background downloads" = "Downloads op achtergrond";
+"Background uploads" = "Uploads op achtergrond";
+
+
+/* confirm_yes_or_no_window.cpp */
+"Confirm - %s" = "Bevestigen - %s";
+"Yes" = "Ja";
+"No" = "Nee";
+
+
+/* confirmation_window.cpp */
+"Remember my choice for this site." = "Mijn keuze voor deze site onthouden.";
+"Allow access to your computer?" = "Toegang tot uw computer toestaan?";
+"This site is on the restricted list." = "Deze site staat op de verboden lijst.";
+"This site is requesting permission to upload and download files to and from your computer." = "Deze site vraagt om toestemming voor het uploaden en downloaden van en naar uw computer.";
+
+
+/* conflicted_files_window2.cpp */
+"Resolve Conflict" = "Conflict oplossen";
+"Refresh" = "Vernieuwen";
+"Resolve Selected Conflicts" = "Geselecteerde conflicten oplossen";
+"Save copy of the local conflicted file and sync again" = "Kopie van het lokale conflicterende bestand opslaan en nogmaals synchroniseren";
+"Name" = "Naam";
+"Location" = "Locatie";
+"Last Updated By" = "Laatst bijgewerkt door";
+"Path" = "Pad";
+"(first %d displayed) " = "(eerste %d afgebeeld) ";
+"Conflicted Files %1$s- %2$s" = "Conflicterende bestanden %1$s- %2$s";
+
+
+/* connect_application.cpp */
+"A previous installation of %s has been detected. Would you like to migrate your settings and uninstall %s?" = "Er is een eerdere installatie van %s gedetecteerd. Wilt u uw instellingen migreren en de installatie van %s ongedaan maken?";
+"A previous installation of %s has been detected. Would you like to migrate your account information? This will remove your accounts from %s." = "Er is een eerdere installatie van %s gedetecteerd. Wilt u uw accountgegevens migreren? Hiermee verwijdert u uw accounts uit %s.";
+"There was an error migrating from %s. It is recommended to manually migrate your account information." = "Er is een fout opgetreden tijdens de migratie vanuit %s. Het wordt aanbevolen uw accountgegevens handmatig te migreren.";
+"%1$s is already running. Please quit before running %2$s." = "%1$s is al actief. Sluit dit af voordat u %2$s uitvoert.";
+"You have invalid accounts. Would you like to review them?" = "U hebt ongeldige accounts. Wilt u deze bekijken?";
+"Your accounts have been successfully migrated from %s. You may be prompted to re-enter your account credentials. Would you like to uninstall %s?" = "Uw accounts zijn gemigreerd vanuit %s. U kunt worden gevraagd om uw accountlegitimatiegegevens opnieuw in te voeren. Wilt u %s verwijderen?";
+
+
+/* connect_tray_handler.cpp */
+//| "1 inbox." = "1 inbox.";
+"%d inboxes." = "%d inboxen.";
+"1 sync." = "1 synchronisatie.";
+"%d syncs." = "%d synchronisaties.";
+"&Send To..." = "&Verzenden naar...";
+"&Send to..." = "&Verzenden naar...";
+"1 transfer." = "1 overdracht.";
+"%d transfers." = "%d overdrachten.";
+"Active:" = "Actief:";
+
+
+/* content_protection_hosts_model.cpp */
+//| "Host" = "Host";
+
+
+/* error_list_window.cpp */
+"Sessions error" = "Sessiefout";
+"Failed to sync file:" = "Synchroniseren van bestand is mislukt:";
+
+
+/* fasp_transfer_inspector_window.cpp */
+"The selected transfer policy is not allowed. The server allowed policy is: %s." = "Het geselecteerde overdrachtbeleid is niet toegestaan. Het toegestane beleid voor de server is: %s.";
+"Fixed" = "Vast";
+"High" = "Hoog";
+"Fair" = "Redelijk";
+"Low" = "Laag";
+
+
+/* faspex_inbox_item_widget.cpp */
+"Automatic checking is off." = "Automatische controle is uitgeschakeld.";
+"Error: %1$s - to retry in %2$s" = "Fout: %1$s - voor nieuwe poging in %2$s";
+"Error: %s" = "Fout: %s";
+"Checking for new packages..." = "Bezig met controleren op nieuwe pakketten...";
+"Checking for new packages in: %s" = "Bezig met controleren op nieuwe pakketten in: %s";
+"Stop automatic checking and inbox transfers." = "Automatische controle en overdrachten met inbox stoppen.";
+"Start automatic checking and resume inbox transfers." = "Automatische controle starten en overdrachten met inbox hervatten";
+"No Inbox" = "Geen inbox";
+"Error: %1$s %2$s left" = "Fout: %1$s %2$s resterend";
+
+
+/* faspex_inbox_window.cpp */
+"Check now" = "Nu controleren";
+"Open folder" = "Map openen";
+"Inbox settings" = "Instellingen van inbox";
+"Check All" = "Alle controleren";
+
+
+/* faspex_settings_dialog.cpp */
+"Packages - %s" = "Pakketten - %s";
+"Passphrase" = "Wachtwoord";
+"Download received packages to" = "Ontvangen pakketten downloaden naar";
+"Change" = "Wijzigen";
+"Overwrite packages that have the same title" = "Pakketten met dezelfde titel overschrijven";
+"Do not download packages sent by me" = "Geen pakketten downloaden die door mij zijn verzonden";
+"Packages are downloaded from:" = "Pakketten worden gedownload van:";
+"Date" = "Datum";
+"Automatically unlock encrypted files on download" = "Versleutelde bestanden automatisch ontgrendelen bij downloaden";
+"Select workspaces to download" = "Selecteer te downloaden werkgebieden";
+"The download folder is not empty. Do you want to continue?" = "De downloadmap is niet leeg. Wilt u doorgaan?";
+"No download folder selected." = "Er is geen downloadmap geselecteerd.";
+"Passphrase is empty." = "Wachtwoord is leeg.";
+"Inbox settings could not be saved due to the following errors: %s" = "Instellingen van de inbox kunnen niet worden opgeslagen vanwege de volgende fouten: %s";
+
+
+/* general_pref_widget.cpp */
+"Automatically launch when Windows starts" = "Automatisch starten bij starten van Windows";
+"Activity Window" = "Venster Activiteit";
+"Open Transfers tab when an Inbox transfer is added" = "Het tabblad Overdrachten openen wanneer een inbox-overdracht wordt toegevoegd";
+"Close Activity window when all transfers are complete" = "Venster Activiteit sluiten als alle overdrachten zijn voltooid";
+"Remove transfer list items:" = "Items van overdrachtslijst verwijderen:";
+"Logging" = "Logboekregistratie";
+"Logging level:" = "Logniveau:";
+"Manually" = "Handmatig";
+"Upon Successful Transfer" = "Bij geslaagde overdracht";
+/* "Info" = "Info"; */
+//| "Debug" = "Debug";
+//| "Trace" = "Trace";
+"Remote View" = "Weergave op afstand";
+"Max remote view items:" = "Max. niet-lokale weergave-items:";
+"* Refresh to apply." = "* Vernieuwen om toe te passen.";
+"Disk Space" = "Schijfruimte";
+"Disk space warning:" = "Waarschuwing schijfruimte:";
+"percent" = "procent";
+"Disk space percentage" = "Percentage schijfruimte";
+
+
+/* gui_application.cpp */
+"Account is invalid. Check network connection, account information and save." = "Account is ongeldig. Controleer de netwerkverbinding en de accountgegevens en sla op.";
+"Account name empty" = "Accountnaam leeg";
+"You have active transfers. Are you sure you want to quit?" = "U hebt actieve overdrachten. Weet u zeker dat u wilt afsluiten?";
+"Could not start new package. Check your settings or network connection and try again." = "Er kan geen nieuw pakket worden gestart. Controleer uw instellingen of netwerkverbinding en probeer het opnieuw.";
+"Transfer monitor is unavailable for this transfer, because no activity is occurring." = "Overdrachtsmonitor is niet beschikbaar voor deze overdracht omdat er geen activiteit plaatsvindt.";
+//| "%1$s Inbox - %2$s" = "%1$s Inbox - %2$s";
+
+
+/* gui_utils.cpp */
+"Choose Folder - %s" = "Map kiezen - %s";
+"Please complete account information." = "Vul de accountgegevens in.";
+"No permission to download from %s" = "Geen toestemming om te downloaden van %s";
+"No permission to upload to %s" = "Geen toestemming om te uploaden naar %s";
+"Folder %s does not exist" = "Map %s bestaat niet";
+
+
+/* hosts_model.cpp */
+"User" = "Gebruiker";
+"Trust State" = "Vertrouwensstatus";
+
+
+/* http_security_handler.cpp */
+"Security problem" = "Beveiligingsprobleem";
+
+
+/* accounts_view_controller.mm */
+"Storage account:" = "Opslagaccount:";
+"Access key:" = "Toegangssleutel:";
+"Path:" = "Pad:";
+"Shared URL:" = "Gedeelde URL:";
+"Revert" = "Vorige versie herstellen";
+"Save" = "Opslaan";
+"Storage" = "Opslag";
+//| "test" = "test";
+
+
+/* activity_controller.mm */
+/* "Inbox" = "Inbox"; */
+"Switch View" = "Naar andere view gaan";
+
+
+/* activity_inbox_delegate.mm */
+"Check Now" = "Nu controleren";
+"Open Folder" = "Map openen";
+"Inbox Settings" = "Instellingen inbox";
+
+
+/* activity_sync_delegate.mm */
+"Sync is not available for this account" = "Synchronisatie is niet beschikbaar voor dit account";
+"Show in Finder" = "Afbeelden in Finder";
+"Sync Settings" = "Synchronisatie-instellingen";
+
+
+/* activity_transfers_delegate.mm */
+"Stop" = "Stoppen";
+"Start" = "Starten";
+"Resume" = "Hervatten";
+"Retry" = "Opnieuw proberen";
+"Show in Transfer Monitor" = "Afbeelden in overdrachtsmonitor";
+"Open Containing Folder" = "Map met bestand openen";
+"Go to " = "Ga naar ";
+"Clear list" = "Lijst wissen";
+
+
+/* bandwidth_view_controller.mm */
+"Kbps" = "kbps";
+/* "Mbps" = "Mbps"; */
+"Limit downloads to" = "Downloads begrenzen tot";
+"Limit uploads to" = "Uploads begrenzen tot";
+"Limit background downloads to" = "Downloads op achtergrond begrenzen tot";
+"Limit background uploads to" = "Uploads op achtergrond begrenzen tot";
+
+
+/* cocoa_initializer.mm */
+"About %s" = "Info %s";
+"Hide %s" = "%s verbergen";
+"Quit %s" = "Stoppen met %s";
+"Preferences..." = "Voorkeuren...";
+"Hide Others" = "Andere verbergen";
+"Show All" = "Alle afbeelden";
+"Edit" = "Bewerken";
+"Undo" = "Ongedaan maken";
+"Redo" = "Opnieuw wijzigen";
+"Cut" = "Knippen";
+"Copy" = "Kopiëren";
+"Paste" = "Plakken";
+"Delete" = "Wissen";
+"Select All" = "Alle selecteren";
+"Window" = "Venster";
+"Minimize" = "Minimaliseren";
+"Zoom" = "Zoomen";
+"Bring All to Front" = "Alles naar voren halen";
+"Open log folder" = "Logboekmap openen";
+
+
+/* filesystem_browser_cell.mm */
+"Open" = "Openen";
+"Rename" = "Naam wijzigen";
+"Archive" = "Archiveren";
+"Undo archive" = "Archivering ongedaan maken";
+
+
+/* filesystem_node.mm */
+"Internal Error. FSItem is null." = "Interne fout. FSItem is null.";
+"The original file does not exist." = "Het oorspronkelijke bestand bestaat niet.";
+"The destination already has an item with the same file name." = "De bestemming heeft al een item met dezelfde bestandsnaam.";
+"Internal Error. FSItem is Null." = "Interne fout. FSItem is Null.";
+
+
+/* network_view_controller.mm */
+"Obtain proxy configuration from" = "Proxyconfiguratie ophalen van";
+"System" = "Systeem";
+"Manual" = "Handmatig";
+"Configure proxy settings." = "Proxy-instellingen configureren.";
+"Use HTTP Proxy" = "HTTP-proxy gebruiken";
+"Address:" = "Adres:";
+"Port:" = "Poort:";
+"HTTP Proxy" = "HTTP-proxy";
+"Use FASP Proxy (DNAT)" = "FASP-proxy gebruiken (DNAT)";
+"Secure (DNATS)" = "Beveiligd (DNATS)";
+"FASP Proxy" = "FASP-proxy";
+
+
+/* preferences_window_controller.mm */
+"Preferences" = "Voorkeuren";
+
+
+/* remote_view_controller.mm */
+"New folder" = "Nieuwe map";
+//| "Server" = "Server";
+"Storage type" = "Type opslag";
+"Storage host" = "Opslaghost";
+"Storage path" = "Opslagpad";
+"Local inbox directory" = "Directory lokale inbox";
+"Sync local directory" = "Lokale directory synchroniseren";
+"Delete Files" = "Bestanden wissen";
+"Are you sure you want to permanently delete the selected files?" = "Weet u zeker dat u de geselecteerde bestanden permanent wilt wissen?";
+"Download has not completed" = "Downloaden is niet voltooid";
+"Delete the selected item(s)" = "De geselecteerde items leegmaken";
+"Rename the selected item" = "Het geselecteerde item hernoemen";
+"Create new package" = "Nieuw pakket maken";
+"Create new folder" = "Nieuwe map maken";
+"The destination already has an item with the same file name. Continue?" = "De bestemming heeft al een item met dezelfde bestandsnaam. Doorgaan?";
+
+
+/* security_view_controller.mm */
+"Are you sure you want to remove the selected host?" = "Weet u zeker dat u de geselecteerde host wilt verwijderen?";
+"Are you sure you want to remove all the hosts?" = "Weet u zeker dat u alle hosts wilt verwijderen?";
+"Are you sure you want to remove the credential?" = "Weet u zeker dat u het legitimatiegegeven wilt verwijderen?";
+"Are you sure you want to remove all credentials?" = "Weet u zeker dat u alle legitimatiegegevens wilt verwijderen?";
+"Trusted Hosts" = "Betrouwbare hosts";
+"Restricted Hosts" = "Beperkt toegankelijke hosts";
+"Passwords" = "Wachtwoorden";
+"Content Protection" = "Contentbeveiliging";
+"Trusted hosts are hosts to which you have granted permission to always allow transfers.  If any attempt is made to start a transfer with a host that is not on this list, you will be given the option to allow or deny the transfer." = "Betrouwbare hosts zijn hosts waaraan u toestemming hebt verleend om overdrachten altijd toe te staan.  Als er een poging wordt gedaan om een overdracht te starten met een host die niet op deze lijst staat, krijgt u de keuze om de overdracht toe te staan of te weigeren.";
+"Add" = "Toevoegen";
+"Remove All" = "Alle verwijderen";
+"Restricted hosts are hosts for which you have enabled enhanced security.  If any attempt is made to start a transfer with a host that is on this list, you will be presented with a warning before it can proceed." = "Beperkt toegankelijke hosts zijn hosts waarvoor u extra beveiliging hebt ingeschakeld.  Als er een poging wordt gedaan om een overdracht te starten met een host die op deze lijst staat, wordt u gewaarschuwd voordat de overdracht kan plaatsvinden.";
+"Login information has been saved for the following hosts:" = "Aanmeldingsgegevens zijn opgeslagen voor de volgende hosts:";
+"Content protection allows you to leave files encrypted on servers to which they have been uploaded.  Enter a list of hosts for which you want to enable this functionality." = "Met contentbeveiliging kunt u bestanden versleuteld achterlaten op servers waarop ze zijn geüpload.  Geef een lijst op van hosts waarvoor u deze functionaliteit wilt inschakelen.";
+
+
+/* sync_wrapper_qt.mm */
+" Sync" = " Synchroniseren";
+"total files and directories" = "totaalaantal bestanden en directory's";
+"Unknown size" = "Onbekende grootte";
+"Nothing to sync" = "Niets om te synchroniseren";
+"Calculating size..." = "Grootte berekenen...";
+"Never started" = "Nooit gestart";
+"%d conflict(s)" = "%d conflict(en)";
+"%d file error(s)" = "%d bestandsfout(en)";
+"Start file sync" = "Bestandssynchronisatie starten";
+"Stop file sync" = "Bestandssynchronisatie stoppen";
+"Warning: %s" = "Waarschuwing: %s";
+"Current File" = "Huidig bestand";
+"Last File" = "Laatste bestand";
+"Done" = "Klaar";
+"Synced" = "Gesynchroniseerd";
+"Retrying" = "Nieuwe poging";
+"Next attempt in %s" = "Volgende poging over %s";
+"Next sync in %s" = "Volgende synchronisatie over %s";
+"Checking for changes" = "Controleren op wijzigingen";
+"Downloading" = "Downloaden";
+"Uploading" = "Uploaden";
+"Syncing" = "Synchronisatie wordt uitgevoerd";
+
+
+/* transfer_wrapper.h */
+"Unlock encrypted files" = "Versleutelde bestanden ontgrendelen";
+
+
+/* transfer_wrapper_qt.mm */
+"Decryption in progress..." = "Decodering wordt uitgevoerd...";
+"Decryption finished" = "Decodering is voltooid";
+"Authenticating..." = "Verifiëren...";
+"Measuring bandwidth..." = "Bandbreedte meten...";
+"Stopping..." = "Stoppen...";
+"Queued" = "In wachtrij geplaatst";
+"elapsed" = "verstreken";
+"Transferring %1$s (%2$s)" = "Overdracht van %1$s (%2$s)";
+"Downloading %1$s (%2$s)" = "Download van %1$s (%2$s)";
+"Uploading %1$s (%2$s)" = "Upload van %1$s (%2$s)";
+"Unknown" = "Onbekend";
+"Open containing folder" = "Map met bestand openen";
+"Open transfer monitor" = "Overdrachtsmonitor openen";
+"Delete source files on complete" = "Bronbestanden wissen na voltooien";
+
+
+/* transfers_view_controller.mm */
+"Download Directory" = "Downloaddirectory";
+"Downloads location:" = "Downloadlocatie:";
+"Remove:" = "Verwijderen:";
+"Always ask me where to save downloaded files." = "Me altijd vragen waar gedownloade bestanden worden opgeslagen.";
+"Queue:" = "Wachtrij:";
+"Enable queuing" = "Wachtrij inschakelen";
+"Maximum concurrent transfers:" = "Maximum aantal gelijktijdige overdrachten:";
+"Retry:" = "Opnieuw proberen:";
+"Automatically retry failed transfers" = "Mislukte overdrachten automatisch herhalen";
+"Attempts:" = "Pogingen:";
+//| "Interval:" = "Interval:";
+"The interval specifies an amount of time that will elapse between each attempt to restart a failed transfer." = "Het interval geeft de tijdsduur aan die verstrijkt tussen elke poging om een mislukte overdracht opnieuw te starten.";
+"Sync:" = "Synchronisatie:";
+"Multi-Session:" = "Meerdere sessies:";
+"Enable multi-session" = "Meerdere sessies inschakelen";
+"Number of sessions:" = "Aantal sessies:";
+"When transferring faster than:" = "Bij overdracht sneller dan:";
+"Split files larger than:" = "Bestanden splitsen als ze groter zijn dan:";
+"Startup interval between sessions:" = "Opstartinterval tussen sessies:";
+"seconds" = "seconden";
+"minutes" = "minuten";
+"hours" = "uur";
+"KB" = "kB";
+/* "MB" = "MB"; */
+/* "GB" = "GB"; */
+/* "Gbps" = "Gbps"; */
+
+
+/* metadata_input_widget.cpp */
+"Missing required fields: %s" = "Ontbrekende verplichte velden: %s";
+
+
+/* mnts_sig_pathname_mixin.cpp */
+"Signature file specified by pathname must exist before sync session is started" = "Handtekeningbestand dat is opgegeven met padnaam moet aanwezig zijn voordat de synchronisatiesessie wordt gestart";
+"Signature file on mounted location in parent directory of sync source on local system" = "Handtekeningbestand op gemounte locatie in bovenliggende directory van synchronisatiebron op lokaal systeem";
+"Browse to parent directory of sync source and specify signature filename" = "Blader naar de bovenliggende directory van de synchronisatiebron en geef de naam van het handtekeningbestand op";
+"Signature file specified by pathname must exist on remote system before sync session is started" = "Handtekeningbestand dat is opgegeven met padnaam moet op het systeem op afstand aanwezig zijn voordat de synchronisatiesessie wordt gestart";
+"Signature file on mounted location in parent directory of sync source on remote system" = "Handtekeningbestand op gemounte locatie in bovenliggende directory van synchronisatiebron op niet-lokaal systeem";
+"Specify local mounts signature file" = "Geeft het handtekeningbestand voor lokale mounts op";
+"Local mounts signature file specified by pathname found to be a directory" = "Handtekeningbestand voor lokale mounts dat is opgegeven met padnaam blijkt een directory te zijn";
+"Local mounts signature file specified by pathname not an ordinary file" = "Het handtekeningbestand voor lokale mounts dat is opgegeven met de padnaam is geen gewoon bestand";
+"Failed to create local mounts signature file by specified pathname" = "Het aanmaken van een lokaal handtekeningbestand met de opgegeven padnaam is mislukt";
+
+
+/* network_pref_widget.cpp */
+"Connect to the Internet via an HTTP proxy." = "Verbinding maken met internet via een HTTP-proxy.";
+
+
+/* passphrase_window.cpp */
+"'Passphrase' field must be entered." = "Veld 'Wachtwoord' moet ingevuld worden.";
+"'Passphrase' and 'Confirm' fields must be entered." = "Velden 'Wachtwoord' en 'Bevestigen' moeten ingevuld worden.";
+"Passphrase confirmation does not match." = "Bevestiging wachtwoord komt niet overeen.";
+"Passphrase is too long. Maximum length is %d." = "Wachtwoord is te lang. Maximumlengte is %d.";
+"Enter a passphrase to decrypt protected files as they are downloaded." = "Voer een wachtwoord in om beveiligde bestanden te decoderen wanneer ze worden gedownload.";
+"Enter a passphrase to store files in an encrypted format on the server." = "Voer een wachtwoord in om bestanden in een versleutelde indeling op de server op te slaan.";
+"A passphrase is required." = "Een wachtwoord is verplicht.";
+"Keep files encrypted" = "Bestanden versleuteld laten";
+"Keep files unencrypted" = "Bestanden niet-versleuteld laten";
+"Passphrase input field" = "Invoerveld wachtwoord";
+"Confirm passphrase input field" = "Invoerveld bevestiging wachtwoord";
+"Confirm" = "Bevestigen";
+"Leave uploaded files unencrypted." = "De geüploade bestanden niet versleuteld laten.";
+
+
+/* select_folder_window.cpp */
+"Look in:" = "Zoeken in:";
+"Choose" = "Kiezen";
+
+
+/* send_to_dialog.cpp */
+"Send Files - " = "Bestanden verzenden - ";
+"Workspace" = "Werkgebied";
+"Title" = "Titel";
+"Notes" = "Opmerkingen";
+"Files" = "Bestanden";
+"Encrypt sent files" = "Verzonden bestanden versleutelen";
+"Send as public Link" = "Verzenden als openbare link";
+"Add files" = "Bestanden toevoegen";
+"Add folder" = "Map toevoegen";
+"Send" = "Verzenden";
+"Email or group" = "E-mail of groep";
+"Shared Inbox" = "Gemeenschappelijk postvak IN";
+//| "Dropbox" = "Dropbox";
+"Name Conflicts - " = "Naamconflicten - ";
+"Failed to send package: " = "Verzenden van pakket is mislukt: ";
+"Server error. Failed to send package: " = "Serverfout. Verzenden van pakket is mislukt: ";
+"Failed to send package. Could not parse error message from server." = "Verzenden van pakket is mislukt. Fout bij ontleden van foutbericht van server.";
+"Package not sent. Account has been deleted." = "Pakket is niet verzonden. Account is gewist.";
+"Shared inbox" = "Gemeenschappelijk postvak IN";
+"Select files" = "Bestanden selecteren";
+"Select folder" = "Map selecteren";
+"The note is cut to fit the maximum length of %d." = "De opmerking is afgekapt tot de maximumlengte van %d.";
+"This workspace doesn't allow sending packages to external users." = "Dit werkgebied staat het verzenden van pakketten aan externe gebruikers niet toe.";
+"Maximum number of items reached." = "Maximumaantal items bereikt.";
+
+
+/* shared_literals.cpp */
+"Show in Windows Explorer" = "Afbeelden in Windows Verkenner";
+"Show in file manager" = "Afbeelden in bestandsbeheer";
+
+
+/* sso_via_browser_dialog.cpp */
+"Please sign on in the browser tab that just opened." = "Meld u aan in het browsertabblad dat zojuist is geopend.";
+"Failed to open default browser for authentication" = "Openen van standaardbrowser voor verificatie is mislukt";
+
+
+/* sync_error_dialog.cpp */
+"&Copy" = "&Kopiëren";
+"Share" = "Delen";
+"File" = "Bestand";
+" File Errors" = " Bestandsfouten";
+"File Conflict" = "Bestandsconflict";
+"Remote" = "Op afstand";
+//| "Type" = "Type";
+"Message" = "Bericht";
+" Session Errors" = " Sessiefouten";
+"Warning" = "Waarschuwing";
+
+
+/* sync_settings_dialog.cpp */
+"Synchronize with the selected remote folders" = "Synchroniseren met de geselecteerde mappen op afstand";
+//| "Status" = "Status";
+"Local Folder Path" = "Pad van lokale map";
+"Reset Sync" = "Synchronisatie resetten";
+"The local sync folder cannot be empty." = "De lokale synchronisatiemap mag niet leeg zijn.";
+"No remote folders selected." = "Geen mappen op afstand geselecteerd.";
+"You are changing continuous mode.\nThis will also reset sync. Click Yes to continue." = "U wijzigt de continue modus.\nHiermee wordt ook de synchronisatie gereset. Klik op Ja om door te gaan.";
+"This will reset your sync history. Click Yes to continue." = "Hiermee wordt de synchronisatiehistorie gereset. Klik op Ja om door te gaan.";
+"Failed to create directory: %s" = "Maken van map is mislukt: %s";
+"The local sync folder selected is not empty. Do you want to continue?" = "De geselecteerde lokale synchronisatiemap is niet leeg. Wilt u doorgaan?";
+
+
+/* sync_widget.cpp */
+"Sync settings" = "Synchronisatie-instellingen";
+"File sync" = "Bestandssynchronisatie";
+
+
+/* transfer_status_widget.cpp */
+"Go to" = "Ga naar";
+"Retrying in" = "Opnieuw proberen over";
+"Resuming..." = "Hervatten...";
+"Error: Server refused request" = "Fout: Server heeft aanvraag geweigerd";
+"Error: Authentication failed" = "Fout: Verificatie is mislukt";
+"Transferring" = "Overdracht";
+" percent" = " procent";
+
+
+/* transfer_status_widget_accessible.cpp */
+"Use the tab to move through the different actions" = "Gebruik de tabtoets om door de verschillende acties te gaan";
+
+
+/* transfer_status_widget_container_accessible.cpp */
+"Transfers list" = "Lijst van overdrachten";
+"List with all the current transfers" = "Lijst met alle huidige overdrachten";
+"Use the up and down arrows to move through the different transfers" = "Gebruik de pijlen omhoog en omlaag om door de verschillende overdrachten te gaan";
+
+
+/* transfers_pref_widget.cpp */
+"Save downloaded files to:" = "Gedownloade bestanden opslaan naar:";
+"Browse" = "Bladeren";
+"Queue" = "In wachtrij zetten";
+"time(s)" = "keer";
+"Multi-session" = "Meerdere sessies";
+"Start interval between sessions:" = "Startinterval tussen sessies:";
+
+
+/* transfers_window_accessible.cpp */
+"Window with all the transfers" = "Venster met alle overdrachten";
+"Use the tab to access the transfer list" = "Gebruik de tabtoets om toegang te krijgen tot de overdrachtslijst";
+
+
+/* tray_handler.cpp */
+"&About..." = "&Info...";
+"Ac&tivity" = "Ac&tiviteit";
+"&Run diagnostic" = "Diagnose &uitvoeren";
+"&Unlock encrypted files" = "Versleutelde bestanden &ontgrendelen";
+"&Quit" = "&Afsluiten";
+"&Open log folder" = "&Logboekmap openen";
+//| "&Feedback" = "&Feedback";
+"&Preferences..." = "&Voorkeuren...";
+"&Others..." = "&Andere...";
+"&Unlock Encrypted Files" = "Versleutelde bestanden &ontgrendelen";
+"&Open Log Folder" = "Logboekmap &openen";
+
+
+/* win_file_dialog_helper.cpp */
+"Sending remote files is not supported" = "Het verzenden van bestanden op afstand wordt niet ondersteund";
+
+
+/* win_preferences_window.cpp */
+"Preferences - %s" = "Voorkeuren - %s";
+"Apply" = "Toepassen";
+"General" = "Algemeen";
+"Network" = "Netwerk";
+"Bandwidth" = "Bandbreedte";
+"Security" = "Beveiliging";
+
+
+/* busy_dialog.cpp */
+"Processing..." = "Verwerken...";
+
+
+/* decrypt_manager.cpp */
+"Task could not be created for %s" = "Er kan geen taak worden gemaakt voor %s";
+"Decryption already in progress." = "Decodering wordt al uitgevoerd.";
+"Cannot perform operations during decryption." = "Tijdens decodering kunnen er geen bewerkingen uitgevoerd worden.";
+"Failed list is empty." = "Lijst met mislukte items is leeg.";
+"Error: could not allocate memory for task %s " = "Fout: er kan geen geheugenruimte gereserveerd worden voor taak %s ";
+
+
+/* fasp_decrypt_worker.cpp */
+"Could not write to destination." = "Schrijven naar bestemming is niet mogelijk.";
+//| "Code:" = "Code:";
+"Input file is corrupted or not encrypted." = "Invoerbestand is beschadigd of niet versleuteld.";
+"Invalid file" = "Ongeldig bestand";
+"Source file does not exist." = "Bronbestand bestaat niet.";
+"Source is not a file." = "Bron is geen bestand.";
+"Could not initialize decrypter." = "Decoderingsprogramma kan niet geïnitialiseerd worden.";
+"Could not write out to device." = "Schrijven naar het apparaat is niet mogelijk.";
+"Cancelled by user" = "Geannuleerd door de gebruiker";
+
+
+/* main_window.cpp */
+"Drag files and folders to start decrypting..." = "Versleep bestanden en mappen om te beginnen met decoderen ...";
+"Open Encrypted files" = "Versleutelde bestanden openen";
+"Open Directory" = "Directory openen";
+"There are current tasks. Do you want to exit?" = "Er zijn actuele taken. Wilt u afsluiten?";
+"Do you want to delete encrypted source files from finished tasks?" = "Wilt u versleutelde bronbestanden van voltooide taken verwijderen?";
+"Do you want to reload?" = "Wilt u opnieuw laden?";
+"Exit" = "Afsluiten";
+"Open Files" = "Bestanden openen";
+"Select file(s) to decrypt" = "Bestand(en) selecteren om te decoderen";
+"Decrypt all files and folders in selected folder" = "Alle bestanden en mappen in de geselecteerde map decoderen";
+"Clear All" = "Alles wissen";
+"Clear all tasks" = "Alle taken wissen";
+"Delete Encrypted" = "Versleutelde items wissen";
+"Delete encrypted files from finished tasks" = "Versleutelde bestanden van voltooide taken verwijderen";
+"Clear Finished" = "Voltooide items wissen";
+"Clear finished tasks" = "Voltooide taken wissen";
+"Clear Failed" = "Mislukte items wissen";
+"Clear failed tasks" = "Mislukte taken wissen";
+"Clear Pending" = "Items in behandeling wissen";
+"Clear pending tasks" = "De taken die in behandeling zijn wissen";
+"Settings" = "Instellingen";
+"Open Settings dialog" = "Dialoogvenster Instellingen openen";
+"About..." = "Info...";
+"Open About dialog" = "Info-venster openen";
+"Reload Failed" = "Mislukte items opnieuw laden";
+"Reload failed tasks and resets status to Pending" = "Mislukte taken opnieuw laden en de status instellen op in behandeling";
+"Decrypt" = "Decoderen";
+"Show passphrase" = "Wachtwoord afbeelden";
+"View:" = "Weergave:";
+"Latest" = "Recentste";
+"Finished" = "Voltooid";
+"Failed" = "Mislukt";
+"Options" = "Opties";
+"About" = "Info";
+"Enter Passphrase" = "Wachtwoord invoeren";
+
+
+/* settings_dialog.cpp */
+"Delete encrypted files when finished" = "Versleutelde bestanden verwijderen na voltooiing";
+"Number of concurrent threads for decryption" = "Aantal gelijktijdige threads voor decodering";
+
+
+/* task.cpp */
+"Decrypting" = "Decoderen";
+"Waiting" = "Wachten";
+"Error %s" = "Fout %s";
+"Cancelled" = "Geannuleerd";
+"Cleared" = "Gewist";
+
+
+/* task_manager.cpp */
+"A task is in progress, try again later." = "Er is een taak in uitvoering, probeer het later opnieuw.";
+"Loading files..." = "Bestanden laden...";
+"Could not open file %1$s, for reading. %2$s" = "Bestand %1$s kan niet worden geopend voor lezen. %2$s";
+"Failed to reload tasks." = "Opnieuw laden van taken is mislukt.";
+"Reloading failed tasks..." = "Mislukte taken opnieuw laden...";
+"Failed Tasks reloaded." = "Mislukte taken zijn opnieuw geladen.";
+"No files cleared." = "Geen bestanden gewist.";
+"Clearing pending tasks..." = "Taken in behandeling wissen...";
+"Could not clear pending tasks." = "Taken in behandeling kunnen niet gewist worden.";
+"All pending tasks cleared." = "Alle taken in behandeling zijn gewist.";
+"Clearing failed tasks..." = "Mislukte taken worden gewist...";
+"Could not clear failed tasks." = "Mislukte taken kunnen niet gewist worden.";
+"All failed tasks cleared." = "Alle mislukte taken zijn gewist.";
+"Clearing finished tasks..." = "Voltooide taken worden gewist...";
+"Could not clear finished tasks." = "Voltooide taken kunnen niet gewist worden.";
+"All finished tasks cleared." = "Alle voltooide taken zijn gewist.";
+"Clearing all tasks..." = "Alle taken wissen...";
+"Could not clear all tasks." = "Niet alle taken kunnen gewist worden.";
+"All tasks cleared" = "Alle taken zijn gewist";
+"No files cleared for unknown status." = "Geen bestanden gewist voor onbekende status.";
+"Could not load files." = "Bestanden kunnen niet geladen worden.";
+"No files found." = "Geen bestanden gevonden.";
+"Deleting encrypted source files..." = "Versleutelde bronbestanden worden gewist...";
+"Encrypted source files deleted from finished tasks." = "Versleutelde bronbestanden verwijderd uit voltooide taken.";
+"Not all encrypted files could be deleted." = "Niet alle versleutelde bestanden kunnen worden gewist.";
+
+
+/* files_fs.cpp */
+"Administratively Shared" = "Administratief gedeeld";
+
+
+/* files_fs_item.cpp */
+" (Shared)" = " (Gedeeld)";
+
+
+/* packages_box_fs_item.cpp */
+"Archived" = "Gearchiveerd";
+"Sent" = "Verzonden";
+
+
+/* root_fs.cpp */
+"My Offline Files" = "Mijn offline bestanden";
+
+
+/* account_provider.cpp */
+"Authentication error (at remote view)" = "Verificatiefout (bij view op afstand)";
+
+
+/* aoc_base_item.cpp */
+"Disconnected share" = "Verbroken share";
+
+
+/* base_item.cpp */
+"Rename Error" = "Fout bij naam wijzigen";
+"Are you sure you want to permanently delete this file?" = "Weet u zeker dat u dit bestand permanent wilt wissen?";
+"Are you sure you want to permanently delete these files?" = "Weet u zeker dat u deze bestanden permanent wilt wissen?";
+"New Folder" = "Nieuwe map";
+
+
+/* external_context_menu.cpp */
+"Send files..." = "Bestanden verzenden...";
+"Activity" = "Activiteit";
+
+
+/* shell_module.cpp */
+"To remove this file only from your computer update your sync selection." = "Als u dit bestand alleen wilt verwijderen van uw computer, werkt u de synchronisatieselectie bij.";
+"Delete permanently?" = "Permanent verwijderen?";
+"Would you like to delete this file everywhere?" = "Wilt u dit bestand overal verwijderen?";
+"Settings update required" = "Bijwerken van instellingen is vereist";
+"Certificate bundle not found. " = "Certificaatbundel niet gevonden. ";
+
+
+/* transfer_controller.cpp */
+"Replace Files" = "Bestanden vervangen";
+
+
+/* auth_error_dlg.cpp */
+"Network Error" = "Netwerkfout";
+"%s cannot access %s" = "%s heeft geen toegang tot %s";
+"Check the account settings and passwords. Otherwise, there might be a problem with your network." = "Controleer de accountinstellingen en wachtwoorden. Anders kan er een probleem zijn met uw netwerk.";
+"Open Settings" = "Instellingen openen";
+
+
+/* download_dlg.cpp */
+"%s - Download destination" = "%s - downloadbestemming";
+"Download files to:" = "Bestanden downloaden naar:";
+"Ask me every time" = "Vraag me elke keer";
+"Download" = "Downloaden";
+"Invalid path is specified. " = "Er is een ongeldig pad opgegeven. ";
+
+
+/* error_dlg.cpp */
+"%s - Error" = "%s - fout";
+"%s couldn't complete the request." = "%s kan de aanvraag niet voltooien.";
+"%s couldn't complete the '%s' request." = "%s kan de aanvraag '%s' niet voltooien.";
+
+
+/* aspcore_utils.cpp */
+"Path is too long. Max length of %s exceeded." = "Pad is te lang. Max. lengte van %s is overschreden.";
+"Path ends with /.." = "Pad eindigt met /..";
+"Path begins with ../" = "Pad begint met ../";
+"Path contains /../" = "Pad bevat /../";
+"Path is .." = "Pad is ...";
+"Illegal string found: \" %s \"." = "Ongeldige tekenreeks gevonden: \" %s \".";
+
+
+/* account_manager.cpp */
+"Could not save account. %s" = "Account kan niet opgeslagen worden. %s";
+"Account is missing an ID." = "Account heeft geen ID.";
+"Host is empty." = "Host is leeg.";
+"No authentication type specified." = "Er is geen verificatietype opgegeven.";
+"User field is empty." = "Gebruikersveld is leeg.";
+"Password field is empty." = "Wachtwoordveld is leeg.";
+"Missing token." = "Token ontbreekt.";
+"Max threads reached." = "Maximumaantal threads bereikt.";
+"Account has been deleted." = "Account is gewist.";
+"No services discovered." = "Geen services gevonden.";
+"Invalid credentials." = "Ongeldige legitimatiegegevens.";
+"Your password has expired. Please reset your password and try again." = "Uw wachtwoord is vervallen. Stel uw wachtwoord opnieuw in en probeer het opnieuw.";
+"Service discovery failed. No services discovered for host: %s" = "Serviceopsporing is mislukt. Geen services gevonden voor host: %s";
+"Storage validation failed." = "Validatie van opslag is mislukt.";
+"This server does not have node services for storage testing." = "Deze server heeft geen knooppuntservices voor opslagtests.";
+"This server requires a valid storage configuration." = "Voor deze server is een geldige opslagconfiguratie vereist.";
+"The server returned the following error:" = "De server heeft de volgende fout geretourneerd:";
+
+
+/* application.cpp */
+"%1$s stopped. You are running very low on disk space on (%2$s)." = "%1$s is gestopt. De beschikbare schijfruimte op (%2$s) is zeer laag.";
+"%1$s. And %2$llu%% disk space remaining for download to %3$s." = "%1$s. En er resteert %2$llu%%  schijfruimte voor download naar %3$s.";
+"%1$s. And %2$llu%% disk space remaining for sync to %3$s." = "%1$s. En er resteert %2$llu%%  schijfruimte voor synchronisatie naar %3$s.";
+//| "Accounts: " = "Accounts: ";
+"%s Name is already taken." = "%s Naam is al bezet.";
+
+
+/* exception.cpp */
+"An instance of the application is already running." = "Er is al een instance van het programma actief.";
+"Invalid input." = "Ongeldige invoer.";
+"Failed to parse XML." = "Ontleden van XML is mislukt.";
+"This system has reached the maximum number of Connect instances running allowed, probably under multiple user IDs. Some will have to be closed before this transfer can succeed." = "Dit systeem heeft het maximumaantal verbindingsinstances bereikt dat is toegestaan, waarschijnlijk onder meerdere gebruikers-ID's. Een aantal ervan moeten worden gesloten voordat deze overdracht kan slagen.";
+"Pointer is nil." = "Pointer is nil.";
+"Unexpected value found." = "Onverwachte waarde gevonden.";
+"Not implemented." = "Niet geïmplementeerd.";
+"Json parse error." = "Fout bij ontleden van JSON.";
+"Json serialization failed." = "Json-serialisatie is mislukt.";
+"Sql execution error." = "Fout bij uitvoering van SQL.";
+"Verification of properties failed." = "Verificatie van eigenschappen is mislukt.";
+"HTTP error" = "HTTP-fout";
+"User cancelled first run." = "Gebruiker heeft de eerste uitvoering geannuleerd.";
+"Configuration file parsed successfully." = "Het configuratiebestand is ontleed.";
+"Error parsing configuration file." = "Fout bij het ontleden van het configuratiebestand.";
+"Failed to parse application arguments." = "Ontleden van toepassingsargumenten is mislukt.";
+
+
+/* faspex_feed_processor2.cpp */
+"Packages-checking request rejected by server as unauthorized" = "Aanvraag voor controle op pakketten door server afgewezen - niet geautoriseerd";
+
+
+/* faspex_inbox_task.cpp */
+"Account \"%s\" may not have permission to download packages." = "Account \"%s\" heeft mogelijk geen machtiging voor het downloaden van pakketten.";
+"Unable to check for packages due to network timeout" = "Er kan niet worden gecontroleerd op pakketten vanwege een netwerktimeout";
+"User name or password not accepted, please check credentials and restart this Inbox." = "Gebruikersnaam of wachtwoord is niet geaccepteerd. Controleer de legitimatiegegevens en start deze inbox opnieuw.";
+"Could not start automatic checking for packages." = "Automatische controle van pakketten kan niet worden gestart.";
+
+
+/* token_refresher.cpp */
+"Token empty/expired" = "Token leeg/vervallen";
+
+
+/* files_feed_processor.cpp */
+"Self query returned nil" = "Query op zichzelf heeft nil geretourneerd";
+"Workspace query returned nil" = "Query op werkgebied heeft nil geretourneerd";
+"Couldn't parse packages response. Check request parameters" = "Respons van pakketten kan niet ontleed worden. Controleer de opdrachtparameters";
+
+
+/* node_api.cpp */
+"Node V2 URL not found." = "URL van knooppunt V2 is niet gevonden.";
+
+
+/* node_file_info_gatherer.cpp */
+"Node not syncable" = "Knooppunt kan niet gesynchroniseerd worden";
+"Node Api returns non-syncable." = "Knooppunt-API retourneert niet-synchroniseerbaar.";
+"Duplicated folder name: " = "Dubbele mapnaam: ";
+". Please check your Files workspace and rename one of the folders." = ". Controleer het werkgebied van Bestanden en wijzig de naam van een van de mappen.";
+//| " code" = " code";
+
+
+/* node_filesystem_model.cpp */
+"upload only" = "alleen uploaden";
+"download only" = "alleen downloaden";
+"no permissions" = "geen machtigingen";
+
+
+/* node_transfer_worker.cpp */
+"Resource not found. Cannot start transfer." = "Resource is niet gevonden. Overdracht kan niet worden gestart.";
+"Transfer failed" = "Overdracht is mislukt";
+
+
+/* sso_adapter.cpp */
+"Failed to communicate with the host." = "Communiceren met de host is mislukt.";
+
+
+/* setup_worker.cpp */
+"remote directory" = "directory op afstand";
+"remote directory: %s" = "directory op afstand: %s";
+"Permission denied to upload to %s" = "Toestemming geweigerd om te uploaden naar %s";
+"The folder %s is no longer available. Go to Aspera on Cloud and resolve the errors." = "De map %s is niet meer beschikbaar. Ga naar Aspera on Cloud en los de fouten op.";
+
+
+/* start_spec.cpp */
+"remote selection" = "selectie op afstand";
+
+
+/* sync_error.cpp */
+"No error" = "Geen fout";
+"Invalid Sync parameters" = "Ongeldige synchronisatieparameters";
+"Connection failed" = "Maken van verbinding is mislukt";
+"Error communicating with server" = "Fout bij communicatie met server";
+"Your user name or password is incorrect" = "Uw gebruikersnaam of wachtwoord is onjuist";
+"No remote directories selected" = "Geen directory's op afstand geselecteerd";
+"Failed to send data" = "Verzenden van gegevens is mislukt";
+"Sync error" = "Synchronisatiefout";
+"Sync engine error" = "Fout in synchronisatie-engine";
+"Remote path is not a directory" = "Pad op afstand is geen map";
+"Permission denied to sync with remote folder" = "Toestemming geweigerd voor synchronisatie met map op afstand";
+"Sync session error" = "Fout in synchronisatiesessie";
+"Sync session failed to start" = "De synchronisatiesessie kan niet worden gestart";
+"Authentication failed" = "Verificatie is mislukt";
+"Failed to initialize the Sync module" = "Initialiseren van de synchronisatiemodule is mislukt";
+"Failed to configure Sync session" = "Configureren van synchronisatiesessie is mislukt";
+"Failed to start Sync session" = "Starten van synchronisatiesessie is mislukt";
+"Failed to stop Sync session" = "Stoppen van synchronisatiesessie is mislukt";
+"Waiting for previous Sync session to end" = "Wachten op einde vorige synchronisatiesessie";
+"Sync tasks stopped. You are running very low on disk space." = "Synchronisatietaken zijn gestopt. De beschikbare schijfruimte is zeer laag.";
+//| "code" = "code";
+
+
+/* sync_queue_manager.cpp */
+"Local directory is not specified" = "Lokale directory is niet opgegeven";
+
+
+/* sync_stats.cpp */
+"Error" = "Fout";
+"Idle" = "Niet actief";
+"Paused" = "Onderbroken";
+"Stopped" = "Gestopt";
+"Running" = "In uitvoering";
+
+
+/* transfer.cpp */
+"Authentication failed.  Host is empty." = "Verificatie is mislukt.  Host is leeg.";
+"User is empty." = "Gebruiker is leeg.";
+"Source path not allowed: %s" = "Bronpad niet toegestaan: %s";
+"Destination path not allowed: %s" = "Doelpad niet toegestaan: %s";
+"Unable to check source or destination path - paths datafile missing" = "Bron- of doelpad kan niet gecontroleerd worden - gegevensbestand van pad ontbreekt";
+"Destination root not allowed. %s" = "Doelroot niet toegestaan. %s";
+"Source root not allowed. %s" = "Bronroot niet toegestaan. %s";
+"Error: " = "Fout: ";
+"Disk write failed" = "Schrijven van schijf is mislukt";
+"Ensure the server file still exists and is accessible." = "Controleer of het serverbestand nog steeds bestaat en toegankelijk is.";
+"Error: Authentication failed." = "Fout: Verificatie is mislukt.";
+"The ascp executable is missing. Repair your Connect or Drive installation." = "Het uitvoerbare bestand van ascp ontbreekt. Herstel de installatie van Connect of Drive.";
+"Error: Session data transfer timeout (server)." = "Fout: Timeout in overdracht sessiegegevens (server).";
+"Error: Communication problem, ensure both client and server are connected to the network." = "Fout: Communicatieprobleem; zorg dat zowel client als server op het netwerk aangesloten zijn.";
+"Error: Ensure that a valid fasp proxy address is set." = "Fout: Zorg dat er een geldig fasp-proxyadres is ingesteld.";
+"Error: FASP process failed to initialize." = "Fout: FASP-proces kan niet worden geïnitialiseerd.";
+"Error: Session failed to connect to the remote server." = "Fout: Sessie kan niet worden verbonden met de server op afstand.";
+
+
+/* transfer_properties.cpp */
+"Input is not a fasp url: %s" = "Invoer is geen fasp-URL: %s";
+"Could not create fasp url from: %s" = "Er kan geen fasp-URL worden aangemaakt vanuit: %s";
+"Could not create fasp url from destination: %s" = "Er kan geen fasp-URL worden aangemaakt vanuit bestemming: %s";
+
+
+/* transfer_worker.cpp */
+"FASP process failed to initialize." = "FASP-proces kan niet worden geïnitialiseerd.";
+"File error" = "Bestandsfout";
+
+
+/* updater.cpp */
+"Failed to communicate with the update server" = "Communiceren met de updateserver is mislukt.";
+"Update server returned invalid data." = "Updateserver heeft ongeldige gegevens geretourneerd.";
+
+
+/* human_string.cpp */
+"at %s" = "op %s";
+"yesterday" = "gisteren";
+"on %s" = "om %s";
+
+
+/* utils_helpers.cpp */
+"GetVolumePathName of '%1$s' failed: %2$ld" = "GetVolumePathName van '%1$s' is mislukt: %2$ld";
+"Error encrypting data" = "Fout bij het versleutelen van gegevens";
+"Error decrypting data" = "Fout bij decoderen van gegevens";
+
+
+/* utils.cpp */
+"\n%sName is empty." = "\n %sNaam is leeg.";
+"\n%sName cannot contain these characters: \\ / * ? : \" < > |" = "\n %sNaam mag deze tekens niet bevatten: \\ / * ? : \" < > |";
+"\n%1$sName is greater than max length: %2$d" = "\n %1$sNaam is langer dan maximumlengte: %2$d";
+"\n%sServer address is empty." = "\n%sServeradres is leeg.";
+"\n%sServer address is invalid." = "\n%sServer-adres is ongeldig.";
+"\n%sUser name is empty." = "\n%sGebruikersnaam is leeg.";
+"\n%sPassword is empty." = "\n%sWachtwoord is leeg.";
+"\n%sStorage path for Azure can not be empty or \"/\"." = "\n%sOpslagpad voor Azure kan niet leeg of \"/\" zijn.";
+"Shared access signature must have either Read-List permissions or Read-Write-Delete-List permissions." = "Handtekening voor gedeelde toegang moet machtigingen voor lezen/opsommen of voor lezen/schrijven/wissen/opsommen hebben.";
+
+
+/* status_code.cpp */
+"Continue" = "Doorgaan";
+"Switching Protocols" = "Wisselen van protocollen";
+"Created" = "Gemaakt";
+"Accepted" = "Geaccepteerd";
+"Non-Authoritative Information" = "Niet-bindende informatie";
+"No Content" = "Geen content";
+"Reset Content" = "Content resetten";
+"Partial Content" = "Gedeeltelijke content";
+"Multiple Choices" = "Meerdere keuzen";
+"Moved Permanently" = "Permanent verplaatst";
+"Found" = "Gevonden";
+"See Other" = "Zie overige";
+"Not Modified" = "Niet gewijzigd";
+"Use Proxy" = "Proxy gebruiken";
+"Temporary Redirect" = "Tijdelijke omleiding";
+"Bad Request" = "Foutieve aanvraag";
+"Unauthorized" = "Niet-geautoriseerd";
+"Payment Required" = "Betaling vereist";
+"Forbidden" = "Niet toegestaan";
+"Not Found" = "Niet gevonden";
+"Method Not Allowed" = "Methode niet toegestaan";
+"Not Acceptable" = "Niet acceptabel";
+"Proxy Authentication Required" = "Proxyverificatie vereist";
+"Request Timeout" = "Timeout voor aanvraag";
+//| "Conflict" = "Conflict";
+"Gone" = "Verdwenen";
+"Length Required" = "Lengte vereist";
+"Precondition Failed" = "Voorwaarde vooraf is mislukt";
+"Request Entity Too Large" = "Aanvraagentiteit te groot";
+"Request-URI Too Large" = "Aanvraag-URI is te groot";
+"Unsupported Media Type" = "Niet-ondersteund mediatype";
+"Requested Range Not Satisfiable" = "Gevraagde bereik niet beschikbaar";
+"Expectation Failed" = "Onverwacht resultaat";
+"Unprocessable Entity" = "Niet-verwerkbare entiteit";
+"Internal Server Error" = "Interne serverfout";
+"Not Implemented" = "Niet geïmplementeerd";
+"Bad Gateway" = "Ongeldige gateway";
+"Service Unavailable" = "Service niet beschikbaar";
+"Gateway Timeout" = "Timeout in gateway";
+"HTTP Version Not Supported" = "HTTP-versie wordt niet ondersteund";
+"Encryption At Rest Passphrase Required" = "wachtwoord vereist bij Encryption At Rest";

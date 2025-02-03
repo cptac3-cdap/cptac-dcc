@@ -1,13 +1,12 @@
 [Desktop Entry]
-Version=3.6.2
+Version=1.0
+X-Aspera-Version=4.2.13.820
 Type=Application
-Encoding=UTF-8
-Exec=sh -c "$HOME/.aspera/connect/bin/asperaconnect"
-Icon=\$HOME/.aspera/connect/res/connect.png
-Name=Aspera Connect
+Exec=$HOME/.aspera/connect/bin/asperaconnect %U
+Icon=$HOME/.aspera/connect/res/connect.png
+Name=IBM Aspera Connect
 Comment=High-performance transfer application
 GenericName=File transfer
-MimeType=x-scheme-handler/fasp;
+MimeType=x-scheme-handler/fasp;asperaconnect;
 Terminal=false
-Categories=Internet
-
+Categories=Network;WebBrowser;

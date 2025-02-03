@@ -1,0 +1,1142 @@
+//| It's a waste of time and space to add entries with translation exactly the same as key.
+
+/* cargo_application.cpp */
+"Errors occurred while loading the configuration file" = "構成ファイルのロード中にエラーが発生しました";
+
+
+/* about_window.cpp */
+"About - %s" = "バージョン情報 - %s";
+"Internal %s (%s)" = "内部 %s (%s)";
+/* "Release (%s)" = "リリース (%s)"; */
+"Version %s (%s)" = "バージョン %s (%s)";
+"Shell extension (%s)" = "シェル拡張 (%s)";
+
+
+/* account_conflicts_item_delegate.cpp */
+"%d conflicts" = "%d 件の競合";
+
+
+/* account_verification_dialog.cpp */
+"Cancel" = "キャンセル";
+"Connecting..." = "接続中...";
+"Looking up host..." = "ホストを検索中...";
+"Verifying cloud storage..." = "クラウド・ストレージを検証中...";
+"Remove" = "削除";
+"Next" = "次へ";
+"Please click 'Next' to re-authenticate the account: '%s'." = "アカウントを再認証するには「次へ」をクリックしてください: '%s'。";
+"Error verifying host: %s" = "ホストの検証中にエラーが発生しました: %s";
+//| "OK" = "OK";
+"Account is invalid." = "アカウントが無効です。";
+
+
+/* accounts_model.cpp */
+"Accounts" = "アカウント";
+" (default)" = " (デフォルト)";
+
+
+/* accounts_pref_widget.cpp */
+"Are you sure you want to remove %s?" = "%s を削除しますか?";
+"\nAll account transfers and services will be stopped and removed." = "\nすべてのアカウント転送とサービスが停止および削除されます。";
+"Please complete the account information." = "アカウント情報を入力してください。";
+"Your authentication token has gone stale. Click here to re-authenticate." = "認証トークンが失効しました。再認証するにはここをクリックしてください。";
+"Sync" = "同期";
+"All changes will be discarded. Are you sure you want to proceed?" = "すべての変更が破棄されます。続行しますか?";
+"Preferences contains errors:" = "設定にエラーが含まれています:";
+"Do you want to revert changes?" = "変更を元に戻しますか?";
+"unknown" = "不明";
+"Querying for services failed: %s" = "サービスの照会が失敗しました: %s";
+"Account name" = "アカウント名";
+"Server address" = "サーバー・アドレス";
+"Username" = "ユーザー名";
+"Password" = "パスワード";
+"Do not verify host's SSL certificate" = "ホストの SSL 証明書を検証しない";
+"Account" = "アカウント";
+"Services" = "サービス";
+"Packages" = "パッケージ";
+"Settings..." = "設定...";
+
+
+/* activity_window.cpp */
+"Activity - %s" = "アクティビティー - %s";
+"Application menu" = "アプリケーション・メニュー";
+"Inboxes" = "受信箱";
+"Transfers" = "転送";
+
+
+/* add_account_wizard2.cpp */
+"Account Wizard - %s" = "アカウント・ウィザード - %s";
+"Back" = "戻る";
+"Finish" = "完了";
+"Welcome to %s" = "%s にようこそ";
+"Fast and secure access to all your files." = "すべてのファイルへの高速でセキュアなアクセスを実現します。";
+"This wizard will help you set up your account." = "このウィザードを利用して、アカウントをセットアップしてください。";
+"Set up account" = "アカウントのセットアップ";
+"Select the %s product you want to link to Drive." = "ドライブにリンクする %s 製品を選択してください。";
+"Enter your IBMid or work email to look up your organization." = "組織を検索するには IBMid または仕事用の E メールを入力してください。";
+"Email" = "E メール";
+"We've sent your organization URL to your email." = "E メールに組織の URL を送信しました。";
+"OR" = "または";
+"Enter your organization URL here." = "ここに組織の URL を入力してください。";
+"Please enter your account email address or organization name." = "アカウントの E メールアドレスまたは組織名を入力してください。";
+"Please enter your organization name." = "組織名を入力してください。";
+"Please enter your account email address." = "アカウントの E メールアドレスを入力してください。";
+"New Account" = "新しいアカウント";
+"Please enter your server information." = "サーバー情報を入力してください。";
+"Account name:" = "アカウント名:";
+"Server address:" = "サーバー・アドレス:";
+"Tip:" = "ヒント:";
+"Server address entered invalid" = "入力したサーバー・アドレスが無効です";
+"An account with the same name already exists. Please choose a new name." = "同じ名前のアカウントが既に存在します。新しい名前を選択してください。";
+"Please enter all fields." = "すべてのフィールドに入力してください。";
+"Authentication" = "認証";
+"Please choose your authentication method." = "認証方式を選択してください。";
+"Unknown host type." = "不明なホスト・タイプです。";
+"Authentication URL is empty" = "認証 URL が空です";
+"Could not retrieve token from OAuth provider" = "OAuth プロバイダーからトークンを取得できませんでした";
+"Basic Authentication" = "基本認証";
+"SAML Authentication" = "SAML 認証";
+"Username:" = "ユーザー名:";
+"Password:" = "パスワード:";
+"Login" = "ログイン";
+"Please enter your credentials." = "資格情報を入力してください。";
+"User name:" = "ユーザー名:";
+"Looking up services..." = "サービスを検索中...";
+"Verifying storage..." = "ストレージを検証中...";
+"Problem..." = "問題...";
+"There was a problem with your account." = "アカウントに問題がありました。";
+"Inbox Setup" = "受信箱のセットアップ";
+"Package downloading" = "パッケージのダウンロード中";
+"The folder selected is not empty. Do you want to continue?" = "選択されたフォルダーが空ではありません。続行しますか?";
+"Automatically download my packages to the following directory" = "次のディレクトリーに自分のパッケージを自動的にダウンロード";
+"I'd rather not set up automatic downloading now." = "今は自動ダウンロードをセットアップしない";
+"Change..." = "変更...";
+"Download existing packages" = "既存のパッケージのダウンロード";
+"Download my packages from date sent" = "送信日以降の自分のパッケージをダウンロード";
+"Only download packages from now on." = "今後のパッケージのみをダウンロードする";
+"Yesterday" = "昨日";
+"A week ago" = "1 週間前";
+"A month ago" = "1 カ月後";
+"The beginning of time" = "期間の開始";
+"Checking for new packages" = "新しいパッケージを確認中";
+"Check for new packages" = "新しいパッケージの確認";
+"I'll check manually using the Check Now option." = "「今すぐチェック」オプションを使用して手動で確認します。";
+"Every Minute" = "1 分ごと";
+"Every 5 Minutes" = "5 分ごと";
+"Every 15 Minutes" = "15 分ごと";
+"Every 30 Minutes" = "30 分ごと";
+"Every Hour" = "1 時間ごと";
+"Sync Setup" = "同期のセットアップ";
+"Sync folder location" = "Sync フォルダーの場所";
+"Place my files in the following directory" = "次のディレクトリーに自分のファイルを配置";
+"I'd rather not set up file syncing now." = "今はファイルの同期をセットアップしない";
+"Two-Way" = "両方向";
+"Remote to Local" = "リモートからローカル";
+"Local to Remote" = "ローカルからリモート";
+"Choose folders to sync" = "同期するフォルダーの選択";
+"Synchronize with the selected remote folders." = "選択したリモート・フォルダーと同期します。";
+"I'll choose the folder to sync later." = "同期するフォルダーは後で選択する";
+"Continuous Mode" = "連続モード";
+"Local Mounts Signature Pathname" = "ローカル・マウントの署名パス名";
+"Remote Mounts Signature Pathname" = "リモート・マウントの署名パス名";
+"Browse..." = "参照...";
+"Direction" = "方向";
+"Completing the Account Setup" = "アカウント・セットアップの完了";
+"Your account is almost complete. Press finish to create your account." = "アカウント・セットアップは、もうすぐ完了します。アカウントを作成するには「完了」を押してください。";
+"Almost done" = "完了間近";
+"The following services are available for this account." = "このアカウントが使用できるサービスは次のとおりです。";
+
+
+/* aoc_workspaces_and_shared_folders_dialog.cpp */
+"Workspace: %s" = "ワークスペース: %s";
+"Workspaces and shared inboxes - %s" = "ワークスペースと共有受信箱 - %s";
+"Select specific workspaces and shared inboxes for download" = "ダウンロード用に特定のワークスペースと共有受信箱を選択してください";
+"Shared inboxes" = "共有受信箱";
+"Loading..." = "ロード中...";
+"My inbox" = "自分の受信箱";
+"Could not retrieve list of workspaces from the server." = "サーバーからワークスペースのリストを取得できませんでした。";
+
+
+/* transfer_monitor_accessible.cpp */
+"Transfer Monitor" = "転送モニター";
+"Use the arrows to change the transfer rate and use SHIFT + arrows to change the minimum transfer rate" = "転送速度を変更するには矢印を使用し、最小転送速度を変更するには SHIFT + 矢印を使用します";
+
+
+/* authentication_window.cpp */
+"User name input field" = "ユーザー名入力フィールド";
+"Password input field" = "パスワード入力フィールド";
+"Login to: %s" = "ログイン先: %s";
+"&User Name:" = "ユーザー名(&U):";
+"&Password:" = "パスワード(&P):";
+"Password is too long. Maximum length is %d." = "パスワードが長すぎます。最大長は %d 文字です。";
+"&Remember this password" = "このパスワードを記憶する(&R)";
+
+
+/* bandwidth_pref_widget.cpp */
+"Transfer speeds depend on server settings and your network connectivity." = "転送速度は、サーバーの設定やネットワーク接続によって異なります。";
+"Manual Transfers" = "手動転送";
+"The settings below let you limit transfer speeds for user-initiated transfers." = "以下の設定により、ユーザーが開始する転送の転送速度を制限できます。";
+"Downloads" = "ダウンロード";
+"Limit to" = "制限値:";
+"Uploads" = "アップロード";
+"Automatic Transfers" = "自動転送";
+"The settings below let you limit transfer speeds for sync transfers and other background jobs." = "以下の設定により、同期転送および他のバックグラウンド・ジョブの転送速度を制限できます。";
+"Background downloads" = "バックグラウンド・ダウンロード";
+"Background uploads" = "バックグラウンド・アップロード";
+
+
+/* confirm_yes_or_no_window.cpp */
+"Confirm - %s" = "確認 - %s";
+"Yes" = "はい";
+"No" = "いいえ";
+
+
+/* confirmation_window.cpp */
+"Remember my choice for this site." = "このサイトでの選択内容を記憶します。";
+"Allow access to your computer?" = "このコンピューターに対するアクセスを許可しますか?";
+"This site is on the restricted list." = "このサイトは制限付きリストにあります。";
+"This site is requesting permission to upload and download files to and from your computer." = "このサイトにより、このコンピューターとの間でファイルのアップロードおよびダウンロードを行うアクセス権限が要求されています。";
+
+
+/* conflicted_files_window2.cpp */
+"Resolve Conflict" = "競合の解決";
+"Refresh" = "更新";
+"Resolve Selected Conflicts" = "選択された競合の解決";
+"Save copy of the local conflicted file and sync again" = "ローカルの競合するファイルのコピーを保存し、再同期します";
+"Name" = "名前";
+"Location" = "場所";
+"Last Updated By" = "最終更新者";
+"Path" = "パス";
+"(first %d displayed) " = "(最初の %d 件を表示) ";
+"Conflicted Files %1$s- %2$s" = "競合するファイル %1$s - %2$s";
+
+
+/* connect_application.cpp */
+"A previous installation of %s has been detected. Would you like to migrate your settings and uninstall %s?" = "%s の前回のインストールが検出されました。設定を移行して %s をアンインストールしますか?";
+"A previous installation of %s has been detected. Would you like to migrate your account information? This will remove your accounts from %s." = "%s の前のインストールが検出されました。アカウント情報を移行しますか? これにより、%s からご使用のアカウントが削除されます。";
+"There was an error migrating from %s. It is recommended to manually migrate your account information." = "%s からの移行でエラーが発生しました。アカウント情報を手動で移行することをお勧めします。";
+"%1$s is already running. Please quit before running %2$s." = "%1$s は既に実行中です。%2$s の実行前に終了してください。";
+"You have invalid accounts. Would you like to review them?" = "無効なアカウントがあります。確認しますか?";
+"Your accounts have been successfully migrated from %s. You may be prompted to re-enter your account credentials. Would you like to uninstall %s?" = "ご使用のアカウントは、%s から正常に移行されました。アカウント資格情報の再入力を求められる場合があります。%s をアンインストールしますか?";
+
+
+/* connect_tray_handler.cpp */
+"1 inbox." = "1 個の受信箱。";
+"%d inboxes." = "%d 個の受信箱。";
+"1 sync." = "1 件の同期。";
+"%d syncs." = "%d 件の同期。";
+"&Send To..." = "送信先(&S)...";
+"&Send to..." = "送信先(&S)...";
+"1 transfer." = "1 件の転送。";
+"%d transfers." = "%d 件の転送。";
+"Active:" = "アクティブ:";
+
+
+/* content_protection_hosts_model.cpp */
+"Host" = "ホスト";
+
+
+/* error_list_window.cpp */
+"Sessions error" = "セッション・エラー";
+"Failed to sync file:" = "ファイルの同期に失敗しました:";
+
+
+/* fasp_transfer_inspector_window.cpp */
+"The selected transfer policy is not allowed. The server allowed policy is: %s." = "選択した転送ポリシーは許可されていません。サーバーで許可されているポリシー: %s";
+"Fixed" = "固定速度転送";
+"High" = "高速転送";
+"Fair" = "共存転送";
+"Low" = "低速転送";
+
+
+/* faspex_inbox_item_widget.cpp */
+"Automatic checking is off." = "自動検査はオフです。";
+"Error: %1$s - to retry in %2$s" = "エラー: %1$s - %2$s での再試行";
+"Error: %s" = "エラー: %s";
+"Checking for new packages..." = "新しいパッケージを確認中...";
+"Checking for new packages in: %s" = "以下の場所で新しいパッケージを確認中: %s";
+"Stop automatic checking and inbox transfers." = "自動検査および受信箱転送を停止します。";
+"Start automatic checking and resume inbox transfers." = "自動検査を開始し、受信箱転送を再開します。";
+"No Inbox" = "受信箱なし";
+"Error: %1$s %2$s left" = "エラー: %1$s %2$s が残りました";
+
+
+/* faspex_inbox_window.cpp */
+"Check now" = "今すぐチェック";
+"Open folder" = "フォルダーを開く";
+"Inbox settings" = "受信箱の設定";
+"Check All" = "すべてチェック";
+
+
+/* faspex_settings_dialog.cpp */
+"Packages - %s" = "パッケージ - %s";
+"Passphrase" = "パスフレーズ";
+"Download received packages to" = "受信したパッケージを次の場所にダウンロード:";
+"Change" = "変更";
+"Overwrite packages that have the same title" = "同じタイトルを持つパッケージを上書き";
+"Do not download packages sent by me" = "自分が送信したパッケージをダウンロードしない";
+"Packages are downloaded from:" = "パッケージのダウンロード元:";
+"Date" = "日付";
+"Automatically unlock encrypted files on download" = "ダウンロード時に暗号化されたファイルのロックを自動的に解除";
+"Select workspaces to download" = "ダウンロードするワークスペースの選択";
+"The download folder is not empty. Do you want to continue?" = "ダウンロード・フォルダーが空ではありません。続行しますか?";
+"No download folder selected." = "ダウンロード・フォルダーが選択されていません。";
+"Passphrase is empty." = "パスフレーズが空です。";
+"Inbox settings could not be saved due to the following errors: %s" = "以下のエラーが原因で、受信箱の設定を保存できませんでした: %s";
+
+
+/* general_pref_widget.cpp */
+"Automatically launch when Windows starts" = "Windows 起動時に自動的に起動する";
+"Activity Window" = "アクティビティー・ウィンドウ";
+"Open Transfers tab when an Inbox transfer is added" = "受信箱転送の追加時に「転送」タブを開く";
+"Close Activity window when all transfers are complete" = "すべての転送の完了時に「アクティビティー」ウィンドウを閉じる";
+"Remove transfer list items:" = "転送リスト内の項目の削除:";
+"Logging" = "ロギング";
+"Logging level:" = "ロギング・レベル:";
+"Manually" = "手動";
+"Upon Successful Transfer" = "転送の完了時";
+"Info" = "情報";
+"Debug" = "デバッグ";
+"Trace" = "トレース";
+"Remote View" = "リモート・ビュー";
+"Max remote view items:" = "最大リモート・ビュー項目:";
+"* Refresh to apply." = "* 適用するには表示を更新してください。";
+"Disk Space" = "ディスク・スペース";
+"Disk space warning:" = "ディスク・スペース警告:";
+"percent" = "パーセント";
+"Disk space percentage" = "ディスク・スペースの割合";
+
+
+/* gui_application.cpp */
+"Account is invalid. Check network connection, account information and save." = "アカウントが無効です。ネットワーク接続とアカウント情報を確認し、保存してください。";
+"Account name empty" = "アカウント名が空です";
+"You have active transfers. Are you sure you want to quit?" = "アクティブなファイル転送があります。終了しますか?";
+"Could not start new package. Check your settings or network connection and try again." = "新しいパッケージを開始できませんでした。設定またはネットワーク接続を確認し、再試行してください。";
+"Transfer monitor is unavailable for this transfer, because no activity is occurring." = "アクティビティーが発生していないため、転送モニターはこの転送に使用できません。";
+"%1$s Inbox - %2$s" = "%1$s 受信箱 - %2$s";
+
+
+/* gui_utils.cpp */
+"Choose Folder - %s" = "フォルダーの選択 - %s";
+"Please complete account information." = "アカウント情報を入力してください。";
+"No permission to download from %s" = "%s からダウンロードする権限がありません";
+"No permission to upload to %s" = "%s にアップロードする権限がありません。";
+"Folder %s does not exist" = "フォルダー %s は存在しません";
+
+
+/* hosts_model.cpp */
+"User" = "ユーザー";
+"Trust State" = "信頼状態";
+
+
+/* http_security_handler.cpp */
+"Security problem" = "セキュリティーの問題";
+
+
+/* accounts_view_controller.mm */
+"Storage account:" = "ストレージ・アカウント:";
+"Access key:" = "アクセス・キー:";
+"Path:" = "パス:";
+"Shared URL:" = "共有 URL:";
+"Revert" = "元に戻す";
+"Save" = "保存";
+"Storage" = "ストレージ";
+"test" = "テスト";
+
+
+/* activity_controller.mm */
+"Inbox" = "受信箱";
+"Switch View" = "ビューの切り替え";
+
+
+/* activity_inbox_delegate.mm */
+"Check Now" = "今すぐチェック";
+"Open Folder" = "フォルダーを開く";
+"Inbox Settings" = "受信箱の設定";
+
+
+/* activity_sync_delegate.mm */
+"Sync is not available for this account" = "Sync はこのアカウントには使用できません";
+"Show in Finder" = "Finder に表示";
+"Sync Settings" = "同期設定";
+
+
+/* activity_transfers_delegate.mm */
+"Stop" = "停止";
+"Start" = "開始";
+"Resume" = "再開";
+"Retry" = "リトライ";
+"Show in Transfer Monitor" = "転送モニターで表示";
+"Open Containing Folder" = "この項目のフォルダーを開く";
+"Go to " = "移動 ";
+"Clear list" = "リストをクリア";
+
+
+/* bandwidth_view_controller.mm */
+/* "Kbps" = "Kbps"; */
+/* "Mbps" = "Mbps"; */
+"Limit downloads to" = "ダウンロードの制限値:";
+"Limit uploads to" = "アップロードの制限値:";
+"Limit background downloads to" = "バックグラウンド・ダウンロードの制限値:";
+"Limit background uploads to" = "バックグラウンド・アップロードの制限値:";
+
+
+/* cocoa_initializer.mm */
+"About %s" = "%s のバージョン情報";
+"Hide %s" = "%s の非表示";
+"Quit %s" = "%s の終了";
+"Preferences..." = "設定...";
+"Hide Others" = "選択以外の非表示";
+"Show All" = "すべて表示";
+"Edit" = "編集";
+"Undo" = "取り消す";
+"Redo" = "やり直し";
+"Cut" = "切り取り";
+"Copy" = "コピー";
+"Paste" = "貼り付け";
+"Delete" = "削除";
+"Select All" = "すべて選択";
+"Window" = "ウィンドウ";
+"Minimize" = "最小化";
+"Zoom" = "ズーム";
+"Bring All to Front" = "すべてを最前面に移動";
+"Open log folder" = "ログ・フォルダーを開く";
+
+
+/* filesystem_browser_cell.mm */
+"Open" = "開く";
+"Rename" = "名前変更";
+"Archive" = "アーカイブ";
+"Undo archive" = "アーカイブの取り消し";
+
+
+/* filesystem_node.mm */
+"Internal Error. FSItem is null." = "内部エラー。FSItem が NULL です。";
+"The original file does not exist." = "元のファイルが存在しません。";
+"The destination already has an item with the same file name." = "宛先には同じファイル名の項目が既に存在します。";
+"Internal Error. FSItem is Null." = "内部エラー。FSItem が NULL です。";
+
+
+/* network_view_controller.mm */
+"Obtain proxy configuration from" = "プロキシー構成の取得先";
+"System" = "システム";
+"Manual" = "手動";
+"Configure proxy settings." = "プロキシーの設定を構成する。";
+"Use HTTP Proxy" = "HTTP プロキシーを使用";
+"Address:" = "アドレス:";
+"Port:" = "ポート:";
+"HTTP Proxy" = "HTTP プロキシー";
+"Use FASP Proxy (DNAT)" = "FASP Proxy (DNAT) を使用";
+"Secure (DNATS)" = "セキュア (DNATS)";
+"FASP Proxy" = "FASP Proxy";
+
+
+/* preferences_window_controller.mm */
+"Preferences" = "設定";
+
+
+/* remote_view_controller.mm */
+"New folder" = "新しいフォルダー";
+"Server" = "サーバー";
+"Storage type" = "ストレージ・タイプ";
+"Storage host" = "ストレージ・ホスト";
+"Storage path" = "ストレージ・パス";
+"Local inbox directory" = "ローカルの受信箱ディレクトリー";
+"Sync local directory" = "ローカル・ディレクトリーの同期";
+"Delete Files" = "ファイルの削除";
+"Are you sure you want to permanently delete the selected files?" = "選択されたファイルを永続的に削除しますか?";
+"Download has not completed" = "ダウンロードは完了していません";
+"Delete the selected item(s)" = "選択した項目の削除";
+"Rename the selected item" = "選択した項目の名前の変更";
+"Create new package" = "新しいパッケージの作成";
+"Create new folder" = "新しいフォルダーの作成";
+"The destination already has an item with the same file name. Continue?" = "宛先には同じファイル名の項目が既に存在します。続行しますか?";
+
+
+/* security_view_controller.mm */
+"Are you sure you want to remove the selected host?" = "選択したホストを削除しますか?";
+"Are you sure you want to remove all the hosts?" = "すべてのホストを削除しますか?";
+"Are you sure you want to remove the credential?" = "資格情報を削除しますか?";
+"Are you sure you want to remove all credentials?" = "すべての資格情報を削除しますか?";
+"Trusted Hosts" = "信頼済みホスト";
+"Restricted Hosts" = "制限付きホスト";
+"Passwords" = "パスワード";
+"Content Protection" = "コンテンツ保護";
+"Trusted hosts are hosts to which you have granted permission to always allow transfers.  If any attempt is made to start a transfer with a host that is not on this list, you will be given the option to allow or deny the transfer." = "信頼済みホストとは、転送を常に許可する権限を付与したホストです。このリストに含まれていないホストとの転送を開始しようとすると、転送の許可または拒否を選択するオプションが表示されます。";
+"Add" = "追加";
+"Remove All" = "すべて削除";
+"Restricted hosts are hosts for which you have enabled enhanced security.  If any attempt is made to start a transfer with a host that is on this list, you will be presented with a warning before it can proceed." = "制限付きホストとは、拡張セキュリティーを有効にしたホストです。このリストに含まれているホストとの転送を開始しようとすると、転送が実行される前に警告が表示されます。";
+"Login information has been saved for the following hosts:" = "以下のホストのログイン情報が保存されています:";
+"Content protection allows you to leave files encrypted on servers to which they have been uploaded.  Enter a list of hosts for which you want to enable this functionality." = "コンテンツ保護機能を利用すると、アップロードしたファイルを暗号化した状態でサーバーに格納することができます。この機能を有効にするホストのリストを入力します。";
+
+
+/* sync_wrapper_qt.mm */
+" Sync" = " 同期";
+"total files and directories" = "ファイルとディレクトリーの合計";
+"Unknown size" = "不明なサイズ";
+"Nothing to sync" = "同期する対象がありません";
+"Calculating size..." = "サイズの計算中...";
+"Never started" = "開始されていない";
+"%d conflict(s)" = "%d 件の競合";
+"%d file error(s)" = "%d 件のファイル・エラー";
+"Start file sync" = "ファイル同期の開始";
+"Stop file sync" = "ファイル同期の停止";
+"Warning: %s" = "警告: %s";
+"Current File" = "現在のファイル";
+"Last File" = "最終ファイル";
+"Done" = "完了";
+"Synced" = "同期済み";
+"Retrying" = "リトライ中";
+"Next attempt in %s" = "%s での次の試行";
+"Next sync in %s" = "%s での次の同期";
+"Checking for changes" = "変更を確認中";
+"Downloading" = "ダウンロード中";
+"Uploading" = "アップロード中";
+"Syncing" = "同期中";
+
+
+/* transfer_wrapper.h */
+"Unlock encrypted files" = "暗号化されたファイルのロックを解除";
+
+
+/* transfer_wrapper_qt.mm */
+"Decryption in progress..." = "復号化中...";
+"Decryption finished" = "復号化が終了しました";
+"Authenticating..." = "認証中...";
+"Measuring bandwidth..." = "帯域幅を測定しています...";
+"Stopping..." = "停止中...";
+"Queued" = "キューに登録済み";
+"elapsed" = "経過";
+"Transferring %1$s (%2$s)" = "%1$s (%2$s) 転送中";
+"Downloading %1$s (%2$s)" = "%1$s (%2$s) ダウンロード中";
+"Uploading %1$s (%2$s)" = "%1$s (%2$s) アップロード中";
+"Unknown" = "不明";
+"Open containing folder" = "この項目のフォルダーを開く";
+"Open transfer monitor" = "転送モニターを開く";
+"Delete source files on complete" = "完了時にソース・ファイルを削除";
+
+
+/* transfers_view_controller.mm */
+"Download Directory" = "ダウンロード・ディレクトリー";
+"Downloads location:" = "ダウンロードの場所:";
+"Remove:" = "削除:";
+"Always ask me where to save downloaded files." = "ダウンロードしたファイルの保存先を毎回確認する";
+"Queue:" = "キュー:";
+"Enable queuing" = "キューを有効にする";
+"Maximum concurrent transfers:" = "最大同時転送数:";
+"Retry:" = "リトライ:";
+"Automatically retry failed transfers" = "転送が失敗した場合は自動的にリトライする";
+"Attempts:" = "リトライ回数:";
+"Interval:" = "間隔:";
+"The interval specifies an amount of time that will elapse between each attempt to restart a failed transfer." = "間隔は、転送が失敗してから転送の再開を試行するまでの時間です。";
+"Sync:" = "同期:";
+"Multi-Session:" = "マルチセッション:";
+"Enable multi-session" = "マルチセッションの有効化";
+"Number of sessions:" = "セッション数:";
+"When transferring faster than:" = "次よりも速く転送:";
+"Split files larger than:" = "次よりも大きいファイルを分割:";
+"Startup interval between sessions:" = "セッション間の起動間隔:";
+"seconds" = "秒";
+"minutes" = "分";
+"hours" = "時間";
+/* "KB" = "KB"; */
+/* "MB" = "MB"; */
+/* "GB" = "GB"; */
+/* "Gbps" = "Gbps"; */
+
+
+/* metadata_input_widget.cpp */
+"Missing required fields: %s" = "次の必須フィールドが欠落しています: %s";
+
+
+/* mnts_sig_pathname_mixin.cpp */
+"Signature file specified by pathname must exist before sync session is started" = "同期セッションを開始するには、パス名によって指定された署名ファイルが存在する必要があります";
+"Signature file on mounted location in parent directory of sync source on local system" = "ローカル・システム上の同期ソースの親ディレクトリー内のマウントされた場所にある署名ファイル";
+"Browse to parent directory of sync source and specify signature filename" = "同期ソースの親ディレクトリーを参照して、署名ファイル名を指定してください";
+"Signature file specified by pathname must exist on remote system before sync session is started" = "同期セッションを開始するには、パス名によって指定された署名ファイルがリモート・システムに存在する必要があります";
+"Signature file on mounted location in parent directory of sync source on remote system" = "リモート・システム上の同期ソースの親ディレクトリー内のマウントされた場所にある署名ファイル";
+"Specify local mounts signature file" = "ローカル・マウントの署名ファイルを指定してください";
+"Local mounts signature file specified by pathname found to be a directory" = "パス名によって指定されたローカル・マウントの署名ファイルがディレクトリーであると検出されました";
+"Local mounts signature file specified by pathname not an ordinary file" = "パス名によって指定されたローカル・マウントの署名ファイルが通常のファイルではありません";
+"Failed to create local mounts signature file by specified pathname" = "指定されたパス名によるローカル・マウントの署名ファイルの作成に失敗しました";
+
+
+/* network_pref_widget.cpp */
+"Connect to the Internet via an HTTP proxy." = "HTTP プロキシー経由でインターネットに接続する";
+
+
+/* passphrase_window.cpp */
+"'Passphrase' field must be entered." = "「パスフレーズ」フィールドに入力する必要があります。";
+"'Passphrase' and 'Confirm' fields must be entered." = "「パスフレーズ」フィールドおよび「確認」フィールドに入力する必要があります。";
+"Passphrase confirmation does not match." = "確認のために入力したパスフレーズが一致しません。";
+"Passphrase is too long. Maximum length is %d." = "パスフレーズが長すぎます。最大長は %d 文字です。";
+"Enter a passphrase to decrypt protected files as they are downloaded." = "ダウンロードされた保護ファイルを復号化するためのパスフレーズを入力してください。";
+"Enter a passphrase to store files in an encrypted format on the server." = "暗号化された形式でファイルをサーバーに格納するためのパスフレーズを入力してください。";
+"A passphrase is required." = "パスフレーズが必要です。";
+"Keep files encrypted" = "ファイルの暗号化状態を保つ";
+"Keep files unencrypted" = "ファイルの非暗号化状態を保つ";
+"Passphrase input field" = "パスフレーズ入力フィールド";
+"Confirm passphrase input field" = "パスフレーズ入力フィールドの確認";
+"Confirm" = "確認";
+"Leave uploaded files unencrypted." = "アップロードしたファイルを暗号化しない";
+
+
+/* select_folder_window.cpp */
+"Look in:" = "検索する場所:";
+"Choose" = "選択";
+
+
+/* send_to_dialog.cpp */
+"Send Files - " = "ファイルの送信 - ";
+"Workspace" = "ワークスペース";
+"Title" = "タイトル";
+"Notes" = "注記\n";
+"Files" = "ファイル";
+"Encrypt sent files" = "送信されるファイルの暗号化";
+"Send as public Link" = "パブリック・リンクとして送信";
+"Add files" = "ファイルの追加";
+"Add folder" = "フォルダーの追加";
+"Send" = "送信";
+"Email or group" = "E メールまたはグループ";
+"Shared Inbox" = "共有受信箱";
+//| "Dropbox" = "Dropbox";
+"Name Conflicts - " = "名前の競合 - ";
+"Failed to send package: " = "パッケージの送信に失敗しました: ";
+"Server error. Failed to send package: " = "サーバー・エラー。パッケージの送信に失敗しました: ";
+"Failed to send package. Could not parse error message from server." = "パッケージの送信に失敗しました。サーバーからのエラー・メッセージを構文解析できませんでした。";
+"Package not sent. Account has been deleted." = "パッケージは送信されていません。アカウントが削除されました。";
+"Shared inbox" = "共有受信箱";
+"Select files" = "ファイルの選択";
+"Select folder" = "フォルダーの選択";
+"The note is cut to fit the maximum length of %d." = "メモは最大長の %d 文字に適合するように切り取られます。";
+"This workspace doesn't allow sending packages to external users." = "このワークスペースでは、外部ユーザーへのパッケージの送信は許可されていません。";
+"Maximum number of items reached." = "項目の最大数に到達しました。";
+
+
+/* shared_literals.cpp */
+"Show in Windows Explorer" = "Windows エクスプローラーに表示";
+"Show in file manager" = "ファイル・マネージャーに表示";
+
+
+/* sso_via_browser_dialog.cpp */
+"Please sign on in the browser tab that just opened." = "今開いたブラウザー・タブでサインオンしてください。";
+"Failed to open default browser for authentication" = "認証のためにデフォルトのブラウザーを開くのに失敗しました";
+
+
+/* sync_error_dialog.cpp */
+"&Copy" = "コピー(&C)";
+"Share" = "共有";
+"File" = "ファイル";
+" File Errors" = " ファイル・エラー";
+"File Conflict" = "ファイル競合";
+"Remote" = "リモート";
+"Type" = "タイプ";
+"Message" = "メッセージ";
+" Session Errors" = " セッション・エラー";
+"Warning" = "警告";
+
+
+/* sync_settings_dialog.cpp */
+"Synchronize with the selected remote folders" = "選択したリモート・フォルダーと同期";
+"Status" = "状況";
+"Local Folder Path" = "ローカル・フォルダー・パス";
+"Reset Sync" = "同期のリセット";
+"The local sync folder cannot be empty." = "ローカル同期フォルダーを空にすることはできません。";
+"No remote folders selected." = "リモート・フォルダーが選択されていません。";
+"You are changing continuous mode.\nThis will also reset sync. Click Yes to continue." = "連続モードを変更しようとしています。\nこれを実行すると同期もリセットされます。続行するには「はい」をクリックしてください。";
+"This will reset your sync history. Click Yes to continue." = "これにより、同期履歴がリセットされます。続行するには「はい」をクリックしてください。";
+"Failed to create directory: %s" = "ディレクトリーを作成できませんでした: %s";
+"The local sync folder selected is not empty. Do you want to continue?" = "選択されたローカル同期フォルダーが空ではありません。続行しますか?";
+
+
+/* sync_widget.cpp */
+"Sync settings" = "同期設定";
+"File sync" = "ファイル同期";
+
+
+/* transfer_status_widget.cpp */
+"Go to" = "移動";
+"Retrying in" = "指定時間の経過後にリトライ:";
+"Resuming..." = "再開中...";
+"Error: Server refused request" = "エラー: サーバーが要求を拒否しました";
+"Error: Authentication failed" = "エラー: 認証に失敗しました";
+"Transferring" = "転送中";
+" percent" = " パーセント";
+
+
+/* transfer_status_widget_accessible.cpp */
+"Use the tab to move through the different actions" = "複数のアクションの間を移動するにはタブを使用します";
+
+
+/* transfer_status_widget_container_accessible.cpp */
+"Transfers list" = "転送リスト";
+"List with all the current transfers" = "すべての現在の転送を示すリスト";
+"Use the up and down arrows to move through the different transfers" = "転送間を移動するには上下の矢印を使用します";
+
+
+/* transfers_pref_widget.cpp */
+"Save downloaded files to:" = "ダウンロードしたファイルを以下の場所に保存する:";
+"Browse" = "参照";
+"Queue" = "キュー";
+"time(s)" = "回";
+"Multi-session" = "マルチセッション";
+"Start interval between sessions:" = "セッション間の開始間隔:";
+
+
+/* transfers_window_accessible.cpp */
+"Window with all the transfers" = "すべての転送を示すウィンドウ";
+"Use the tab to access the transfer list" = "転送リストにアクセスするにはタブを使用します";
+
+
+/* tray_handler.cpp */
+"&About..." = "バージョン情報(&A)...";
+"Ac&tivity" = "アクティビティー(&T)";
+"&Run diagnostic" = "診断の実行(&R)";
+"&Unlock encrypted files" = "暗号化されたファイルのロックを解除(&U)";
+"&Quit" = "終了(&Q)";
+"&Open log folder" = "ログ・フォルダーを開く(&O)";
+"&Feedback" = "フィードバック (&F)";
+"&Preferences..." = "設定(&P)...";
+"&Others..." = "その他(&O)...";
+"&Unlock Encrypted Files" = "暗号化されたファイルのロックを解除(&U)";
+"&Open Log Folder" = "ログ・フォルダーを開く(&O)";
+
+
+/* win_file_dialog_helper.cpp */
+"Sending remote files is not supported" = "リモート・ファイルの送信はサポートされていません";
+
+
+/* win_preferences_window.cpp */
+"Preferences - %s" = "設定 - %s";
+"Apply" = "適用";
+"General" = "全般";
+"Network" = "ネットワーク";
+"Bandwidth" = "帯域幅";
+"Security" = "セキュリティー";
+
+
+/* busy_dialog.cpp */
+"Processing..." = "処理中...";
+
+
+/* decrypt_manager.cpp */
+"Task could not be created for %s" = "%s に対してタスクを作成できませんでした";
+"Decryption already in progress." = "復号は既に進行中です。";
+"Cannot perform operations during decryption." = "復号処理中は操作できません。";
+"Failed list is empty." = "失敗リストが空です。";
+"Error: could not allocate memory for task %s " = "エラー: タスク %s に対してメモリーの割り当てができませんでした ";
+
+
+/* fasp_decrypt_worker.cpp */
+"Could not write to destination." = "宛先に書き込むことができませんでした。";
+"Code:" = "コード\n";
+"Input file is corrupted or not encrypted." = "入力ファイルが壊れているか暗号化されています。";
+"Invalid file" = "無効なファイル";
+"Source file does not exist." = "ソース・ファイルが存在しません。";
+"Source is not a file." = "ソースがファイルではありません。";
+"Could not initialize decrypter." = "復号ツールを初期化できませんでした。";
+"Could not write out to device." = "デバイスへの書き込みができませんでした。";
+"Cancelled by user" = "ユーザーによりキャンセルされました";
+
+
+/* main_window.cpp */
+"Drag files and folders to start decrypting..." = "ファイルとフォルダーをドラッグして復号を開始する...";
+"Open Encrypted files" = "暗号化ファイルを開く";
+"Open Directory" = "ディレクトリーを開く";
+"There are current tasks. Do you want to exit?" = "現行タスクがあります。終了しますか?";
+"Do you want to delete encrypted source files from finished tasks?" = "完了したタスクから暗号化されたソース・ファイルを削除しますか?";
+"Do you want to reload?" = "再ロードしますか?";
+"Exit" = "終了";
+"Open Files" = "ファイルを開く";
+"Select file(s) to decrypt" = "復号するファイルの選択";
+"Decrypt all files and folders in selected folder" = "選択したフォルダー内のすべてのファイルとフォルダーを復号する";
+"Clear All" = "すべてクリア";
+"Clear all tasks" = "すべてのタスクをクリアする";
+"Delete Encrypted" = "暗号化部分を削除する";
+"Delete encrypted files from finished tasks" = "完了したタスクから暗号化されたファイルを削除する";
+"Clear Finished" = "完了をクリア";
+"Clear finished tasks" = "完了したタスクをクリアする";
+"Clear Failed" = "失敗をクリア";
+"Clear failed tasks" = "失敗したタスクをクリアする";
+"Clear Pending" = "保留をクリア";
+"Clear pending tasks" = "保留中のタスクをクリアする";
+"Settings" = "設定";
+"Open Settings dialog" = "設定ダイアログを開く";
+"About..." = "バージョン情報...";
+"Open About dialog" = "製品情報ダイアログを開く";
+"Reload Failed" = "再ロード失敗";
+"Reload failed tasks and resets status to Pending" = "失敗したタスクを再ロードしてステータスを保留中にリセットする";
+"Decrypt" = "復号";
+"Show passphrase" = "パスフレーズの表示";
+"View:" = "ビュー:";
+"Latest" = "最新";
+"Finished" = "完了";
+"Failed" = "失敗";
+"Options" = "オプション";
+"About" = "バージョン情報";
+"Enter Passphrase" = "パスフレーズの入力";
+
+
+/* settings_dialog.cpp */
+"Delete encrypted files when finished" = "完了時に暗号化されたファイルを削除する";
+"Number of concurrent threads for decryption" = "複合化する同時スレッド数";
+
+
+/* task.cpp */
+"Decrypting" = "復号中";
+"Waiting" = "待機中";
+"Error %s" = "エラー %s";
+"Cancelled" = "キャンセル済み";
+"Cleared" = "クリア済み";
+
+
+/* task_manager.cpp */
+"A task is in progress, try again later." = "タスクが実行中です。後ほど試してみてください。";
+"Loading files..." = "ファイルのロード中...";
+"Could not open file %1$s, for reading. %2$s" = "ファイル %1$s を読み取り用に開けませんでした。%2$s";
+"Failed to reload tasks." = "タスクの再ロードに失敗しました。";
+"Reloading failed tasks..." = "失敗したタスクの再ロード中...";
+"Failed Tasks reloaded." = "失敗したタスクが再ロードされました。";
+"No files cleared." = "ファイルがクリアされませんでした。";
+"Clearing pending tasks..." = "保留中タスクのクリア中...";
+"Could not clear pending tasks." = "保留中タスクをクリアできませんでした。";
+"All pending tasks cleared." = "すべての保留中タスクがクリアされました。";
+"Clearing failed tasks..." = "失敗したタスクをクリア中...";
+"Could not clear failed tasks." = "失敗したタスクをクリアできませんでした。";
+"All failed tasks cleared." = "失敗したタスクがクリアされました。";
+"Clearing finished tasks..." = "完了したタスクをクリア中...";
+"Could not clear finished tasks." = "完了したタスクをクリアできませんでした。";
+"All finished tasks cleared." = "すべての完了したタスクがクリアされました。";
+"Clearing all tasks..." = "すべてのタスクをクリア中...";
+"Could not clear all tasks." = "すべてのタスクをクリアできませんでした。";
+"All tasks cleared" = "すべてのタスクがクリアされました";
+"No files cleared for unknown status." = "不明なステータスのためファイルがクリアされませんでした。";
+"Could not load files." = "ファイルをロードできませんでした。";
+"No files found." = "ファイルが見つかりません。";
+"Deleting encrypted source files..." = "暗号化されたソース・ファイルを削除中...";
+"Encrypted source files deleted from finished tasks." = "完了済みタスクから暗号化されたソース・ファイルが削除されました。";
+"Not all encrypted files could be deleted." = "すべての暗号化されたファイルが削除された訳ではありません。";
+
+
+/* files_fs.cpp */
+"Administratively Shared" = "管理上の共有";
+
+
+/* files_fs_item.cpp */
+" (Shared)" = " (共有)";
+
+
+/* packages_box_fs_item.cpp */
+"Archived" = "アーカイブ済み";
+"Sent" = "送信済み";
+
+
+/* root_fs.cpp */
+"My Offline Files" = "自分のオフライン・ファイル";
+
+
+/* account_provider.cpp */
+"Authentication error (at remote view)" = "認証エラー (リモート・ビュー)";
+
+
+/* aoc_base_item.cpp */
+"Disconnected share" = "切断された共有";
+
+
+/* base_item.cpp */
+"Rename Error" = "名前変更エラー";
+"Are you sure you want to permanently delete this file?" = "このファイルを完全に削除しますか?";
+"Are you sure you want to permanently delete these files?" = "これらのファイルを完全に削除しますか?";
+"New Folder" = "新規フォルダー";
+
+
+/* external_context_menu.cpp */
+"Send files..." = "ファイルの送信...";
+"Activity" = "アクティビティー";
+
+
+/* shell_module.cpp */
+"To remove this file only from your computer update your sync selection." = "ご使用のコンピューターのみからこのファイルを削除するには、同期の選択肢を更新してください。";
+"Delete permanently?" = "完全に削除しますか?";
+"Would you like to delete this file everywhere?" = "すべての場所からこのファイルを削除しますか?";
+"Settings update required" = "設定の更新が必要です";
+"Certificate bundle not found. " = "証明書バンドルが見つかりません。 ";
+
+
+/* transfer_controller.cpp */
+"Replace Files" = "ファイルの置換";
+
+
+/* auth_error_dlg.cpp */
+"Network Error" = "ネットワーク・エラー";
+"%s cannot access %s" = "%s が %s にアクセスできません";
+"Check the account settings and passwords. Otherwise, there might be a problem with your network." = "アカウントの設定とパスワードを確認してください。それ以外の場合、ネットワークに問題がある可能性があります。";
+"Open Settings" = "設定を開く";
+
+
+/* download_dlg.cpp */
+"%s - Download destination" = "%s - ダウンロード先";
+"Download files to:" = "ファイルを次の場所にダウンロード:";
+"Ask me every time" = "毎回表示する";
+"Download" = "ダウンロード";
+"Invalid path is specified. " = "無効なパスが指定されています。 ";
+
+
+/* error_dlg.cpp */
+"%s - Error" = "%s - エラー";
+"%s couldn't complete the request." = "%s が要求を完了できませんでした。";
+"%s couldn't complete the '%s' request." = "%s が '%s' 要求を完了できませんでした。";
+
+
+/* aspcore_utils.cpp */
+"Path is too long. Max length of %s exceeded." = "パスが長すぎます。最大文字数の %s を超過しました。";
+"Path ends with /.." = "パスの末尾が /.. になっています。";
+"Path begins with ../" = "パスの先頭が ../ になっています。";
+"Path contains /../" = "パスに /../ が含まれています。";
+"Path is .." = "パス:";
+"Illegal string found: \" %s \"." = "正しくないストリングが見つかりました: \" %s \"。";
+
+
+/* account_manager.cpp */
+"Could not save account. %s" = "アカウントを保存できませんでした。%s";
+"Account is missing an ID." = "アカウントに ID がありません。";
+"Host is empty." = "ホストが空です。";
+"No authentication type specified." = "認証タイプが指定されていません。";
+"User field is empty." = "「ユーザー」フィールドが空です。";
+"Password field is empty." = "「パスワード」フィールドが空です。";
+"Missing token." = "トークンがありません。";
+"Max threads reached." = "最大スレッド数に達しました。";
+"Account has been deleted." = "アカウントが削除されました。";
+"No services discovered." = "サービスが検出されませんでした。";
+"Invalid credentials." = "無効な資格情報。";
+"Your password has expired. Please reset your password and try again." = "パスワードの有効期限が切れました。パスワードを再設定し、再試行してください。";
+"Service discovery failed. No services discovered for host: %s" = "サービスの検出に失敗しました。ホスト %s に対するサービスは検出されませんでした";
+"Storage validation failed." = "ストレージの検証が失敗しました。";
+"This server does not have node services for storage testing." = "このサーバーには、ストレージをテストするためのノード・サービスがありません。";
+"This server requires a valid storage configuration." = "このサーバーには、有効なストレージ構成が必要です。";
+"The server returned the following error:" = "サーバーは次のエラーを返しました:";
+
+
+/* application.cpp */
+"%1$s stopped. You are running very low on disk space on (%2$s)." = "%1$s が停止しました。(%2$s) のディスク・スペースが非常に少なくなっています。";
+"%1$s. And %2$llu%% disk space remaining for download to %3$s." = "%1$s. %2$llu%% のディスク・スペースが %3$s へのダウンロードのために残っています。";
+"%1$s. And %2$llu%% disk space remaining for sync to %3$s." = "%1$s. %2$llu%% のディスク・スペースが %3$s への同期のために残っています。";
+"Accounts: " = "アカウント: ";
+"%s Name is already taken." = "%s 名前は既に取得されています。";
+
+
+/* exception.cpp */
+"An instance of the application is already running." = "アプリケーションのインスタンスは既に実行中です。";
+"Invalid input." = "無効な入力。";
+"Failed to parse XML." = "XML を構文解析できませんでした。";
+"This system has reached the maximum number of Connect instances running allowed, probably under multiple user IDs. Some will have to be closed before this transfer can succeed." = "このシステムは、実行が許可される Connect インスタンスの最大数に達しました。これらは、複数のユーザー ID の下で実行されている可能性があります。この転送を正常に実行するには、いくつかを終了する必要があります。";
+"Pointer is nil." = "ポインターが nil です。";
+"Unexpected value found." = "予期しない値が見つかりました。";
+"Not implemented." = "未実装。";
+"Json parse error." = "JSON 構文解析エラー。";
+"Json serialization failed." = "JSON の直列化が失敗しました。";
+"Sql execution error." = "SQL 実行エラー。";
+"Verification of properties failed." = "プロパティーの検証が失敗しました。";
+"HTTP error" = "HTTP エラー";
+"User cancelled first run." = "ユーザーが最初の実行をキャンセルしました。";
+"Configuration file parsed successfully." = "構成ファイルが正常に構文解析されました。";
+"Error parsing configuration file." = "構成ファイルの構文解析でエラーが発生しました。";
+"Failed to parse application arguments." = "アプリケーション引数を構文解析できませんでした。";
+
+
+/* faspex_feed_processor2.cpp */
+"Packages-checking request rejected by server as unauthorized" = "パッケージ検査要求が無許可であるとしてサーバーから拒否されました";
+
+
+/* faspex_inbox_task.cpp */
+"Account \"%s\" may not have permission to download packages." = "アカウント \"%s\" には、パッケージをダウンロードする権限がない可能性があります。";
+"Unable to check for packages due to network timeout" = "ネットワーク・タイムアウトのため、パッケージを確認できません";
+"User name or password not accepted, please check credentials and restart this Inbox." = "ユーザー名またはパスワードが受け入れられませんでした。資格情報を確認し、この受信箱を再起動してください。";
+"Could not start automatic checking for packages." = "パッケージの自動検査を開始できませんでした。";
+
+
+/* token_refresher.cpp */
+"Token empty/expired" = "トークンが空/期限切れです";
+
+
+/* files_feed_processor.cpp */
+"Self query returned nil" = "セルフ照会が nil を返しました。";
+"Workspace query returned nil" = "ワークスペース照会が nil を返しました";
+"Couldn't parse packages response. Check request parameters" = "パッケージ応答を構文解析できませんでした。要求パラメーターを確認してください";
+
+
+/* node_api.cpp */
+"Node V2 URL not found." = "ノード V2 URL が見つかりません。";
+
+
+/* node_file_info_gatherer.cpp */
+"Node not syncable" = "ノードが同期不可です";
+"Node Api returns non-syncable." = "ノード API が同期不可を返しました。";
+"Duplicated folder name: " = "重複するフォルダー名: ";
+". Please check your Files workspace and rename one of the folders." = ". Files ワークスペースを確認し、いずれかのフォルダー名を変更してください。";
+" code" = " コード";
+
+
+/* node_filesystem_model.cpp */
+"upload only" = "アップロードのみ";
+"download only" = "ダウンロードのみ";
+"no permissions" = "権限がありません";
+
+
+/* node_transfer_worker.cpp */
+"Resource not found. Cannot start transfer." = "リソースが見つかりません。転送を開始できません。";
+"Transfer failed" = "転送に失敗しました";
+
+
+/* sso_adapter.cpp */
+"Failed to communicate with the host." = "ホストと通信できませんでした。";
+
+
+/* setup_worker.cpp */
+"remote directory" = "リモート・ディレクトリー";
+"remote directory: %s" = "リモート・ディレクトリー: %s";
+"Permission denied to upload to %s" = "次へのアップロードのアクセス権が拒否されました: %s";
+"The folder %s is no longer available. Go to Aspera on Cloud and resolve the errors." = "フォルダー %s は使用できなくなりました。Aspera on Cloud に移動して、エラーを解決してください。";
+
+
+/* start_spec.cpp */
+"remote selection" = "リモート選択";
+
+
+/* sync_error.cpp */
+"No error" = "エラーはありません";
+"Invalid Sync parameters" = "無効な同期パラメーター";
+"Connection failed" = "接続に失敗しました";
+"Error communicating with server" = "サーバーとの通信中にエラーが発生しました";
+"Your user name or password is incorrect" = "ユーザー名またはパスワードが正しくありません";
+"No remote directories selected" = "リモート・ディレクトリーが選択されていません";
+"Failed to send data" = "データの送信に失敗しました。";
+"Sync error" = "同期エラー";
+"Sync engine error" = "同期エンジン・エラー";
+"Remote path is not a directory" = "リモート・パスがディレクトリーではありません";
+"Permission denied to sync with remote folder" = "リモート・フォルダーとの同期のアクセス権が拒否されました";
+"Sync session error" = "同期セッション・エラー";
+"Sync session failed to start" = "同期セッションを開始できませんでした";
+"Authentication failed" = "認証に失敗しました";
+"Failed to initialize the Sync module" = "同期モジュールを初期化できませんでした";
+"Failed to configure Sync session" = "同期セッションを構成できませんでした";
+"Failed to start Sync session" = "同期セッションを開始できませんでした";
+"Failed to stop Sync session" = "同期セッションを停止できませんでした";
+"Waiting for previous Sync session to end" = "以前の同期セッションの終了の待機中";
+"Sync tasks stopped. You are running very low on disk space." = "同期タスクが停止しました。ディスク・スペースが非常に少なくなっています。";
+"code" = "コード";
+
+
+/* sync_queue_manager.cpp */
+"Local directory is not specified" = "ローカル・ディレクトリーが指定されていません";
+
+
+/* sync_stats.cpp */
+"Error" = "エラー";
+"Idle" = "アイドル";
+"Paused" = "一時停止";
+"Stopped" = "停止";
+"Running" = "実行中";
+
+
+/* transfer.cpp */
+"Authentication failed.  Host is empty." = "認証に失敗しました。ホストが空です。";
+"User is empty." = "ユーザーが空です。";
+"Source path not allowed: %s" = "ソース・パスが許可されていません: %s";
+"Destination path not allowed: %s" = "ターゲット・パスが許可されていません: %s";
+"Unable to check source or destination path - paths datafile missing" = "ソースまたは宛先のパスを確認できません - パス・データファイルがありません";
+"Destination root not allowed. %s" = "ターゲット・ルートが許可されていません。%s";
+"Source root not allowed. %s" = "ソース・ルートが許可されていません。%s";
+"Error: " = "エラー: ";
+"Disk write failed" = "ディスクへの書き込みに失敗しました";
+"Ensure the server file still exists and is accessible." = "サーバー・ファイルがまだ存在し、アクセス可能であることを確認してください。";
+"Error: Authentication failed." = "エラー: 認証に失敗しました。";
+"The ascp executable is missing. Repair your Connect or Drive installation." = "ascp 実行可能ファイルがありません。Connect または Drive のインストール済み環境を修復してください。";
+"Error: Session data transfer timeout (server)." = "エラー: セッション・データ転送タイムアウト (サーバー)。";
+"Error: Communication problem, ensure both client and server are connected to the network." = "エラー: 通信の問題。クライアントとサーバーが両方ともネットワークに接続されていることを確認してください。";
+"Error: Ensure that a valid fasp proxy address is set." = "エラー: 有効な fasp プロキシー・アドレスが設定されていることを確認してください。";
+"Error: FASP process failed to initialize." = "エラー: FASP プロセスの初期化に失敗しました。";
+"Error: Session failed to connect to the remote server." = "エラー: セッションはリモート・サーバーへの接続に失敗しました。";
+
+
+/* transfer_properties.cpp */
+"Input is not a fasp url: %s" = "入力が fasp url ではありません: %s";
+"Could not create fasp url from: %s" = "以下から fasp url を作成できませんでした: %s";
+"Could not create fasp url from destination: %s" = "以下の宛先から fasp url を作成できませんでした: %s";
+
+
+/* transfer_worker.cpp */
+"FASP process failed to initialize." = "FASP プロセスの初期化に失敗しました。";
+"File error" = "ファイル・エラー";
+
+
+/* updater.cpp */
+"Failed to communicate with the update server" = "更新サーバーと通信できませんでした";
+"Update server returned invalid data." = "更新サーバーが無効データを返しました。";
+
+
+/* human_string.cpp */
+"at %s" = "時刻: %s";
+"yesterday" = "昨日";
+"on %s" = "曜日: %s";
+
+
+/* utils_helpers.cpp */
+"GetVolumePathName of '%1$s' failed: %2$ld" = "%1$s の GetVolumePathName が失敗しました: %2$ld";
+"Error encrypting data" = "データの暗号化でエラーが発生しました";
+"Error decrypting data" = "データの復号でエラーが発生しました";
+
+
+/* utils.cpp */
+"\n%sName is empty." = "\n%s名前が空です。";
+"\n%sName cannot contain these characters: \\ / * ? : \" < > |" = "\n%s名前に文字 \\ / * ? : \" < > | を含めることはできません";
+"\n%1$sName is greater than max length: %2$d" = "\n%1$s名前が最大長 %2$d を超えています";
+"\n%sServer address is empty." = "\n%s サーバー・アドレスが空です。";
+"\n%sServer address is invalid." = "\n%s サーバー・アドレスが無効です。";
+"\n%sUser name is empty." = "\n%s ユーザー名が空です。";
+"\n%sPassword is empty." = "\n%s パスワードが空です。";
+"\n%sStorage path for Azure can not be empty or \"/\"." = "\n%s Azure のストレージ・パスを空または \"/\" にすることはできません。";
+"Shared access signature must have either Read-List permissions or Read-Write-Delete-List permissions." = "共有アクセス署名は、Read-List 権限または Read-Write-Delete-List 権限のいずれかを持つ必要があります。";
+
+
+/* status_code.cpp */
+"Continue" = "続行";
+"Switching Protocols" = "プロトコルの切り替え";
+"Created" = "作成済み";
+"Accepted" = "受け入れ済み";
+"Non-Authoritative Information" = "信頼できない情報";
+"No Content" = "コンテンツなし";
+"Reset Content" = "コンテンツのリセット";
+"Partial Content" = "部分的コンテンツ";
+"Multiple Choices" = "多肢選択";
+"Moved Permanently" = "永続的に移動";
+"Found" = "検出済み";
+"See Other" = "他を参照";
+"Not Modified" = "変更なし";
+"Use Proxy" = "プロキシーを使用";
+"Temporary Redirect" = "一時的リダイレクト";
+"Bad Request" = "不正な要求";
+"Unauthorized" = "無許可";
+"Payment Required" = "支払いが必要";
+"Forbidden" = "禁止";
+"Not Found" = "未検出";
+"Method Not Allowed" = "許可されていない方法";
+"Not Acceptable" = "受け入れ不可";
+"Proxy Authentication Required" = "Proxy 認証が必要";
+"Request Timeout" = "要求タイムアウト";
+"Conflict" = "競合";
+"Gone" = "終了";
+"Length Required" = "長さが必要";
+"Precondition Failed" = "前提条件に誤り";
+"Request Entity Too Large" = "要求エンティティーが大きすぎる";
+"Request-URI Too Large" = "要求 URI が大きすぎる";
+"Unsupported Media Type" = "サポートされないメディア・タイプ";
+"Requested Range Not Satisfiable" = "要求された範囲が不適切";
+"Expectation Failed" = "要求どうりの処理が不可能";
+"Unprocessable Entity" = "処理できないエンティティー";
+"Internal Server Error" = "内部サーバー・エラー";
+"Not Implemented" = "未実装";
+"Bad Gateway" = "不正ゲートウェイ";
+"Service Unavailable" = "サービスが使用不可";
+"Gateway Timeout" = "ゲートウェイ・タイムアウト";
+"HTTP Version Not Supported" = "サポートされない HTTP バージョン";
+"Encryption At Rest Passphrase Required" = "停止時の暗号化のパスフレーズが必要";

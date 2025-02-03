@@ -1,10 +1,4 @@
 <product>
-  <name>Aspera Connect</name>
-  <version>3.6.2.117442</version>
-  <components>
-    <component>
-      <name>ascp</name>
-      <version>3.5.6.112424</version>
-    </component>
-  </components>
+  <name>IBM Aspera Connect</name>
+  <version>4.2.13 (820)</version>
 </product>
