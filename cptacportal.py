@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.12
 
 from __future__ import print_function
 
@@ -59,8 +59,8 @@ class CPTACDataPortal(object):
             self.verbose = False
         self.verbose = kwargs.get('verbose',self.verbose)
         self.read_config(verbose=(self.verbose>0))
-        self.set_version()
         self.find_aspera()
+        self.set_version()
         self.parse_arguments(cmdline=cmdline)
         if not cmdline:
             for k,v in list(kwargs.items()):
@@ -136,6 +136,8 @@ class CPTACDataPortal(object):
                 VARIABLES['INSTALL'] = os.path.join('.',base+'.data')
             else:
                 VARIABLES['INSTALL'] = installdir
+        if self.cfg.has_option('Aspera','System'):
+            VARIABLES['SYSTEM'] = self.cfg.get('Aspera','System')
         if 'SYSTEM' not in VARIABLES:
             VARIABLES['SYSTEM'] = platform.system()
             bits = platform.architecture()[0][:2]
@@ -151,6 +153,7 @@ class CPTACDataPortal(object):
         else:
             self.ascp = os.path.join(ASPERA,'bin','ascp')
             self.ascpkey = os.path.join(ASPERA,'etc','asperaweb_id_dsa.openssh')
+        self.ascpsystem = VARIABLES['SYSTEM']
 
         assert os.path.isdir(ASPERA), "ASPERA install directory does not exist - check %s.ini file"%(self.portal,)
 
@@ -159,9 +162,7 @@ class CPTACDataPortal(object):
         assert os.path.exists(self.ascpkey), "ASPERA public key file asperaweb_id_dsa not found, expected location: %s"%(self.ascpkey,)
 
     def set_version(self):
-        self.VERSION = version.VERSION + ' (%s, %s, %s bit)'%(sys.argv[0].split('/')[-1],
-                                                              platform.system(),
-                                                              platform.architecture()[0][:2])
+        self.VERSION = version.VERSION + ' (%s, %s)'%(sys.argv[0].split('/')[-1], self.ascpsystem)
         
     def add_login_options(self,parser):
         # override for public portal
