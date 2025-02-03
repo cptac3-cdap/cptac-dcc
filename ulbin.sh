@@ -1,5 +1,5 @@
 #!/bin/sh
-VER=`python3 cksum.py --version | tr -d -c '0-9.'`
+VER=`python3.12 cksum.py --version | tr -d -c '0-9.'`
 OS=`uname`
 AR=`uname -m`
 XX="linux-$AR"

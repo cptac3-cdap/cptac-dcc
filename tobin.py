@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.12
 
 import sys, os, shutil, stat
 
@@ -30,7 +30,7 @@ from cx_Freeze import setup, Executable
 build_exe_options = {"packages": ["os","encodings.ascii","encodings.utf_8","encodings.utf_16_le","encodings.latin_1","encodings.string_escape","encodings.hex_codec","encodings","_strptime"], "excludes": ["tkinter"]}
 
 sys.argv[1:] = ['build']
-setup(executables = map(lambda f: Executable(f, base=None),files))
+setup(executables = list(map(lambda f: Executable(f, base=None),files)))
 shutil.copytree('build/exe.linux-x86_64-3.6',base)
 
 for f in files:
