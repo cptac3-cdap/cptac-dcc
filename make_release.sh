@@ -12,6 +12,9 @@ if [ "$1" ]; then
     # echo "* $comment" >> dist/cptacpublic-$VER.txt
   done
 fi
+gh release delete "$DCCVER" -y
+git push --delete origin "refs/tags/$DCCVER"
+git tag --delete "$DCCVER"
 gh release create "$DCCVER" dist/cptacdcc-$VER.*.tgz dist/cptacdcc-$VER.md5 -F dist/cptacdcc-$VER.txt -t "$DCCVER"
 for a in dist/cptacdcc-$VER.*.tgz; do
   a1=`basename $a`

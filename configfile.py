@@ -26,6 +26,7 @@ def readconfig(prog, verbose=False):
                ]))
   if verbose:
      print("  " + "\n  ".join(map(os.path.realpath,list(map(os.path.abspath,readfiles)))))
+     cfg.write(sys.stdout)
   return cfg
 
 def get(cfg, section, key, default=None):

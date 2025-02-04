@@ -104,6 +104,15 @@ class CPTACDataPortal(object):
         default_resume = cfg.get('Aspera','Resume')
         self.ascp_opts = cfg.get('Aspera','Options')
         self.ascp_opts = self.ascp_opts.split()
+        self.ascp_docker = cfg.get('Aspera','Docker')
+        if self.ascp_docker in ("True",):
+            self.ascp_docker = True
+        elif self.ascp_docker in ("False",):
+            self.ascp_docker = False
+        elif self.ascp_docker in ("Sudo",):
+            self.ascp_docker = "SUDO"
+        else:
+            raise RuntimeError("Bad Aspera: Docker option value")
         
         # May not be set in config
         default_user = configfile.get(cfg,'Portal','User',None)
@@ -143,6 +152,8 @@ class CPTACDataPortal(object):
             bits = platform.architecture()[0][:2]
         if VARIABLES['SYSTEM'] == 'Linux' and bits == '64':
             VARIABLES['SYSTEM'] = 'Linux64'
+        if self.ascp_docker != False:
+            VARIABLES['SYSTEM'] += "-Docker"
         ASPERA = os.path.abspath(self.cfg.get('Aspera','Install',raw=True)%VARIABLES)
         if VARIABLES['SYSTEM'] == 'Darwin':
             self.ascp = os.path.join(ASPERA,'Contents','Resources','ascp')
@@ -793,7 +804,10 @@ class CPTACDataPortal(object):
                '--mode', 'recv',
                portal_path,
                local_path]
-        self.aspera_execute(cmd)
+        if self.ascp_docker == "SUDO":
+            self.aspera_execute(cmd,DOCKER_SUDO='1')
+        else:
+            self.aspera_execute(cmd)
 
     def aspera_put(self,local_path,portal_path,metadata):
 
@@ -812,9 +826,12 @@ class CPTACDataPortal(object):
                '--mode', 'send'] + \
                list(local_path) + \
                [portal_path]
-        self.aspera_execute(cmd)
+        if self.ascp_docker == "SUDO":
+            self.aspera_execute(cmd,DOCKER_SUDO='1')
+        else:
+            self.aspera_execute(cmd)
 
-    def aspera_execute(self,cmd):
+    def aspera_execute(self,cmd,**env):
 
         if self.opts.echo or self.verbose:
             print(' '.join([s if ' ' not in s else '"%s"'%s for s in cmd]))
@@ -833,7 +850,7 @@ class CPTACDataPortal(object):
 
         else:
             try:
-                p = subprocess.Popen(cmd)
+                p = subprocess.Popen(cmd,env=dict(os.environ,**env))
             except OSError:
                 raise ASCPExecuteError(1)
 
