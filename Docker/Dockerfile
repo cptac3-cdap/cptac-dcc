@@ -21,7 +21,8 @@ RUN \
   cd /home/ascp && \
   curl "$CONNECT" | tar xvz -f - && \
   /bin/bash ibm-aspera-connect_*.sh > /dev/null 2>&1 && \
-  rm -f ibm-aspera-connect_*.sh
+  rm -f ibm-aspera-connect_*.sh && \
+  chmod a+rX /home/ascp
 
 WORKDIR /data
 
