@@ -6,6 +6,10 @@ IMAGE=cptacdcc/cptacdcc_ascp
 if [ "$DOCKER_SUDO" != "" ]; then
   SUDO="sudo"
 fi
+INTERACTIVE="-it"
+if [ "$NONINTERACTIVE" != "" ]; then
+  INTERACTIVE=""
+fi
 
 IDENTITY=""
 ARGS=""
@@ -21,7 +25,7 @@ while getopts ":i:" o; do
 done
 if [ "$IDENTITY" != "" ]; then
   IDENTITY=`readlink -f "$IDENTITY"`
-  $SUDO docker run -u $USER -v "$PWD":/data/ -v "$IDENTITY":/.identity -it --rm $IMAGE -i /.identity "$@"
+  $SUDO docker run -u $USER -v "$PWD":/data/ -v "$IDENTITY":/.identity $INTERACTIVE --rm $IMAGE -i /.identity "$@"
 else
-  $SUDO docker run -u $USER -v "$PWD":/data/ -it --rm $IMAGE "$@"
+  $SUDO docker run -u $USER -v "$PWD":/data/ $INTERACTIVE --rm $IMAGE "$@"
 fi
