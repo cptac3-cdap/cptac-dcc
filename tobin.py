@@ -29,9 +29,13 @@ from cx_Freeze import setup, Executable
 # Dependencies are automatically detected, but it might need fine tuning.
 build_exe_options = {"packages": ["os","encodings.ascii","encodings.utf_8","encodings.utf_16_le","encodings.latin_1","encodings.string_escape","encodings.hex_codec","encodings","_strptime"], "excludes": ["tkinter"]}
 
+version = ".".join(map(str,[sys.version_info.major,sys.version_info.minor]))
+builddir = 'build/exe.linux-x86_64-'+version
+
 sys.argv[1:] = ['build']
 setup(executables = list(map(lambda f: Executable(f, base=None),files)))
-shutil.copytree('build/exe.linux-x86_64-3.6',base)
+shutil.copytree(builddir,base)
+rmminusrf(builddir)
 
 for f in files:
     if os.path.exists(f[:-3] + '.ini'):
