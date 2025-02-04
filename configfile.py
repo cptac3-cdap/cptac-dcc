@@ -14,10 +14,9 @@ def readconfig(prog, verbose=False):
   siteIniFileName = name+'-local.ini'
   cfg = ConfigParser()
   cfg.optionxform = str
-  iniFile = open(os.path.join(d,iniFileName))
-  cfg.read(iniFile)
-  iniFile.close()
-  readfiles = [ os.path.join(d,iniFileName) ]
+  iniFile = os.path.join(d,iniFileName)
+  readfiles = cfg.read([iniFile])
+  assert len(readfiles) > 0, "Can't read installed configuration file"
   readfiles.extend(
       cfg.read([iniFileName,                            # current working directory
                 os.path.join(d,siteIniFileName),        # install dir (site ini)
@@ -26,7 +25,6 @@ def readconfig(prog, verbose=False):
                ]))
   if verbose:
      print("  " + "\n  ".join(map(os.path.realpath,list(map(os.path.abspath,readfiles)))))
-     cfg.write(sys.stdout)
   return cfg
 
 def get(cfg, section, key, default=None):
