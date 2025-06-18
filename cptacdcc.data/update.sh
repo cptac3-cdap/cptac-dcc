@@ -20,8 +20,18 @@ rm -f $ZIP
 # Assume wget and unzip/tar are on the path...
 wget --read-timeout 10 --no-check-certificate -O $ZIP $URL/$ZIP
 if [ "$EXT" = ".zip" ]; then
+    unzip -t $ZIP
+    if [ $? -ne 0 ]; then
+        exit 1
+    fi
+    rm -rf `ls | egrep -v '\.(ini|zip)$' | fgrep -v update.sh`
     unzip -o -d .. $ZIP
 else
+    gunzip -t $ZIP
+    if [ $? -ne 0 ]; then
+        exit 1
+    fi
+    rm -rf `ls | egrep -v '\.(ini|tgz)$' | fgrep -v update.sh`
     tar -C .. -xvzf $ZIP
 fi
 ./cptacdcc$EXE --version
