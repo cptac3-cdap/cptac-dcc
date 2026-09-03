@@ -240,9 +240,18 @@ class DCCChecksumTable(ChecksumTable):
         dir,fname = os.path.split(self.path)
         if os.path.split(dir)[1] == fname[:-6]:
             return dir
+        if not os.path.isdir(os.path.join(dir, fname[:-6])):
+            return dir
         raise RuntimeError('Can\'t infer directory from checksum file')
     def autopath(self):
-        return self.directory.rstrip(os.sep)+'.cksum'
+        sibling = self.directory.rstrip(os.sep)+'.cksum'
+        if os.path.exists(sibling):
+            return sibling
+        d = self.directory.rstrip(os.sep)
+        inner = [f for f in os.listdir(d) if f.endswith('.cksum')]
+        if len(inner) == 1 and not os.path.isdir(os.path.join(d, inner[0][:-6])):
+            return os.path.join(d, inner[0])
+        return sibling
     def read(self):
         h=open(self.path)
         for l in h:
